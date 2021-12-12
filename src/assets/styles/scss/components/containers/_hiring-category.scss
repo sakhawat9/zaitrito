@@ -1,0 +1,31 @@
+.hiring-category {
+  @apply grid gap-4 md:grid-cols-3 text-justify;
+  &__item {
+    @apply rounded shadow-lg hover:bg-blue-500 p-7 hover:text-white;
+    &:hover svg {
+      transition: all 0.4s;
+      @apply bg-white text-blue-500;
+      border-radius: 50%;
+      border-bottom-right-radius: 6px;
+    }
+    svg {
+      @apply flex w-16 h-16 p-3 items-center justify-center left-0 text-white;
+      border-radius: 50%;
+      border-top-right-radius: 6px;
+      flex-shrink: 0;
+      transition: all 0.4s;
+    }
+    &__icon-one {
+      background-color: #7f8eff;
+    }
+    &__icon-two {
+      background-color: #b87fff;
+    }
+    &__icon-three {
+      background-color: #ff7f8b;
+    }
+    &__icon-fore {
+      background-color: #90ce7f;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.blog-header {
+  @apply text-gray-900 text-lg;
+  &__wrapper {
+    @apply flex justify-between items-center pt-10 pb-8  px-4;
+    &__drawer {
+      @apply text-3xl lg:hidden flex justify-between w-full p-3 shadow-lg rounded;
+      &__menu {
+        @apply p-3 overflow-hidden text-2xl text-right;
+      }
+    }
+    &__menu {
+      @apply flex flex-wrap items-center  hidden text-base md:mr-auto  lg:block;
+      a,
+      svg {
+        @apply mr-6;
+      }
+      &__service {
+        @apply inline-block pb-2;
+        span {
+          @apply flex items-center gap-1;
+          svg {
+            @apply mr-0;
+          }
+        }
+      }
+    }
+    &__cart {
+      @apply relative inline-block mr-6;
+    }
+  }
+}
+
+.blog-mobile-menu li a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}

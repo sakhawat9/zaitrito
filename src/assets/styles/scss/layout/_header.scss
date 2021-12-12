@@ -1,0 +1,42 @@
+.header {
+  @apply text-gray-900 text-lg;
+  background-color: #f3f6ff;
+  &__wrapper {
+    @apply flex flex-wrap items-center justify-between py-10 container px-4 mx-auto;
+    &__drawer {
+      @apply inline-block text-3xl lg:hidden justify-items-end;
+      &__menu {
+        @apply p-3 overflow-hidden text-2xl text-right;
+      }
+    }
+    &__menu {
+      @apply flex flex-wrap items-center  hidden text-base md:ml-auto  lg:block;
+      a,
+      svg {
+        @apply mr-6;
+      }
+      &__service {
+        @apply inline-block pb-2;
+        span {
+          @apply flex items-center gap-1;
+          svg {
+            @apply mr-0;
+          }
+        }
+      }
+    }
+    &__cart {
+      @apply relative inline-block mr-6;
+    }
+  }
+}
+.mobile-menu {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mobile-menu li a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}

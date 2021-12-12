@@ -1,0 +1,27 @@
+.dropdown-menu {
+  width: 200px;
+  @apply z-10 absolute top-20 p-4;
+  li {
+    @apply bg-white;
+    cursor: pointer;
+    &:hover {
+      @apply bg-gray-300;
+    }
+  }
+}
+
+.dropdown-menu.clicked {
+  display: none;
+  padding: 15px;
+}
+
+.dropdown-link {
+  @apply block h-full w-full text-gray-900 p-3;
+  margin-right: 0 !important;
+  &_item {
+    @apply flex w-52 mr-0;
+  }
+  svg {
+    @apply mr-0 w-12 h-12 text-blue-600 px-2;
+  }
+}

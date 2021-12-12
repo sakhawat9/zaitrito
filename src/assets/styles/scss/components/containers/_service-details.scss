@@ -1,0 +1,17 @@
+.service-details {
+  &__wrapper {
+    @apply grid md:grid-cols-12 gap-4;
+    &__item {
+      @apply md:col-span-3;
+      ul {
+        @apply bg-blue-100 py-7;
+        li {
+          @apply py-3 px-7;
+          &:hover {
+            @apply bg-blue-600 text-white;
+          }
+        }
+      }
+    }
+  }
+}
