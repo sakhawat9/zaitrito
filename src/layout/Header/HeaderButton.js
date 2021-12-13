@@ -4,17 +4,17 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const HeaderButton = () => {
   return (
-    <div className="flex justify-center header-button">
+    <div className="flex justify-center mb-4 border-b border-b-gray-100 header-button">
       <ul className="flex">
-        <li className="hoverable ">
+        <li className=" hoverable">
           <a
             href="#"
             className="relative flex items-center block px-4 py-6 lg:p-6"
           >
             Home <MdOutlineKeyboardArrowDown />
           </a>
-          <div className="p-6 mb-16 shadow-xl mega-menu sm:mb-0">
-            <div className="inline-block mx-2">
+          <div className="p-6 mb-16 bg-white shadow-xl mega-menu sm:mb-0">
+            <div className="mx-2">
               <ul className="">
                 <li>Home One</li>
                 <li>Home Two</li>
@@ -30,7 +30,7 @@ const HeaderButton = () => {
           >
             Shop <MdOutlineKeyboardArrowDown />
           </a>
-          <div className="p-6 mb-16 shadow-xl mega-menu sm:mb-0">
+          <div className="p-6 mb-16 bg-white shadow-xl mega-menu sm:mb-0">
             <div className="container flex flex-wrap justify-between w-full mx-2 mx-auto">
               <ul className="w-full px-4 pt-6 pb-6 sm:w-1/2 lg:w-1/4 lg:pt-3">
                 <div className="">
@@ -42,12 +42,12 @@ const HeaderButton = () => {
                   <h3 className="mb-2 text-xl text-bold">Heading 2</h3>
                 </div>
               </ul>
-              <ul className="w-full px-4 pt-6 pb-6 border-b sm:w-1/2 lg:w-1/4 lg:pt-3">
+              <ul className="w-full px-4 pt-6 pb-6 sm:w-1/2 lg:w-1/4 lg:pt-3">
                 <div className="">
                   <h3 className="mb-2 text-xl text-bold">Heading 3</h3>
                 </div>
               </ul>
-              <ul className="w-full px-4 pt-6 pb-6 border-b sm:w-1/2 lg:w-1/4 lg:pt-3">
+              <ul className="w-full px-4 pt-6 pb-6 sm:w-1/2 lg:w-1/4 lg:pt-3">
                 <div className="">
                   <h3 className="mb-2 text-xl text-bold">Heading 4</h3>
                 </div>
@@ -62,7 +62,7 @@ const HeaderButton = () => {
           >
             Pages <MdOutlineKeyboardArrowDown />
           </a>
-          <div className="p-6 mb-16 shadow-xl mega-menu sm:mb-0">
+          <div className="p-6 mb-16 bg-white shadow-xl mega-menu sm:mb-0">
             <div className="container flex flex-wrap justify-between w-full mx-2 mx-auto">
               <ul className="w-full px-4 pt-6 pb-6 sm:w-1/2 lg:w-1/4 lg:pt-3">
                 <div className="">
@@ -99,7 +99,7 @@ const HeaderButton = () => {
           >
             Blog <MdOutlineKeyboardArrowDown />
           </a>
-          <div className="p-6 mb-16 shadow-xl mega-menu sm:mb-0">
+          <div className="p-6 mb-16 bg-white shadow-xl mega-menu sm:mb-0">
             <div className="container flex flex-wrap justify-between w-full mx-2 mx-auto">
               <ul className="w-full px-4 pt-6 pb-6 sm:w-1/2 lg:w-1/4 lg:pt-3">
                 <div className="">

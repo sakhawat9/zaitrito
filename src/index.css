@@ -18,3 +18,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.section-padding {
+  @apply p-52;
+}
+
+.section-padding-t {
+  @apply p-52;
+}
+.section-padding-b {
+  @apply p-52;
+}
+.section-padding-secondary-b {
+  @apply p-52;
+}

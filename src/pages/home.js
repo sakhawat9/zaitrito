@@ -1,14 +1,12 @@
 import React from "react";
-import HeaderButton from "../layout/Header/HeaderButton";
-import HeaderMiddle from "../layout/Header/HeaderMiddle";
-import HeaderTop from "../layout/Header/HeaderTop";
+import Hero from "../components/containers/Hero";
+import Header from "../layout/Header/Header";
 
 const Home = () => {
   return (
     <div>
-      <HeaderTop />
-      <HeaderMiddle />
-      <HeaderButton />
+      <Header />
+      <Hero />
     </div>
   );
 };

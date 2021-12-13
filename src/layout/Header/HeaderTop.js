@@ -40,23 +40,23 @@ const HeaderTop = () => {
           <MobileMenu />
         </Drawer>
 
-        <nav className="flex flex-wrap items-center justify-center hidden md:ml-auto md:mr-auto lg:block">
-          <a href="#" className="mr-12 hover:text-gray-900">
+        <nav className="header__wrapper__nav">
+          <a href="#">
             About Us
           </a>
-          <a href="#" className="mr-12 hover:text-gray-900">
+          <a href="#">
             Blog
           </a>
-          <a href="#" className="mr-12 hover:text-gray-900">
+          <a href="#">
             How To Buy
           </a>
         </nav>
 
         <nav className="flex">
-          <a href="#" className="flex items-center mr-12 hover:text-gray-900">
+          <a href="#" className="flex items-center mr-12 ">
             <Udsmenue />
           </a>
-          <a href="#" className="flex items-center hover:text-gray-900">
+          <a href="#" className="flex items-center ">
             <Engmenu />
           </a>
         </nav>
