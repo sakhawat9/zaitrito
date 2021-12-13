@@ -1,12 +1,14 @@
-import React from 'react';
-import Header from '../layout/Header';
+import React from "react";
+import HeaderMiddle from "../layout/Header/HeaderMiddle";
+import HeaderTop from "../layout/Header/HeaderTop";
 
 const Home = () => {
-    return (
-        <div>
-            <Header />
-        </div>
-    );
+  return (
+    <div>
+      <HeaderTop />
+      <HeaderMiddle />
+    </div>
+  );
 };
 
 export default Home;

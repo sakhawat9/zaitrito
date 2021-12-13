@@ -9,7 +9,7 @@
       }
     }
     &__menu {
-      @apply flex flex-wrap items-center  hidden text-base md:mr-auto  lg:block;
+      @apply flex flex-wrap items-center  hidden  md:mr-auto  lg:block;
       a,
       svg {
         @apply mr-6;
