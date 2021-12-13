@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const HeaderButton = () => {
   return (
-    <div className="flex justify-center mb-4 border-b border-b-gray-100 header-button">
+    <div className="justify-center hidden mb-4 border-b lg:flex lg:block border-b-gray-100 header-button">
       <ul className="flex">
         <li className=" hoverable">
           <a

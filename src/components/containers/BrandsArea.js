@@ -35,7 +35,7 @@ const carouselProperties = {
       },
     },
     {
-      breakpoint: 1025,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 4,
         centerMode: false,
@@ -47,22 +47,23 @@ const carouselProperties = {
 
 const Testimonials = () => {
   return (
-    <div className="container mx-auto carousel section-padding">
-      <Slider {...carouselProperties}>
-        {data.map((item, index) => (
-          <Card key={index} item={item} />
-        ))}
-      </Slider>
-    </div>
-  );
-};
-
-const Card = ({ item }) => {
-  console.log(item);
-  return (
-    <div className="border-t border-b py-14">
-      <div className="inline-flex bg-white">
-        <img className="object-cover w-full h-full" src={item} alt="" />
+    <div className="section-padding">
+      <div className="border-t border-b py-14 carousel ">
+        <div className="container px-8 mx-auto text-center ">
+          <Slider {...carouselProperties}>
+            {data.map((item, index) => (
+              <div>
+                <div className="inline-flex bg-white">
+                  <img
+                    className="object-cover w-full h-full"
+                    src={item}
+                    alt=""
+                  />
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

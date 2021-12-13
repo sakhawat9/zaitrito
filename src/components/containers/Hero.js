@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="hero__banner">
           <div className="">
             <h1>Exclusive Summer Sale Is Going On Zairito The Shopify</h1>
-            <p className="none md:flex">
+            <p>
               Curabitur non nulla sit amet nisl tempus convallis quis lectus.
               porttitor lectus nibh. Curabitur arcu erat, accu msan id imperdiet
               et, porttitor at. Cras ultricies ligula sed magna dictum porta.

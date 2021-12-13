@@ -1,5 +1,5 @@
 .header-middle {
-  @apply container px-8 py-14 mx-auto;
+  @apply container px-8 hidden lg:block py-14 mx-auto;
   &__wrapper {
     @apply flex justify-between;
   }

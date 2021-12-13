@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <Header />
       <Hero />
-      <BrandsArea infinite="true" autoPlay="true" deviceType="desktop" />
+      <BrandsArea  />
     </div>
   );
 };
