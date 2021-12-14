@@ -24,11 +24,28 @@ code {
 }
 
 .section-padding-t {
-  @apply py-52;
+  @apply pt-52;
 }
 .section-padding-b {
-  @apply py-52;
+  @apply pb-52;
 }
 .section-padding-secondary-b {
-  @apply py-52;
+  padding-bottom: 110px;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 1.4rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: white;
+  background-color: #0d7862;
+  transition: all 0.3s linear;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #04b691;
+  color: #fff;
 }

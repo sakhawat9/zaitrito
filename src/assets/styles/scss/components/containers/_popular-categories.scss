@@ -1,0 +1,9 @@
+.category-list {
+  @apply grid grid-cols-3 gap-6;
+  li {
+    @apply my-3 border border-gray-300 h-24 text-3xl flex items-center hover:bg-yellow-400 justify-center;
+    a {
+      @apply flex items-center;
+    }
+  }
+}

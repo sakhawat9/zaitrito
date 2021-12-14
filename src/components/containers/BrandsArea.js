@@ -25,6 +25,7 @@ const carouselProperties = {
       settings: {
         slidesToShow: 2,
         centerMode: false,
+        slidesToScroll: 1,
       },
     },
     {
@@ -32,6 +33,7 @@ const carouselProperties = {
       settings: {
         slidesToShow: 3,
         centerMode: false,
+        slidesToScroll: 1,
       },
     },
     {
@@ -39,15 +41,23 @@ const carouselProperties = {
       settings: {
         slidesToShow: 4,
         centerMode: false,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 3000,
+      settings: {
+        slidesToShow: 6,
+        centerMode: false,
+        slidesToScroll: 1,
       },
     },
   ],
 };
 
-const Testimonials = () => {
+const BrandsArea = () => {
   return (
-    <div className="section-padding">
+    <div className="section-padding-t">
       <div className="border-t border-b py-14 carousel ">
         <div className="container px-8 mx-auto text-center ">
           <Slider {...carouselProperties}>
@@ -55,7 +65,7 @@ const Testimonials = () => {
               <div>
                 <div className="inline-flex bg-white">
                   <img
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full opacity-50 hover:opacity-100"
                     src={item}
                     alt=""
                   />
@@ -69,4 +79,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default BrandsArea;
