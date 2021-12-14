@@ -1,0 +1,21 @@
+.featured-products {
+  background-color: $bg-primary;
+  &__header {
+    @apply text-center pt-16;
+    h2 {
+      @apply relative text-7xl inline-block;
+      &:before {
+        @apply absolute w-28 h-px bg-black top-1/2;
+        content: "";
+        transform: translateY(-50%);
+        left: -100px;
+      }
+      &:after {
+        @apply absolute w-28 h-px bg-black top-1/2;
+        content: "";
+        transform: translateY(-50%);
+        right: -100px;
+      }
+    }
+  }
+}

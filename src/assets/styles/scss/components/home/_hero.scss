@@ -1,6 +1,6 @@
 .hero {
   @apply mt-24;
-  background-color: #f8f3e7;
+  background-color: $bg-primary;
   &__wrapper {
     @apply container  mx-auto px-8 p-24;
   }
