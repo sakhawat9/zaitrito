@@ -1,0 +1,133 @@
+.special-offer-area {
+  margin-bottom: 110px;
+}
+
+.special-offer {
+  @apply container mx-auto px-8;
+  &__wrapper {
+    @apply relative;
+    padding: 100px;
+    min-height: 460px;
+    background: #0d7862;
+    border-radius: 500px;
+    z-index: 1;
+    &__line-shape-one {
+      @apply absolute bottom-0 right-1/3;
+      z-index: -1;
+    }
+    &__line-shape-two {
+      @apply absolute top-0;
+      right: 20%;
+      z-index: -1;
+    }
+  }
+}
+
+.offers {
+  @apply grid lg:grid-cols-12 gap-4;
+  &__image {
+    @apply top-12 absolute text-center;
+  }
+  &__text {
+    @apply text-white font-semibold italic uppercase;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-family: $body-font !important;
+  }
+  &__category {
+    @apply mb-4 font-extrabold uppercase text-white;
+    line-height: 1.2;
+    font-size: 5rem;
+    font-family: $body-font !important;
+    &__color {
+      color: #fdd65b;
+    }
+    &__offer {
+      margin-bottom: 3.5rem;
+      font-size: 3rem;
+      font-weight: 700;
+      font-style: italic;
+      color: white;
+      font-family: $body-font !important;
+    }
+  }
+  &__btn {
+    @apply inline-block;
+    padding: 1.4rem 3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: white;
+    background-color: #ef1b27;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    border: none;
+    &:hover {
+      background-color: #cc1f28;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .offers__image {
+    text-align: left;
+    left: 5%;
+  }
+  .offers__category {
+    font-size: 5rem;
+  }
+  .offers__text {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .offers__category__offer {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .offers__image {
+    left: -2%;
+  }
+}
+
+@media (max-width: 991px) {
+  .offers__image {
+    display: none;
+  }
+  .special-offer__wrapper {
+    min-height: auto;
+    padding: 50px;
+    border-radius: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .special-offer__wrapper {
+    padding: 50px 30px;
+  }
+  .offers__category {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .offers__category {
+    font-size: 3.6rem;
+  }
+  .offers__text {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+  .offers__category__offer {
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .special-offer__wrapper {
+    text-align: center;
+  }
+}
