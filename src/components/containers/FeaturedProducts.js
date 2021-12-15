@@ -1,17 +1,46 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
-import imgae1 from "../../assets/images/home-two-product-image-1.png";
-import imgae2 from "../../assets/images/home-two-product-image-2.png";
-import imgae3 from "../../assets/images/home-two-product-image-3.png";
+import { BiHeart } from "react-icons/bi";
+import { BsBarChart } from "react-icons/bs";
+import { IoMdAddCircle } from "react-icons/io";
 
-// const featuredProduct = [
-//     {
-//         img: "../../assets/images/home-two-product-image-1.png",
-        
-//     }
-// ]
-
+const featuredProducts = [
+  {
+    id: 1,
+    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-2_chzcap.png",
+    sale: "sale",
+    discount: 15,
+    category: "New - Collection",
+    name: "Rosmo Namino Milancelos",
+    regularprice: 770.18,
+    price: 700.08,
+    size: ["xl", "SMALL", "large"],
+  },
+  {
+    id: 2,
+    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-3_icsfmu.png",
+    sale: "sale",
+    discount: 15,
+    category: "HOT - Collection",
+    name: "Midi Dress",
+    regularprice: 270.18,
+    price: 100.08,
+    size: ["xl", "SMALL", "large"],
+  },
+  {
+    id: 3,
+    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-1_dvbxn2.png",
+    sale: "sale",
+    discount: 15,
+    category: "New - Collection",
+    name: "Black T-Shirt For Woman",
+    regularprice: 800.18,
+    price: 600.08,
+    size: ["xl", "SMALL", "large"],
+  },
+];
+console.log(featuredProducts);
 const FeaturedProducts = () => {
   return (
     <div className="featured-products section-padding-t section-padding-secondary-b">
@@ -20,300 +49,93 @@ const FeaturedProducts = () => {
           <h2>Featured Products</h2>
         </div>
         <div className="featured-products__items">
-          <div className="single-grid-product-v2">
-            <div className="product-top">
-              <a href="#">
-                <img className="product-thumbnal" src={imgae1} alt="product" />
-              </a>
-              <div className="product-flags">
-                <span className="product-flag sale">SALE</span>
-                <span className="product-flag discount">-15%</span>
-              </div>
-              <ul className="prdouct-btn-wrapper">
-                <li className="single-product-btn">
-                  <a
-                    className="addToWishlist product-btn"
-                    href="#"
-                    title="Add to compare"
-                  >
-                    <i className="icon flaticon-bar-chart"></i>
-                  </a>
-                </li>
-                <li className="single-product-btn">
-                  <a
-                    className="addCompare product-btn"
-                    href="#"
-                    title="Add to wishlist"
-                  >
-                    <i className="icon flaticon-like"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="text-center product-info">
-              <h4 className="product-catagory">New - Collection</h4>
-              <h3 className="product-name">
-                <a className="product-link" href="#">
-                  Rosmo Namino Milancelos
+          {featuredProducts.map((featuredProduct) => (
+            <div className="single-grid-product-v2">
+              <div className="product-top">
+                <a href="#">
+                  <img
+                    className="product-thumbnal"
+                    src={featuredProduct.img}
+                    alt="product"
+                  />
                 </a>
-              </h3>
-              <ul className="product-review">
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item">
-                  <AiFillStar />
-                </li>
-                <li className="review-item">
-                  <AiFillStar />
-                </li>
-              </ul>
-              <div className="product-price">
-                <span className="regular-price">$770.18</span>
-                <span className="price">$700.08</span>
-              </div>
-              <div className="variable-single-item color-switch">
-                <div className="product-variable-color">
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                      checked=""
-                    />
-                    <span className="product-color-black"></span>
-                  </label>
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                    />
-                    <span className="product-color-tomato"></span>
-                  </label>
-
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                    />
-                    <span className="product-color-gray"></span>
-                  </label>
+                <div className="product-flags">
+                  <span className="product-flag sale">
+                    {featuredProduct.sale}
+                  </span>
+                  <span className="product-flag discount">
+                    -{featuredProduct.discount}%
+                  </span>
                 </div>
+                <ul className="prdouct-btn-wrapper">
+                  <li className="single-product-btn">
+                    <a
+                      className="addToWishlist product-btn"
+                      href="#"
+                      title="Add to compare"
+                    >
+                      <BsBarChart />
+                    </a>
+                  </li>
+                  <li className="single-product-btn">
+                    <a
+                      className="addCompare product-btn"
+                      href="#"
+                      title="Add to wishlist"
+                    >
+                      <BiHeart />
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul className="size-switch">
-                <li className="single-size active">XL</li>
-                <li className="single-size">LARGE</li>
-                <li className="single-size">SMALL</li>
-              </ul>
-              <a href="#" title="Add to cart" className="add-cart">
-                Add To Cart <i className="icon fas fa-plus-circle"></i>
-              </a>
-            </div>
-          </div>
-          <div className="single-grid-product-v2">
-            <div className="product-top">
-              <a href="#">
-                <img className="product-thumbnal" src={imgae2} alt="product" />
-              </a>
-              <div className="product-flags">
-                <span className="product-flag sale">SALE</span>
-                <span className="product-flag discount">-15%</span>
-              </div>
-              <ul className="prdouct-btn-wrapper">
-                <li className="single-product-btn">
-                  <a
-                    className="addToWishlist product-btn"
-                    href="#"
-                    title="Add to compare"
-                  >
-                    <i className="icon flaticon-bar-chart"></i>
+              <div className="text-center product-info">
+                <h4 className="product-catagory">{featuredProduct.category}</h4>
+                <h3 className="product-name">
+                  <a className="product-link" href="#">
+                    {featuredProduct.name}
                   </a>
-                </li>
-                <li className="single-product-btn">
-                  <a
-                    className="addCompare product-btn"
-                    href="#"
-                    title="Add to wishlist"
-                  >
-                    <i className="icon flaticon-like"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="text-center product-info">
-              <h4 className="product-catagory">New - Collection</h4>
-              <h3 className="product-name">
-                <a className="product-link" href="#">
-                  Rosmo Namino Milancelos
+                </h3>
+                <ul className="product-review">
+                  <li className="product-review__item active">
+                    <AiFillStar />
+                  </li>
+                  <li className="product-review__item active">
+                    <AiFillStar />
+                  </li>
+                  <li className="product-review__item active">
+                    <AiFillStar />
+                  </li>
+                  <li className="product-review__item">
+                    <AiFillStar />
+                  </li>
+                  <li className="product-review__item">
+                    <AiFillStar />
+                  </li>
+                </ul>
+                <div className="product-price">
+                  <span className="product-price__regular">
+                    ${featuredProduct.regularprice}
+                  </span>
+                  <span className="product-price__price">{featuredProduct.price}</span>
+                </div>
+                <div className="variable-single-item color-switch">
+                  <div className="product-variable-color">
+                    <span className="product-variable-color__black"></span>
+                    <span className="product-variable-color__tomato"></span>
+                    <span className="product-variable-color__gray"></span>
+                  </div>
+                </div>
+                <ul className="size-switch">
+                {featuredProduct.size.map((s) => (
+                    <li className="size-switch__single-size">{s}</li>
+                ))}
+                </ul>
+                <a href="#" title="Add to cart" className="add-cart">
+                  Add To Cart <IoMdAddCircle />
                 </a>
-              </h3>
-              <ul className="product-review">
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item">
-                  <AiFillStar />
-                </li>
-                <li className="review-item">
-                  <AiFillStar />
-                </li>
-              </ul>
-              <div className="product-price">
-                <span className="regular-price">$770.18</span>
-                <span className="price">$700.08</span>
               </div>
-              <div className="variable-single-item color-switch">
-                <div className="product-variable-color">
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                      checked=""
-                    />
-                    <span className="product-color-black"></span>
-                  </label>
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                    />
-                    <span className="product-color-tomato"></span>
-                  </label>
-
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                    />
-                    <span className="product-color-gray"></span>
-                  </label>
-                </div>
-              </div>
-              <ul className="size-switch">
-                <li className="single-size active">XL</li>
-                <li className="single-size">LARGE</li>
-                <li className="single-size">SMALL</li>
-              </ul>
-              <a href="#" title="Add to cart" className="add-cart">
-                Add To Cart <i className="icon fas fa-plus-circle"></i>
-              </a>
             </div>
-          </div>
-          <div className="single-grid-product-v2">
-            <div className="product-top">
-              <a href="single-product-v2.html">
-                <img className="product-thumbnal" src={imgae3} alt="product" />
-              </a>
-              <div className="product-flags">
-                <span className="product-flag sale">SALE</span>
-                <span className="product-flag discount">-15%</span>
-              </div>
-              <ul className="prdouct-btn-wrapper">
-                <li className="single-product-btn">
-                  <a
-                    className="addToWishlist product-btn"
-                    href="compare.html"
-                    title="Add to compare"
-                  >
-                    <i className="icon flaticon-bar-chart"></i>
-                  </a>
-                </li>
-                <li className="single-product-btn">
-                  <a
-                    className="addCompare product-btn"
-                    href="wish-list.html"
-                    title="Add to wishlist"
-                  >
-                    <i className="icon flaticon-like"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="text-center product-info">
-              <h4 className="product-catagory">New - Collection</h4>
-              <h3 className="product-name">
-                <a className="product-link" href="single-product-v2.html">
-                  Rosmo Namino Milancelos
-                </a>
-              </h3>
-              <ul className="product-review">
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item active">
-                  <AiFillStar />
-                </li>
-                <li className="review-item">
-                  <AiFillStar />
-                </li>
-                <li className="review-item">
-                  <AiFillStar />
-                </li>
-              </ul>
-              <div className="product-price">
-                <span className="regular-price">$770.18</span>
-                <span className="price">$700.08</span>
-              </div>
-              <div className="variable-single-item color-switch">
-                <div className="product-variable-color">
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                      checked=""
-                    />
-                    <span className="product-color-black"></span>
-                  </label>
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                    />
-                    <span className="product-color-tomato"></span>
-                  </label>
-
-                  <label>
-                    <input
-                      name="modal-product-color"
-                      className="color-select"
-                      type="radio"
-                    />
-                    <span className="product-color-gray"></span>
-                  </label>
-                </div>
-              </div>
-              <ul className="size-switch">
-                <li className="single-size active">XL</li>
-                <li className="single-size">LARGE</li>
-                <li className="single-size">SMALL</li>
-              </ul>
-              <a href="cart.html" title="Add to cart" className="add-cart">
-                Add To Cart <i className="icon fas fa-plus-circle"></i>
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
