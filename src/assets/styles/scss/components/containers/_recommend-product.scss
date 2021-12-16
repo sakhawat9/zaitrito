@@ -1,0 +1,11 @@
+.recommend-product {
+  @apply container text-center px-8 mx-auto  section-padding;
+  &__nav {
+    &__wrapper {
+      @apply flex justify-center mt-16;
+      li {
+        @apply mr-8 p-2 cursor-pointer;
+      }
+    }
+  }
+}

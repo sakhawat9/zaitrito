@@ -18,7 +18,7 @@ const carouselProperties = {
   centerMode: true,
   infinite: true,
   autoplay: true,
-  centerPadding: "200px",
+  // centerPadding: "200px",
   responsive: [
     {
       breakpoint: 500,

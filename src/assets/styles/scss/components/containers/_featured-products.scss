@@ -3,15 +3,15 @@
   &__header {
     @apply text-center pt-16 mb-16;
     h2 {
-      @apply relative text-7xl inline-block;
+      @apply relative text-5xl md:text-7xl inline-block;
       &:before {
-        @apply absolute w-28 h-px bg-black top-1/2;
+        @apply absolute hidden md:block w-28 h-px bg-black top-1/2;
         content: "";
         transform: translateY(-50%);
         left: -100px;
       }
       &:after {
-        @apply absolute w-28 h-px bg-black top-1/2;
+        @apply absolute hidden md:block w-28 h-px bg-black top-1/2;
         content: "";
         transform: translateY(-50%);
         right: -100px;
@@ -29,7 +29,7 @@
 }
 
 .product-top {
-  @apply relative mb-14;
+  @apply relative mb-14 flex justify-center;
   z-index: 1;
   text-align: center;
   overflow: hidden;

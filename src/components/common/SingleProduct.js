@@ -7,11 +7,11 @@ import { IoMdAddCircle } from "react-icons/io";
 
 const SingleProduct = ({featuredProduct}) => {
   return (
-    <div className="single-product">
+    <div className="single-product m-4">
       <div className="product-top">
         <a href="#">
           <img
-            className="product-thumbnal"
+            className="product-thumbnal text-center"
             src={featuredProduct.img}
             alt="product"
           />
