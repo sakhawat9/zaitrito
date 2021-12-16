@@ -16,7 +16,7 @@ const data = [
 const carouselProperties = {
   slidesToShow: 3,
   centerMode: true,
-  infinite: true,
+  // infinite: true,
   autoplay: true,
   // centerPadding: "200px",
   responsive: [
