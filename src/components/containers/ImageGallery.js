@@ -81,105 +81,105 @@ const ImageGallery = () => {
               </div>
             </div>
           </div>
-          {/* <div class="row">
-            <div class="col-lg-8 col-md-8">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="single-gallery border-left">
+          {/* <div className="row">
+            <div className="col-lg-8 col-md-8">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="single-gallery border-left">
                     <img
-                      class="gallery-image"
+                      className="gallery-image"
                       src="assets/images/home-2-gallery-1.jpg"
                       alt="gallery"
                     />
-                    <div class="popuo-overlay">
+                    <div className="popuo-overlay">
                       <a
-                        class="popup-image"
+                        className="popup-image"
                         href="assets/images/home-2-gallery-1.jpg"
                       >
-                        <i class="view-icon flaticon-view"></i>
+                        <i className="view-icon flaticon-view"></i>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                  <div class="single-gallery border-bottom">
+                <div className="col-lg-6 col-md-6">
+                  <div className="single-gallery border-bottom">
                     <img
-                      class="gallery-image"
+                      className="gallery-image"
                       src="assets/images/home-2-gallery-2.jpg"
                       alt="gallery"
                     />
-                    <div class="popuo-overlay">
+                    <div className="popuo-overlay">
                       <a
-                        class="popup-image"
+                        className="popup-image"
                         href="assets/images/home-2-gallery-2.jpg"
                       >
-                        <i class="view-icon flaticon-view"></i>
+                        <i className="view-icon flaticon-view"></i>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                  <div class="single-gallery">
+                <div className="col-lg-6 col-md-6">
+                  <div className="single-gallery">
                     <img
-                      class="gallery-image"
+                      className="gallery-image"
                       src="assets/images/home-2-gallery-3.jpg"
                       alt="gallery"
                     />
-                    <div class="popuo-overlay">
+                    <div className="popuo-overlay">
                       <a
-                        class="popup-image"
+                        className="popup-image"
                         href="assets/images/home-2-gallery-3.jpg"
                       >
-                        <i class="view-icon flaticon-view"></i>
+                        <i className="view-icon flaticon-view"></i>
                       </a>
                     </div>
                   </div>
-                  <div class="single-gallery">
+                  <div className="single-gallery">
                     <img
-                      class="gallery-image"
+                      className="gallery-image"
                       src="assets/images/home-2-gallery-4.jpg"
                       alt="gallery"
                     />
-                    <div class="popuo-overlay">
+                    <div className="popuo-overlay">
                       <a
-                        class="popup-image"
+                        className="popup-image"
                         href="assets/images/home-2-gallery-4.jpg"
                       >
-                        <i class="view-icon flaticon-view"></i>
+                        <i className="view-icon flaticon-view"></i>
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4">
-              <div class="single-gallery border-top">
+            <div className="col-lg-4 col-md-4">
+              <div className="single-gallery border-top">
                 <img
-                  class="gallery-image"
+                  className="gallery-image"
                   src="assets/images/home-2-gallery-5.jpg"
                   alt="gallery"
                 />
-                <div class="popuo-overlay">
+                <div className="popuo-overlay">
                   <a
-                    class="popup-image"
+                    className="popup-image"
                     href="assets/images/home-2-gallery-5.jpg"
                   >
-                    <i class="view-icon flaticon-view"></i>
+                    <i className="view-icon flaticon-view"></i>
                   </a>
                 </div>
               </div>
-              <div class="single-gallery">
+              <div className="single-gallery">
                 <img
-                  class="gallery-image"
+                  className="gallery-image"
                   src="assets/images/home-2-gallery-6.jpg"
                   alt="gallery"
                 />
-                <div class="popuo-overlay">
+                <div className="popuo-overlay">
                   <a
-                    class="popup-image"
+                    className="popup-image"
                     href="assets/images/home-2-gallery-6.jpg"
                   >
-                    <i class="view-icon flaticon-view"></i>
+                    <i className="view-icon flaticon-view"></i>
                   </a>
                 </div>
               </div>

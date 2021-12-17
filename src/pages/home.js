@@ -1,4 +1,5 @@
 import React from "react";
+import BlogArea from "../components/containers/BlogArea";
 import BrandsArea from "../components/containers/BrandsArea";
 import FeaturedProducts from "../components/containers/FeaturedProducts";
 import Footer from "../components/containers/Footer";
@@ -22,6 +23,7 @@ const Home = () => {
       <RecommendProduct />
       <Testimonial />
       <ImageGallery />
+      <BlogArea />
       <Footer />
     </div>
   );
