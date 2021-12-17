@@ -5,6 +5,7 @@ import FeaturedProducts from "../components/containers/FeaturedProducts";
 import Footer from "../components/containers/Footer";
 import Hero from "../components/containers/Hero";
 import ImageGallery from "../components/containers/ImageGallery";
+import MapArea from "../components/containers/MapArea";
 import PopularCategories from "../components/containers/PopularCategories";
 import RecommendProduct from "../components/containers/RecommendProduct";
 import SpecialOffer from "../components/containers/SpecialOffer";
@@ -24,6 +25,7 @@ const Home = () => {
       <Testimonial />
       <ImageGallery />
       <BlogArea />
+      <MapArea />
       <Footer />
     </div>
   );
