@@ -1,0 +1,96 @@
+.image-gallery-area-v2 .single-gallery {
+  position: relative;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.image-gallery-area-v2 .single-gallery.border-left {
+  border-radius: 500px 0 0 500px;
+}
+
+.image-gallery-area-v2 .single-gallery.border-top {
+  border-radius: 500px 500px 0 0;
+}
+
+.image-gallery-area-v2 .single-gallery.border-bottom {
+  border-radius: 0 0 500px 500px;
+}
+
+.image-gallery-area-v2 .single-gallery .gallery-image {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-area-v2 .single-gallery .popuo-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 120, 98, 0.3);
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.image-gallery-area-v2 .single-gallery .popuo-overlay .popup-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 5.4rem;
+  height: 5.4rem;
+  border-radius: 50%;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 2.5rem;
+  line-height: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.image-gallery-area-v2 .single-gallery .popuo-overlay .popup-image .view-icon {
+  position: relative;
+  top: 2px;
+}
+
+.image-gallery-area-v2
+  .single-gallery
+  .popuo-overlay
+  .popup-image
+  .view-icon::before {
+  line-height: 1;
+}
+
+.image-gallery-area-v2 .single-gallery .popuo-overlay .popup-image:hover {
+  color: var(--white);
+  background-color: var(--primary-color-two);
+}
+
+.image-gallery-area-v2 .single-gallery:hover .popuo-overlay {
+  opacity: 1;
+  visibility: visible;
+}
