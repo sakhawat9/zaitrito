@@ -4,18 +4,23 @@ import { AiFillStar } from "react-icons/ai";
 import { BiHeart } from "react-icons/bi";
 import { BsBarChart } from "react-icons/bs";
 import { IoMdAddCircle } from "react-icons/io";
+import { useHistory } from "react-router-dom";
 
-const SingleProduct = ({featuredProduct}) => {
+const SingleProduct = ({ featuredProduct }) => {
+  const history = useHistory();
+  const handleClick = (e) => {
+    history.push(`/product/${featuredProduct.id}`);
+  };
   return (
     <div className="single-product m-4">
       <div className="product-top">
-        <a href="#">
+        
           <img
-            className="product-thumbnal text-center"
+            onClick={handleClick}
+            className="product-thumbnal cursor-pointer text-center"
             src={featuredProduct.img}
             alt="product"
           />
-        </a>
         <div className="product-flags">
           <span className="product-flag sale">{featuredProduct.sale}</span>
           <span className="product-flag discount">
@@ -45,10 +50,10 @@ const SingleProduct = ({featuredProduct}) => {
       </div>
       <div className="text-center product-info">
         <h4 className="product-catagory">{featuredProduct.category}</h4>
-        <h3 className="product-name">
-          <a className="product-link" href="#">
+        <h3 className="product-name product-link cursor-pointer"onClick={handleClick}>
+          
             {featuredProduct.name}
-          </a>
+         
         </h3>
         <ul className="product-review">
           <li className="product-review__item active">
