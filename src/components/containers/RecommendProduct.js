@@ -1,77 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import SingleProduct from "../common/SingleProduct";
-
-const featuredProducts = [
-  {
-    id: 1,
-    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-2_chzcap.png",
-    sale: "sale",
-    discount: 15,
-    category: "New - Collection",
-    name: "Rosmo Namino Milancelos",
-    regularprice: 770.18,
-    price: 700.08,
-    size: ["xl", "SMALL", "large"],
-  },
-  {
-    id: 2,
-    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-3_icsfmu.png",
-    sale: "sale",
-    discount: 15,
-    category: "HOT - Collection",
-    name: "Midi Dress",
-    regularprice: 270.18,
-    price: 100.08,
-    size: ["xl", "SMALL", "large"],
-  },
-  {
-    id: 3,
-    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-1_dvbxn2.png",
-    sale: "sale",
-    discount: 15,
-    category: "New - Collection",
-    name: "Black T-Shirt For Woman",
-    regularprice: 800.18,
-    price: 600.08,
-    size: ["xl", "SMALL", "large"],
-  },
-  {
-    id: 4,
-    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-2_chzcap.png",
-    sale: "sale",
-    discount: 15,
-    category: "ELLA - HALOTHEMES",
-    name: "Plaid Cotton Oxford Shirt",
-    regularprice: 770.18,
-    price: 700.08,
-    size: ["xl", "SMALL", "large"],
-  },
-  {
-    id: 5,
-    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-3_icsfmu.png",
-    sale: "sale",
-    discount: 15,
-    category: "HOT - Collection",
-    name: "Midi Dress",
-    regularprice: 270.18,
-    price: 100.08,
-    size: ["xl", "SMALL", "large"],
-  },
-  {
-    id: 6,
-    img: "https://res.cloudinary.com/medsy/image/upload/v1639537188/home-two-product-image-1_dvbxn2.png",
-    sale: "sale",
-    discount: 15,
-    category: "New - Collection",
-    name: "Black T-Shirt For Woman",
-    regularprice: 800.18,
-    price: 600.08,
-    size: ["xl", "SMALL", "large"],
-  },
-];
 
 const carouselProperties = {
   slidesToShow: 3,
@@ -113,6 +44,13 @@ const carouselProperties = {
 };
 
 const RecommendProduct = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
     <div className="recommend-product carousel">
       <div className="recommend-product__nav">
@@ -128,7 +66,7 @@ const RecommendProduct = () => {
         </div>
       </div>
       <Slider {...carouselProperties}>
-        {featuredProducts.map((item, index) => (
+        {data.map((item, index) => (
           <SingleProduct featuredProduct={item} key={item.id} />
         ))}
       </Slider>

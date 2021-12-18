@@ -1,4 +1,5 @@
 import React from "react";
+import Details from "../components/containers/Details";
 import FeaturedProducts from "../components/containers/FeaturedProducts";
 import Footer from "../components/containers/Footer";
 import MapArea from "../components/containers/MapArea";
@@ -10,6 +11,7 @@ const ProductDetails = () => {
     <div>
       <Header />
       <SingleDetailsSubHeader />
+      <Details />
       <FeaturedProducts />
       <MapArea />
       <Footer />

@@ -3,21 +3,21 @@ import React from "react";
 
 const SingleDetailsSubHeader = () => {
   return (
-    <div class="singleDetailsSubHeader">
-      <div class="container px-8 mx-auto">
-        <div class="text-center">
+    <div className="singleDetailsSubHeader">
+      <div className="container px-8 mx-auto">
+        <div className="text-center">
           <ul>
-            <li class="page-item">
-              <a class="page-item-link" href="#">
+            <li className="page-item">
+              <a className="page-item-link" href="#">
                 Home
               </a>
             </li>
-            <li class="page-item">
-              <a class="page-item-link" href="#">
+            <li className="page-item">
+              <a className="page-item-link" href="#">
                 Products
               </a>
             </li>
-            <li class="page-item">Product Single Page</li>
+            <li className="page-item">Product Single Page</li>
           </ul>
         </div>
       </div>
