@@ -319,7 +319,7 @@
 }
 
 .nav-item .nav-link {
-  @apply m-0 bg-transparent text-4xl border-r-0 font-normal capitalize text-gray-400 bg-slate-200;
+  @apply m-0 bg-transparent text-4xl rounded-none font-normal capitalize text-gray-400 bg-slate-200;
   padding: 1.3rem 2.7rem;
   border: 1px solid transparent;
   transition: all 0.3s linear;
