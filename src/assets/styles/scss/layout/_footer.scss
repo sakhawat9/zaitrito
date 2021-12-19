@@ -1,0 +1,111 @@
+.footer {
+  @apply pt-32;
+  background: #0d7862;
+  &__widget {
+    @apply py-20;
+    &__wrapper {
+      @apply container mx-auto px-8;
+      &__area {
+        @apply lg:col-span-3 col-span-6;
+        &__single-item {
+          @apply mb-12;
+          &__logo {
+            @apply inline-block mb-10;
+            img {
+              max-width: 130px;
+            }
+          }
+          &__title {
+            @apply mb-12 text-4xl font-semibold capitalize text-white;
+          }
+          &__menu {
+            li {
+              @apply block mb-6;
+              a {
+                @apply block text-2xl font-normal capitalize;
+                color: #cccccc;
+                transition: all 0.3s linear;
+                &:hover {
+                  @apply text-white pl-2;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-widget .address-text {
+  @apply mb-6 text-2xl font-normal;
+  line-height: 2.5rem;
+  color: #cccccc;
+}
+
+.about-widget .block-content .contact {
+  @apply mb-0 text-2xl font-normal;
+  line-height: 2.5rem;
+  color: #cccccc;
+}
+
+.social-media {
+  li {
+    @apply inline-block mr-4;
+    a {
+      @apply flex justify-center items-center w-16 h-16 rounded-full text-white;
+      flex-flow: row wrap;
+      border: 1px solid white;
+      transition: all 0.3s linear;
+      &:hover {
+        color: #ef1b27;
+        border-color: #ef1b27;
+      }
+    }
+  }
+}
+
+.social-media li:last-child {
+  margin-right: 0;
+}
+
+.footer-bottom {
+  @apply container mx-auto px-8;
+  &__wrap {
+    padding: 3rem 0;
+    border-top: 1px solid #469685;
+    &__wrapper {
+      @apply grid grid-cols-12 items-center;
+    }
+  }
+}
+
+.copyright-text {
+  @apply m-0 text-2xl font-normal text-gray-200;
+}
+
+.copyright-text .brand-name {
+  color: #d6d6d6;
+  transition: all 0.3s linear;
+  &:hover {
+    color: #ef1b27;
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer__widget__wrapper__area__single-item__title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding-top: 0;
+    &__widget {
+      padding: 5rem 0 2rem 0;
+    }
+  }
+  .copyright-text {
+    margin-bottom: 1.5rem;
+  }
+}

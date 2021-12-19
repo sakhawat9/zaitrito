@@ -22,7 +22,7 @@ const ImageGallery = () => {
           <div className="grid gap-4 grid-cols-12">
             <div className="md:col-span-8 col-span-12">
               <div className="grid gap-4 grid-cols-12">
-                <div className="lg:col-span-12">
+                <div className="lg:col-span-12 col-span-12">
                   <div className="single-gallery single-gallery__left">
                     <img src={image1} alt="gallery" />
                     <div className="popup-overlay">
@@ -32,7 +32,7 @@ const ImageGallery = () => {
                     </div>
                   </div>
                 </div>
-                <div className="md:col-span-6">
+                <div className="md:col-span-6 col-span-12">
                   <div className="single-gallery single-gallery__bottom">
                     <img src={image2} alt="gallery" />
                     <div className="popup-overlay">
@@ -42,7 +42,7 @@ const ImageGallery = () => {
                     </div>
                   </div>
                 </div>
-                <div className="md:col-span-6">
+                <div className="md:col-span-6 col-span-12">
                   <div className="single-gallery">
                     <img src={image3} alt="gallery" />
                     <div className="popup-overlay">
@@ -81,6 +81,110 @@ const ImageGallery = () => {
               </div>
             </div>
           </div>
+          {/* <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="single-gallery border-left">
+                    <img
+                      class="gallery-image"
+                      src="assets/images/home-2-gallery-1.jpg"
+                      alt="gallery"
+                    />
+                    <div class="popuo-overlay">
+                      <a
+                        class="popup-image"
+                        href="assets/images/home-2-gallery-1.jpg"
+                      >
+                        <i class="view-icon flaticon-view"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="single-gallery border-bottom">
+                    <img
+                      class="gallery-image"
+                      src="assets/images/home-2-gallery-2.jpg"
+                      alt="gallery"
+                    />
+                    <div class="popuo-overlay">
+                      <a
+                        class="popup-image"
+                        href="assets/images/home-2-gallery-2.jpg"
+                      >
+                        <i class="view-icon flaticon-view"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="single-gallery">
+                    <img
+                      class="gallery-image"
+                      src="assets/images/home-2-gallery-3.jpg"
+                      alt="gallery"
+                    />
+                    <div class="popuo-overlay">
+                      <a
+                        class="popup-image"
+                        href="assets/images/home-2-gallery-3.jpg"
+                      >
+                        <i class="view-icon flaticon-view"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="single-gallery">
+                    <img
+                      class="gallery-image"
+                      src="assets/images/home-2-gallery-4.jpg"
+                      alt="gallery"
+                    />
+                    <div class="popuo-overlay">
+                      <a
+                        class="popup-image"
+                        href="assets/images/home-2-gallery-4.jpg"
+                      >
+                        <i class="view-icon flaticon-view"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="single-gallery border-top">
+                <img
+                  class="gallery-image"
+                  src="assets/images/home-2-gallery-5.jpg"
+                  alt="gallery"
+                />
+                <div class="popuo-overlay">
+                  <a
+                    class="popup-image"
+                    href="assets/images/home-2-gallery-5.jpg"
+                  >
+                    <i class="view-icon flaticon-view"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-gallery">
+                <img
+                  class="gallery-image"
+                  src="assets/images/home-2-gallery-6.jpg"
+                  alt="gallery"
+                />
+                <div class="popuo-overlay">
+                  <a
+                    class="popup-image"
+                    href="assets/images/home-2-gallery-6.jpg"
+                  >
+                    <i class="view-icon flaticon-view"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div> */}
         </div>
       </div>
     </>
