@@ -1,0 +1,45 @@
+.breadcrumb-area {
+  @apply bg-no-repeat bg-cover bg-center;
+  padding: 5.5rem 0;
+  background-image: url("http://zairito-html.zainiktheme.com/demo/assets/images/breadcrumb-bg.png");
+  min-height: 200px;
+}
+
+.breadcrumb-wrap {
+  h2 {
+    @apply mt-0 mb-9 text-6xl font-semibold capitalize text-black;
+  }
+  ul {
+    li {
+      @apply inline-block relative mr-8 font-medium capitalize text-gray-800;
+      font-size: 1.6rem;
+      line-height: 1;
+      &:after {
+        @apply absolute top-0;
+        content: "";
+        left: calc(100% + 10px);
+      }
+      &:last-child {
+        @apply mr-0;
+        &:after {
+          display: none;
+        }
+      }
+      a {
+        @apply inline-block font-normal text-gray-500;
+        transition: all 0.3s linear;
+        &:hover {
+          @apply text-red-600;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb-wrap {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
