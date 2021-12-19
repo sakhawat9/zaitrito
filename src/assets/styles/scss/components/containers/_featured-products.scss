@@ -45,7 +45,6 @@
 }
 
 .single-product .product-top:hover .product-thumbnal {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -58,6 +57,9 @@
   @apply flex justify-between px-8 absolute left-0 right-0;
   top: 20%;
   text-align: center;
+}
+.product-btn-wrapper {
+  @apply absolute mb-10 left-0 right-0 text-center bottom-14;
 }
 
 .product-flag {

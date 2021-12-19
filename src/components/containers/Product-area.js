@@ -1,14 +1,15 @@
 import React from "react";
-import Product from "../common/Product";
+import { FiSearch } from "react-icons/fi";
+import Products from "./Products";
 
 const ProductArea = () => {
   return (
-    <div className="product-area section">
+    <div className="product-area section-padding">
       <div className="container mx-auto">
         <div className="grid grid-cols-12">
           <div className="xl:col-span-3 md:col-span-6 lg:col-span-4">
             <div className="sidebar-widget-area mobile-sidebar">
-              <div className="sidebar-widget-header d-block d-lg-none">
+              <div className="sidebar-widget-header block lg:hidden">
                 <div className="widget-header-wrap">
                   <h5 className="offcanvas-title">Filter</h5>
                   <button
@@ -19,26 +20,24 @@ const ProductArea = () => {
               </div>
 
               <div className="single-widget search-widget">
-                <h3 className="widget-title">Search Here</h3>
+                <h3>Search Here</h3>
                 <form>
                   <div className="form-group">
                     <input
                       type="text"
-                      className="form-control"
-                      id="searchwidget"
                       name="searchwidget"
                       placeholder="Product Store"
                     />
-                    <button type="button" className="search-btn">
-                      <i className="flaticon-search"></i>
+                    <button type="button">
+                      <FiSearch />
                     </button>
                   </div>
                 </form>
               </div>
 
               <div className="single-widget categories-widget">
-                <h3 className="widget-title">Categories</h3>
-                <div className="categories-list">
+                <h3>Categories</h3>
+                <div className="">
                   <div className="single-categorie">
                     <div className="categorie-left">
                       <input
@@ -121,7 +120,7 @@ const ProductArea = () => {
               </div>
 
               <div className="single-widget price-widget">
-                <h3 className="widget-title">Price</h3>
+                <h3>Price</h3>
                 <form>
                   <div className="price-wrap">
                     <div className="price-wrap-left">
@@ -152,12 +151,12 @@ const ProductArea = () => {
               </div>
 
               <div className="single-widget colors-widget">
-                <h3 className="widget-title">Colors</h3>
+                <h3>Colors</h3>
                 <div className="colors-list">
                   <div className="single-colors">
                     <div className="colors-left">
                       <input
-                        className="form-check-input green"
+                        className="form-check-input rounded-full green"
                         type="checkbox"
                         id="Jungle"
                       />
@@ -236,7 +235,7 @@ const ProductArea = () => {
               </div>
 
               <div className="single-widget size-widget">
-                <h3 className="widget-title">Size</h3>
+                <h3>Size</h3>
                 <div className="size-list">
                   <div className="single-size">
                     <input
@@ -269,19 +268,31 @@ const ProductArea = () => {
                     </label>
                   </div>
                   <div className="single-size">
-                    <input className="form-check-input" type="checkbox" id="XL" />
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="XL"
+                    />
                     <label className="form-check-label" for="XL">
                       XL
                     </label>
                   </div>
                   <div className="single-size">
-                    <input className="form-check-input" type="checkbox" id="XXL" />
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="XXL"
+                    />
                     <label className="form-check-label" for="XXL">
                       XXL
                     </label>
                   </div>
                   <div className="single-size">
-                    <input className="form-check-input" type="checkbox" id="XXXL" />
+                    <input
+                      className="form-check-input"
+                      type="checkbox"
+                      id="XXXL"
+                    />
                     <label className="form-check-label" for="XXXL">
                       XXXL
                     </label>
@@ -290,7 +301,7 @@ const ProductArea = () => {
               </div>
 
               <div className="single-widget brand-widget">
-                <h3 className="widget-title">Brand</h3>
+                <h3>Brand</h3>
                 <div className="brand-list">
                   <div className="single-brand">
                     <div className="brand-left">
@@ -333,7 +344,11 @@ const ProductArea = () => {
                   </div>
                   <div className="single-brand">
                     <div className="brand-left">
-                      <input className="form-check-input" type="checkbox" id="HM" />
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="HM"
+                      />
                       <label className="form-check-label" for="HM">
                         H&amp;M
                       </label>
@@ -357,7 +372,7 @@ const ProductArea = () => {
               </div>
 
               <div className="single-widget tags-widget">
-                <h3 className="widget-title">Tags</h3>
+                <h3>Tags</h3>
                 <ul className="tags-list">
                   <li className="tag-item">
                     <a
@@ -416,7 +431,7 @@ const ProductArea = () => {
               </div>
 
               <div className="single-widget rating-widget">
-                <h3 className="widget-title">Rating</h3>
+                <h3>Rating</h3>
                 <ul className="rating-list">
                   <li className="rating-item">
                     <a className="rating-link" href="#">
@@ -478,15 +493,15 @@ const ProductArea = () => {
                 <div className="md:col-span-3 col-span-12">
                   <div className="product-section-top-left">
                     <button
-                      className="sidebar-filter d-block d-lg-none"
+                      className="sidebar-filter items-center flex block lg:hidden"
                       type="button"
                       data-bs-toggle="offcanvas"
                       data-bs-target="#offcanvasExample"
                       aria-controls="offcanvasExample"
                     >
-                      Filter{" "}
+                      Filter
                       <img
-                        src="assets/images/angle-down.svg"
+                        src="http://zairito-html.zainiktheme.com/demo/assets/images/angle-down.svg"
                         alt="angle-down"
                       />
                     </button>
@@ -497,7 +512,7 @@ const ProductArea = () => {
                       >
                         <img
                           className="view-icon"
-                          src="assets/images/view-list.svg"
+                          src="http://zairito-html.zainiktheme.com/demo/assets/images/view-list.svg"
                           alt="view-list"
                         />
                       </a>
@@ -507,7 +522,7 @@ const ProductArea = () => {
                       >
                         <img
                           className="view-icon"
-                          src="assets/images/view-grid.svg"
+                          src="http://zairito-html.zainiktheme.com/demo/assets/images/view-grid.svg"
                           alt="view-grid"
                         />
                       </a>
@@ -529,35 +544,9 @@ const ProductArea = () => {
                 </div>
               </div>
             </div>
-            <div className="">
+            <div>
               <div className="grid grid-cols-12">
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                  <Product />
-                </div>
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                <Product />
-                </div>
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                <Product />
-                </div>
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                <Product />
-                </div>
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                <Product />
-                </div>
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                <Product />
-                </div>
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                <Product />
-                </div>
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                <Product />
-                </div>
-                <div className="lg:col-span-4 col-span-12 md:col-span-6">
-                <Product />
-                </div>
+                <Products />
               </div>
 
               <div className="pagination-area mt-30">
