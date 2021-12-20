@@ -37,7 +37,7 @@ const ProductAreaHeader = () => {
                       </a>
                     </li>
                     <li className="menu-item">
-                      <a className="#" href="faq.html">
+                      <a className="#" href="#">
                         How To Buy
                       </a>
                     </li>
@@ -118,7 +118,7 @@ const ProductAreaHeader = () => {
         <div className="container mx-auto px-8">
           <div className="header-middle-wrap">
             <div className="brand-area">
-              <a className="#" href="index.html">
+              <a className="#" href="/l">
                 <img
                   className="brand-image"
                   src="http://zairito-html.zainiktheme.com/demo/assets/images/zairito.png"
