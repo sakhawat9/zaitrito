@@ -4,6 +4,7 @@ import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { BsBag, BsBarChart, BsSearch } from "react-icons/bs";
+import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 const ProductAreaHeader = () => {
   return (
@@ -204,7 +205,7 @@ const ProductAreaHeader = () => {
           <ul className="main-menu">
             <li className="menu-item menu-item-has-children">
               <a className="menu-link" href="#">
-                Home <i className="arrow-icon fas fa-angle-down"></i>
+                Home <MdOutlineKeyboardArrowDown class="arrow-icon" />
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">
@@ -226,7 +227,7 @@ const ProductAreaHeader = () => {
             </li>
             <li className="menu-item mega-menu-parent active">
               <a className="menu-link" href="#">
-                Shop <i className="arrow-icon fas fa-angle-down"></i>
+                Shop <MdOutlineKeyboardArrowDown class="arrow-icon" />
               </a>
               <div className="mega-menu-area">
                 <div className="container mx-auto px-8">
@@ -335,7 +336,7 @@ const ProductAreaHeader = () => {
 
             <li className="menu-item menu-item-has-children">
               <a className="menu-link" href="#">
-                Pages <i className="arrow-icon fas fa-angle-down"></i>
+                Pages <MdOutlineKeyboardArrowDown class="arrow-icon" />
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">
@@ -389,7 +390,7 @@ const ProductAreaHeader = () => {
 
             <li className="menu-item menu-item-has-children">
               <a className="menu-link" href="#">
-                Blog <i className="arrow-icon fas fa-angle-down"></i>
+                Blog <MdOutlineKeyboardArrowDown class="arrow-icon" />
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">

@@ -52,7 +52,7 @@ const RecommendProduct = () => {
   }, []);
 
   return (
-    <div className="recommend-product carousel">
+    <div className="recommend-product section-padding carousel">
       <div className="recommend-product__nav">
         <div className="featured-products__header">
           <h2>Featured Products</h2>

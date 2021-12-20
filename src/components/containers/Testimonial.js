@@ -83,7 +83,7 @@ const featuredProducts = [
 
 const Testimonial = () => {
   return (
-    <div className="testimonial">
+    <div className="testimonial section-padding">
       <div className="testimonial__wrapper carousel">
         <div>
           <div className="featured-products__header">

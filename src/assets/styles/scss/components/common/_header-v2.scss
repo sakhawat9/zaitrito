@@ -42,7 +42,7 @@
 }
 
 .header-area-v2 .header-top .top-bar-menu .menu-list .menu-item .menu-link {
-  display: inline-block;
+  @apply flex items-center;
   font-size: 1.5rem;
   font-weight: 500;
   text-transform: capitalize;
@@ -207,7 +207,7 @@
 }
 
 .header-area-v2 .header-bottom .menu-area .main-menu .menu-item .menu-link {
-  display: inline-block;
+  @apply flex items-center;
   position: relative;
   padding: 1.7rem 0;
   font-size: 1.6rem;
