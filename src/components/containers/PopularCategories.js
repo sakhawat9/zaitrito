@@ -20,7 +20,7 @@ const PopularCategories = () => {
             <div className="w-full">
               <ul className="category-list">
                 <li>
-                  <a className="catatory-link " href="#">
+                  <a className="catatory-link " href="/weedingDress">
                     Weeding Dress
                     <IoIosArrowForward />
                   </a>

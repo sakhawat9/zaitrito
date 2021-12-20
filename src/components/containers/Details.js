@@ -2,18 +2,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useState } from "react";
 import {
-    AiFillStar,
-    AiOutlineMinus,
-    AiOutlinePlus,
-    AiOutlinePlusCircle
+  AiFillStar,
+  AiOutlineMinus,
+  AiOutlinePlus,
+  AiOutlinePlusCircle
 } from "react-icons/ai";
 import { BsBarChart } from "react-icons/bs";
 import {
-    FaFacebookF,
-    FaLinkedinIn,
-    FaPinterestP,
-    FaRegHeart,
-    FaTwitter
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaRegHeart,
+  FaTwitter
 } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import Slider from "react-slick";
@@ -114,14 +114,14 @@ const Details = () => {
                     {data.map((item, index) => (
                       <>
                         <li
-                          class="single-item slick-slide slick-current slick-active"
+                          className="single-item slick-slide slick-current slick-active"
                           data-slick-index="0"
                           aria-hidden="false"
                           style={{ width: "157px" }}
                           tabindex="0"
                         >
                           <img
-                            class="single-item-image"
+                            className="single-item-image"
                             src={item.img}
                             alt="product"
                           />
@@ -175,11 +175,11 @@ const Details = () => {
                     </ul>
                   </div>
 
-                  <div class="variable-single-item pb-4">
-                    <div class="product-variable-color">
-                      <span class="product-variable-color__black"></span>
-                      <span class="product-variable-color__tomato"></span>
-                      <span class="product-variable-color__gray"></span>
+                  <div className="variable-single-item pb-4">
+                    <div className="product-variable-color">
+                      <span className="product-variable-color__black"></span>
+                      <span className="product-variable-color__tomato"></span>
+                      <span className="product-variable-color__gray"></span>
                     </div>
                   </div>
 
@@ -208,14 +208,14 @@ const Details = () => {
                     </a>
                     <a
                       className="addCompare product-btn"
-                      href="wish-list.html"
+                      href="#"
                       title="Add to wishlist"
                     >
                       <FaRegHeart />
                     </a>
                     <a
                       className="addToWishlist product-btn"
-                      href="compare.html"
+                      href="#"
                       title="Add to compare"
                     >
                       <BsBarChart />

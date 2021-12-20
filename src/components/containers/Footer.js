@@ -2,10 +2,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {
-    FaFacebookF,
-    FaInstagram,
-    FaLinkedinIn,
-    FaTwitter
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter
 } from "react-icons/fa";
 import footerImg from "../../assets/images/accepts-image.png";
 import footerLogo from "../../assets/images/footer-logo-two.png";
@@ -41,20 +41,20 @@ const Footer = () => {
                 </h3>
                 <ul className="footer__widget__wrapper__area__single-item__menu">
                   <li className="meni-item">
-                    <a className="menu-link" href="shop-grid-left-sidebar.html">
+                    <a className="menu-link" href="#">
                       Appliances
                     </a>
                   </li>
                   <li className="meni-item">
                     <a
                       className="menu-link"
-                      href="shop-grid-right-sidebar.html"
+                      href="#"
                     >
                       Computers &amp; Laptops
                     </a>
                   </li>
                   <li className="meni-item">
-                    <a className="menu-link" href="shop-grid.html">
+                    <a className="menu-link" href="#">
                       Cameras
                     </a>
                   </li>
@@ -66,13 +66,13 @@ const Footer = () => {
                   <li className="meni-item">
                     <a
                       className="menu-link"
-                      href="shop-list-right-sidebar.html"
+                      href="#"
                     >
                       Televisions
                     </a>
                   </li>
                   <li className="meni-item">
-                    <a className="menu-link" href="shop-list-left-sidebar.html">
+                    <a className="menu-link" href="#">
                       Video Games
                     </a>
                   </li>

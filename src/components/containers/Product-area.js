@@ -380,53 +380,53 @@ const ProductArea = () => {
                   <li className="tag-item">
                     <a
                       className="tag-link active"
-                      href="shop-grid-left-sidebar.html"
+                      href="#"
                     >
                       Fashion
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       Hats
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       Vagabond
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       Sandal
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       Beachwear
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       Sunglasses
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       Denim
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       Magenta
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       leather
                     </a>
                   </li>
                   <li className="tag-item">
-                    <a className="tag-link" href="shop-grid-left-sidebar.html">
+                    <a className="tag-link" href="#">
                       Vagabond
                     </a>
                   </li>
@@ -511,7 +511,7 @@ const ProductArea = () => {
                     </button>
                     <div className="list-grid-view">
                       <a
-                        href="shop-list-left-sidebar.html"
+                        href="#"
                         className="view-btn list-view"
                       >
                         <img
@@ -521,7 +521,7 @@ const ProductArea = () => {
                         />
                       </a>
                       <a
-                        href="shop-grid-left-sidebar.html"
+                        href="#"
                         className="view-btn grid-view active"
                       >
                         <img
