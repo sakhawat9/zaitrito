@@ -11,8 +11,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 :root {
   font-size: 62.5%;
+  --primary-color: #ef1b27;
+  --hover-color: #cc1f28;
+  --primary-color-two: #0d7862;
+  --hover-color-two: #04b691;
+  --primary-color-three: #5f8e3e;
+  --hover-color-three: #519224;
+  --secondary-color: #fdd65b;
+  --bColor: #777777;
+  --white: #ffffff;
+  --black: #000000;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
