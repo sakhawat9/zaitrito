@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Product from "../common/Product";
+import Product02 from "../common/Product02";
 
-const Products = () => {
+const Products02 = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch("/products.json")
@@ -11,11 +11,11 @@ const Products = () => {
 
   return (
     <>
-      {products.slice(0, 9).map((product) => (
-        <Product product={product} key={product.id} />
+      {products.map((product) => (
+        <Product02 product={product} key={product.id} />
       ))}
     </>
   );
 };
 
-export default Products;
+export default Products02;

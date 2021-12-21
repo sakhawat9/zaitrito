@@ -4,6 +4,7 @@ import MobileHeader from "../common/MobileHeader";
 import ProductAreaHeader from "../common/ProductAreaHeader";
 import Footer from "./Footer";
 import MapArea from "./MapArea";
+import ProductArea02 from "./Product-area-02";
 
 const AthleticWear = () => {
   return (
@@ -11,6 +12,7 @@ const AthleticWear = () => {
       <ProductAreaHeader />
       <MobileHeader />
       <BreadcrumbArea />
+      <ProductArea02 />
       <MapArea />
       <Footer />
     </div>
