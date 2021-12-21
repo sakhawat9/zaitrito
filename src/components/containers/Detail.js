@@ -1,7 +1,9 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import Review from "../common/Review";
 
 const Detail = ({ data }) => {
   console.log(data);
@@ -75,7 +77,7 @@ const Detail = ({ data }) => {
                       </li>
                     </ul>
                     <span className="review-count">
-                      Based on ({data?.reviewer.length}) Reviews{" "}
+                      Based on ({data?.reviewer?.length}) Reviews{" "}
                     </span>
                   </div>
                 </div>
@@ -86,42 +88,8 @@ const Detail = ({ data }) => {
                 </div>
               </div>
               <div className="reviews-list">
-                {data.reviewer.map((review) => (
-                  <div className="single-review">
-                    <div className="reviewer">
-                      <div className="reviewer-wrap">
-                        <img
-                          className="reviewer-image"
-                          src={review?.img}
-                          alt={review?.name}
-                        />
-                        <div className="reviewer-info">
-                          <h4 className="reviewer-name">{review?.name}</h4>
-                          <h4 className="review-meta">
-                            <span className="time">{review?.date}</span>
-                          </h4>
-                        </div>
-                      </div>
-                      <ul className="review-list">
-                        <li className="review-item active">
-                          <AiFillStar />
-                        </li>
-                        <li className="review-item active">
-                          <AiFillStar />
-                        </li>
-                        <li className="review-item active">
-                          <AiFillStar />
-                        </li>
-                        <li className="review-item active">
-                          <AiFillStar />
-                        </li>
-                        <li className="review-item">
-                          <AiFillStar />
-                        </li>
-                      </ul>
-                    </div>
-                    <p className="review-text">{review?.desc}</p>
-                  </div>
+                {data?.reviewer?.map((review) => (
+                  <Review review={review} />
                 ))}
               </div>
             </div>

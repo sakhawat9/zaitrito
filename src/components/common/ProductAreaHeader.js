@@ -205,7 +205,7 @@ const ProductAreaHeader = () => {
           <ul className="main-menu">
             <li className="menu-item menu-item-has-children">
               <a className="menu-link" href="#">
-                Home <MdOutlineKeyboardArrowDown class="arrow-icon" />
+                Home <MdOutlineKeyboardArrowDown className="arrow-icon" />
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">
@@ -227,7 +227,7 @@ const ProductAreaHeader = () => {
             </li>
             <li className="menu-item mega-menu-parent active">
               <a className="menu-link" href="#">
-                Shop <MdOutlineKeyboardArrowDown class="arrow-icon" />
+                Shop <MdOutlineKeyboardArrowDown className="arrow-icon" />
               </a>
               <div className="mega-menu-area">
                 <div className="container mx-auto px-8">
@@ -336,7 +336,7 @@ const ProductAreaHeader = () => {
 
             <li className="menu-item menu-item-has-children">
               <a className="menu-link" href="#">
-                Pages <MdOutlineKeyboardArrowDown class="arrow-icon" />
+                Pages <MdOutlineKeyboardArrowDown className="arrow-icon" />
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">
@@ -390,7 +390,7 @@ const ProductAreaHeader = () => {
 
             <li className="menu-item menu-item-has-children">
               <a className="menu-link" href="#">
-                Blog <MdOutlineKeyboardArrowDown class="arrow-icon" />
+                Blog <MdOutlineKeyboardArrowDown className="arrow-icon" />
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">

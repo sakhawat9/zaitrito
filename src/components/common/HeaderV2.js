@@ -220,127 +220,127 @@ const HeaderV2 = () => {
         </div>
       </div>
       <div className="header-bottom">
-        <nav class="menu-area">
-          <ul class="main-menu">
-            <li class="menu-item menu-item-has-children">
-              <a class="menu-link" href="#">
-                Home <MdOutlineKeyboardArrowDown class="arrow-icon" />
+        <nav className="menu-area">
+          <ul className="main-menu">
+            <li className="menu-item menu-item-has-children">
+              <a className="menu-link" href="#">
+                Home <MdOutlineKeyboardArrowDown className="arrow-icon" />
               </a>
-              <ul class="sub-menu">
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+              <ul className="sub-menu">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Home One
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Home Two
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Home Three
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item mega-menu-parent active">
-              <a class="menu-link" href="#">
-                Shop <MdOutlineKeyboardArrowDown class="arrow-icon" />
+            <li className="menu-item mega-menu-parent active">
+              <a className="menu-link" href="#">
+                Shop <MdOutlineKeyboardArrowDown className="arrow-icon" />
               </a>
-              <div class="mega-menu-area">
-                <div class="container mx-auto px-8">
-                  <ul class="mega-menu">
-                    <li class="mega-menu-item">
-                      <a class="mega-menu-title" href="#">
+              <div className="mega-menu-area">
+                <div className="container mx-auto px-8">
+                  <ul className="mega-menu">
+                    <li className="mega-menu-item">
+                      <a className="mega-menu-title" href="#">
                         Shop Layout
                       </a>
-                      <ul class="menu-items">
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                      <ul className="menu-items">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Shop Grid Leftsidebar{" "}
-                            <span class="menu-item-badge new">New</span>
+                            <span className="menu-item-badge new">New</span>
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Shop Grid Rightsidebar{" "}
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Shop Grid No Sidebar{" "}
-                            <span class="menu-item-badge trending">
+                            <span className="menu-item-badge trending">
                               Trending
                             </span>
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Shop List Leftsidebar
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Shop List Rightsidebar
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Shop List No Sidebar
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li class="mega-menu-item">
-                      <a class="mega-menu-title" href="#">
+                    <li className="mega-menu-item">
+                      <a className="mega-menu-title" href="#">
                         List Layout &amp; Others
                       </a>
-                      <ul class="menu-items">
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                      <ul className="menu-items">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Product Single 1
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Product Single 2
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Product Single 3
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Cart Page
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Checkout Page
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Compare
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Wishlist
                           </a>
                         </li>
-                        <li class="mega-menu-items">
-                          <a class="mega-menu-link" href="#">
+                        <li className="mega-menu-items">
+                          <a className="mega-menu-link" href="#">
                             Empty Wishlist
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li class="mega-menu-item">
-                      <a class="mega-menu-banner" href="#">
+                    <li className="mega-menu-item">
+                      <a className="mega-menu-banner" href="#">
                         <img
                           className="menu-banner-image"
                           src="http://zairito-html.zainiktheme.com/demo/assets/images/mega-menu-banner.png"
@@ -352,77 +352,77 @@ const HeaderV2 = () => {
                 </div>
               </div>
             </li>
-            <li class="menu-item menu-item-has-children">
-              <a class="menu-link" href="#">
-                Pages <MdOutlineKeyboardArrowDown class="arrow-icon" />
+            <li className="menu-item menu-item-has-children">
+              <a className="menu-link" href="#">
+                Pages <MdOutlineKeyboardArrowDown className="arrow-icon" />
               </a>
-              <ul class="sub-menu">
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+              <ul className="sub-menu">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Term &amp; Conditions
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Privacy Policy
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Shipping &amp; Return
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Frequently Asked Questions
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Refund policy
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Error Page
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Sign In
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Sign Up
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">
+            <li className="menu-item">
+              <a className="menu-link" href="#">
                 about us
               </a>
             </li>
-            <li class="menu-item menu-item-has-children">
-              <a class="menu-link" href="#">
-                Blog <MdOutlineKeyboardArrowDown class="arrow-icon" />
+            <li className="menu-item menu-item-has-children">
+              <a className="menu-link" href="#">
+                Blog <MdOutlineKeyboardArrowDown className="arrow-icon" />
               </a>
-              <ul class="sub-menu">
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+              <ul className="sub-menu">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Blog Grid
                   </a>
                 </li>
-                <li class="sub-menu-item">
-                  <a class="sub-menu-link" href="#">
+                <li className="sub-menu-item">
+                  <a className="sub-menu-link" href="#">
                     Blog Single
                   </a>
                 </li>
               </ul>
             </li>
-            <li class="menu-item">
-              <a class="menu-link" href="#">
+            <li className="menu-item">
+              <a className="menu-link" href="#">
                 Contact
               </a>
             </li>
