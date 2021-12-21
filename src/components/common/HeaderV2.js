@@ -197,22 +197,22 @@ const HeaderV2 = () => {
             <ul className="btn-list">
               <li className="single-items wishlist-area">
                 <a className="single-btn wishlist-btn" href="#">
-                  <AiOutlineHeart className="btn-icon" />
+                  <AiOutlineHeart className="btn-icon w-10 h-10" />
                 </a>
               </li>
               <li className="single-items compare-area">
                 <a className="single-btn compare-btn" href="#">
-                  <BsBarChart className="btn-icon" />
+                  <BsBarChart className="btn-icon w-10 h-10" />
                 </a>
               </li>
               <li className="single-items cart-area">
                 <a className="single-btn cart-btn">
-                  <BsBag className="btn-icon" />
+                  <BsBag className="btn-icon w-10 h-10" />
                 </a>
               </li>
               <li className="single-items user-area">
-                <a className="single-btn user-btn" href="#">
-                  <BiUserCircle className="btn-icon" />
+                <a className="single-btn user-btn" href="/signIn">
+                  <BiUserCircle className="btn-icon w-10 h-10" />
                 </a>
               </li>
             </ul>
@@ -388,7 +388,7 @@ const HeaderV2 = () => {
                   </a>
                 </li>
                 <li className="sub-menu-item">
-                  <a className="sub-menu-link" href="#">
+                  <a className="sub-menu-link" href="/signIn">
                     Sign In
                   </a>
                 </li>

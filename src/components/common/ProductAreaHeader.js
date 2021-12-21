@@ -107,7 +107,7 @@ const ProductAreaHeader = () => {
                     </ul>
                   </div>
                 </div>
-                <a className="account-btn" href="#">
+                <a className="account-btn" href="/singIn">
                   <BiUserCircle className="user-icon" /> My Account
                 </a>
               </div>
@@ -370,7 +370,7 @@ const ProductAreaHeader = () => {
                   </a>
                 </li>
                 <li className="sub-menu-item">
-                  <a className="sub-menu-link" href="#">
+                  <a className="sub-menu-link" href="/signIn">
                     Sign In
                   </a>
                 </li>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AthleticWear from "./components/containers/AthleticWear";
 import Home from "./pages/home";
 import ProductDetails from "./pages/productDetails";
+import SignIn from "./pages/SignIn";
 import WeedingDress from "./pages/WeedingDress";
 
 const AppRouter = () => {
@@ -23,6 +24,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/athleticWear">
           <AthleticWear />
+        </Route>
+        <Route path="/signIn">
+          <SignIn />
         </Route>
       </Switch>
     </Router>
