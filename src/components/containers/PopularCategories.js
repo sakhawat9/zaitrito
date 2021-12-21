@@ -26,7 +26,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/athleticWear">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -51,7 +51,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/athleticWear">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -61,12 +61,12 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/athleticWear">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/athleticWear">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -76,7 +76,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/athleticWear">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -86,7 +86,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/athleticWear">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>

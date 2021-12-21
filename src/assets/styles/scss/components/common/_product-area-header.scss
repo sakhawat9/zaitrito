@@ -452,12 +452,9 @@
   .main-menu
   .menu-item.mega-menu-parent
   .mega-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  @apply flex justify-center;
   flex-flow: row wrap;
   max-width: 1024px;
-  justify-content: center;
   margin: 0 auto;
 }
 
@@ -489,25 +486,9 @@
   .mega-menu
   .mega-menu-item
   .mega-menu-title {
-  display: block;
-  margin-bottom: 3rem;
+  @apply mb-12 font-medium capitalize text-black block;
   font-family: "Jost", sans-serif;
   font-size: 2rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: black;
-}
-
-.header-area
-  .header-bottom
-  .menu-area
-  .main-menu
-  .menu-item.mega-menu-parent
-  .mega-menu
-  .mega-menu-item
-  .menu-items {
-  margin: 0;
-  padding: 0;
 }
 
 .header-area
@@ -519,9 +500,7 @@
   .mega-menu-item
   .menu-items
   .mega-menu-items {
-  list-style: none;
-  display: block;
-  margin-bottom: 2rem;
+  @apply mb-8 block;
 }
 
 .header-area
@@ -534,10 +513,9 @@
   .menu-items
   .mega-menu-items
   .mega-menu-link {
+  @apply font-normal capitalize;
   font-family: "Jost", sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: capitalize;
   color: #555555;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -554,15 +532,11 @@
   .mega-menu-items
   .mega-menu-link
   .menu-item-badge {
-  display: inline-block;
+  @apply font-bold capitalize text-white ml-2 inline-block;
   font-size: 1.4rem;
   padding: 0.5rem 0.8rem;
   line-height: 1;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: var(--white);
   background-color: #00aa6c;
-  margin-left: 0.5rem;
 }
 
 .header-area
@@ -621,20 +595,13 @@
 }
 
 .lang-switcher {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  padding: 0;
+  @apply items-center p-0 flex relative;
 }
 
 .lang-switcher .flag {
+  @apply overflow-hidden inline-block rounded-full;
   margin-right: 5px;
   width: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
 }
 
 .lang-switcher .lang {
@@ -651,23 +618,17 @@
 }
 
 .lang-switcher .lang-list {
-  background-color: #ffffff;
+  @apply bg-white absolute left-0 opacity-0 invisible;
   box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
   padding: 12px;
-  position: absolute;
   top: 90px;
-  left: 0px;
   width: 100px;
-  opacity: 0;
-  visibility: hidden;
   transition: all 0.3s ease-in;
 }
 
 .lang-switcher .lang-list .single-lang {
-  display: flex;
-  align-items: center;
+  @apply items-center cursor-pointer flex;
   margin-bottom: 6px;
-  cursor: pointer;
 }
 
 .lang-switcher .lang-list .single-lang .lang-text {
@@ -690,13 +651,9 @@
 }
 
 .lang-switcher .lang-list::before {
+  @apply absolute block top-0 left-0 w-full;
   content: "";
-  display: block;
   clear: both;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 2px;
   background-color: var(--primary-color);
 }
@@ -709,22 +666,13 @@
 }
 
 .currency-switcher {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  margin-right: 2rem;
-  padding: 0;
+  @apply flex items-center p-0 mr-8 relative;
   min-width: 63px;
 }
 
 .currency-switcher .flag {
+  @apply w-auto rounded-full inline-block overflow-hidden;
   margin-right: 5px;
-  width: auto;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
 }
 
 .currency-switcher .flag i {
@@ -739,37 +687,35 @@
 }
 
 .currency-switcher .currency .fa-angle-down {
-  position: relative;
+  @apply relative;
   top: 2px;
   margin-left: 3px;
 }
 
 .currency-switcher .currency-list {
-  background-color: #ffffff;
+  @apply bg-white absolute left-0 invisible opacity-0;
   box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
   padding: 12px;
-  position: absolute;
   top: 90px;
-  left: 0px;
   width: 100px;
-  opacity: 0;
-  visibility: hidden;
   transition: all 0.3s ease-in;
+  &:before {
+    @apply block absolute top-0 left-0 w-full;
+    content: "";
+    clear: both;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
 }
 
 .currency-switcher .currency-list .single-currency {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
+  @apply items-center cursor-pointer flex;
   margin-bottom: 6px;
-  cursor: pointer;
 }
 
 .currency-switcher .currency-list .single-currency .currency-text {
   color: var(--bColor);
-  display: block;
-  -webkit-transition: all 0.3s ease-in;
+  @apply block;
   transition: all 0.3s ease-in;
 }
 
@@ -784,18 +730,6 @@
 
 .currency-switcher .currency-list .single-currency:last-child {
   margin-bottom: 0;
-}
-
-.currency-switcher .currency-list::before {
-  content: "";
-  display: block;
-  clear: both;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--primary-color);
 }
 
 .currency-switcher .currency-list-open {

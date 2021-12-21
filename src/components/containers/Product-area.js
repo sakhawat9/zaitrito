@@ -1,11 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { AiFillStar } from "react-icons/ai";
+import { AiFillStar, AiOutlineCloseSquare } from "react-icons/ai";
 import { FaAngleDoubleLeft, FaAngleDoubleRight, FaPlay } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
+import MobileFilterMenu from "../common/MobileFilterMenu";
 import Products from "./Products";
 
 const ProductArea = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
   return (
     <div className="product-area section-padding">
       <div className="container mx-auto">
@@ -20,6 +29,15 @@ const ProductArea = () => {
                     className="btn-close text-reset sidebar-close"
                   ></button>
                 </div>
+                <Drawer open={isOpen} onClose={toggleDrawer} direction="left">
+                  <div
+                    onClick={toggleDrawer}
+                    className="p-3 overflow-hidden text-2xl text-right close text-royal-blue"
+                  >
+                    <AiOutlineCloseSquare className="float-right" />
+                  </div>
+                  <MobileFilterMenu />
+                </Drawer>
               </div>
 
               <div className="single-widget search-widget">
@@ -378,10 +396,7 @@ const ProductArea = () => {
                 <h3>Tags</h3>
                 <ul className="tags-list">
                   <li className="tag-item">
-                    <a
-                      className="tag-link active"
-                      href="#"
-                    >
+                    <a className="tag-link active" href="#">
                       Fashion
                     </a>
                   </li>
@@ -497,6 +512,7 @@ const ProductArea = () => {
                 <div className="md:col-span-3 col-span-12">
                   <div className="product-section-top-left">
                     <button
+                      onClick={toggleDrawer}
                       className="sidebar-filter items-center flex block lg:hidden"
                       type="button"
                       data-bs-toggle="offcanvas"
@@ -510,20 +526,14 @@ const ProductArea = () => {
                       />
                     </button>
                     <div className="list-grid-view">
-                      <a
-                        href="#"
-                        className="view-btn list-view"
-                      >
+                      <a href="#" className="view-btn list-view">
                         <img
                           className="view-icon"
                           src="http://zairito-html.zainiktheme.com/demo/assets/images/view-list.svg"
                           alt="view-list"
                         />
                       </a>
-                      <a
-                        href="#"
-                        className="view-btn grid-view active"
-                      >
+                      <a href="#" className="view-btn grid-view active">
                         <img
                           className="view-icon"
                           src="http://zairito-html.zainiktheme.com/demo/assets/images/view-grid.svg"

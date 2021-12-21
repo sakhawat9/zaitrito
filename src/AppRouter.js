@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AthleticWear from "./components/containers/AthleticWear";
 import Home from "./pages/home";
 import ProductDetails from "./pages/productDetails";
 import WeedingDress from "./pages/WeedingDress";
@@ -19,6 +20,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/weedingDress">
           <WeedingDress />
+        </Route>
+        <Route path="/athleticWear">
+          <AthleticWear />
         </Route>
       </Switch>
     </Router>

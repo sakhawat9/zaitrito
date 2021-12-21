@@ -1,67 +1,9 @@
-.offcanvas.show {
-  transform: none;
+.form-control.bg-color {
+  background-color: #f4f4f4;
 }
-
-.offcanvas-start {
-  top: 0;
-  left: 0;
-  width: 400px;
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
-.offcanvas {
-  position: fixed;
-  bottom: 0;
-  z-index: 1045;
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  background-color: #fff;
-  background-clip: padding-box;
-  outline: 0;
-  transition: transform 0.3s ease-in-out;
-}
-
-.offcanvas .offcanvas-header {
-  padding: 3rem 4.5rem 0 4.5rem;
-}
-.offcanvas-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1rem;
-}
-
-@media (max-width: 991px) {
-  .offcanvas .offcanvas-body {
-    padding: 3rem 1.5rem;
-  }
-  .offcanvas .offcanvas-header {
-    margin-bottom: 0;
-    padding: 3rem 1.5rem 0 1.5rem;
-  }
-}
-
-.offcanvas .offcanvas-header .offcanvas-title {
-  font-family: "Jost", sans-serif;
-  font-size: 3.6rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  color: black;
-}
-.offcanvas-title {
-  margin-bottom: 0;
-  line-height: 1.5;
-}
-
-@media (max-width: 575px) {
-  .offcanvas.offcanvas-end {
-    width: 320px;
-  }
-  .offcanvas .offcanvas-header .offcanvas-title {
-    font-size: 2.6rem;
-  }
-  .offcanvas.offcanvas-end .offcanvas-header {
-    margin: 0 15px 0;
-    padding: 25px 0;
-  }
+.offcanvas-header .btn-close {
+  padding: 0.5rem 0.5rem;
+  margin-top: -0.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: -0.5rem;
 }
