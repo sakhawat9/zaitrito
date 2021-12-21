@@ -75,7 +75,7 @@
     padding: 3rem 0;
     border-top: 1px solid #469685;
     &__wrapper {
-      @apply grid grid-cols-12 items-center;
+      @apply grid grid-cols-12 gap-4 items-center;
     }
   }
 }

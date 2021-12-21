@@ -78,8 +78,8 @@ const Product = ({ product }) => {
             </div>
           </div>
           <ul className="size-switch">
-            {product.size.map((s) => (
-              <li className="size-switch__single-size">{s}</li>
+            {product.size.map((s, index) => (
+              <li key={index} className="size-switch__single-size">{s}</li>
             ))}
           </ul>
           <a href="#" title="Add to cart" className="add-cart">

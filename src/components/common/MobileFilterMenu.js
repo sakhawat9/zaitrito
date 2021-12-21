@@ -5,7 +5,7 @@ const MobileFilterMenu = () => {
   return (
     <div
       className="offcanvas offcanvas-start show"
-      tabindex="-1"
+      tabIndex="-1"
       id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel"
       style={{visibility: "visible"}}

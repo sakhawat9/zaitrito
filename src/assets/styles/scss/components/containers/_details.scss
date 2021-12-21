@@ -204,11 +204,8 @@
     border-color: $primary;
   }
 }
-.product-btn-wrapper {
-  @apply absolute mb-10 left-0 right-0 text-center bottom-14;
-}
-
-.product-btn-wrapper {
+.product-btns {
+  @apply mb-10 left-0 right-0 text-center bottom-14;
   margin-bottom: 2.4rem;
 }
 

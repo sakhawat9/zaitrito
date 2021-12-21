@@ -62,7 +62,7 @@ const BrandsArea = () => {
         <div className="container px-8 mx-auto text-center ">
           <Slider {...carouselProperties}>
             {data.map((item, index) => (
-              <div>
+              <div key={index}>
                 <div className="inline-flex bg-white">
                   <img
                     className="object-cover w-full h-full opacity-50 hover:opacity-100"

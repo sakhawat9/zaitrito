@@ -6,7 +6,7 @@ const MobileFilterSidebar = () => {
     <>
       <div
         className="offcanvas offcanvas-start show"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel"
         aria-modal="true"

@@ -1,22 +1,29 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import { AiOutlineCloseSquare } from "react-icons/ai";
+import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
+import Drawer from "react-modern-drawer";
+import "react-modern-drawer/dist/index.css";
+import MobileFilterMenu from "../common/MobileFilterMenu";
 import Products02 from "../common/Products02";
 
 const ProductArea02 = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
+  };
   return (
-    <div className="product-area section">
+    <div className="product-area section-padding">
       <div className="container mx-auto px-8">
-        <div className="section-padding-t">
+        <div className="mb-10">
           <div className="grid grid-cols-12 items-center">
             <div className="md:col-span-4 col-span-12">
               <div className="product-section-top-left">
                 <button
-                  //   onClick={toggleDrawer}
-                  className="sidebar-filter items-center flex block lg:hidden"
+                  onClick={toggleDrawer}
+                  className="sidebar-filter filter-btn flex items-center gap-2"
                   type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasExample"
-                  aria-controls="offcanvasExample"
                 >
                   Filter
                   <img
@@ -24,6 +31,15 @@ const ProductArea02 = () => {
                     alt="angle-down"
                   />
                 </button>
+                <Drawer open={isOpen} onClose={toggleDrawer} direction="left">
+                  <div
+                    onClick={toggleDrawer}
+                    className="p-3 overflow-hidden text-2xl text-right close text-royal-blue"
+                  >
+                    <AiOutlineCloseSquare className="float-right" />
+                  </div>
+                  <MobileFilterMenu />
+                </Drawer>
                 <div className="list-grid-view">
                   <a href="#" className="view-btn list-view">
                     <img
@@ -43,7 +59,7 @@ const ProductArea02 = () => {
               </div>
             </div>
             <div className="md:col-span-8 col-span-12">
-              <div className="product-filter flex justify-end">
+              <div className="product-filter">
                 <p className="shoing-result">Showing 1 - 9 of 9 result</p>
                 <form>
                   <select className="form-select">
@@ -67,7 +83,7 @@ const ProductArea02 = () => {
             <ul className="paginations text-center">
               <li className="pagination-page">
                 <a href="#" className="pagination-link">
-                  <i className="fas fa-angle-double-left"></i>
+                  <FaAngleDoubleLeft />
                 </a>
               </li>
               <li className="pagination-page active">
@@ -87,7 +103,7 @@ const ProductArea02 = () => {
               </li>
               <li className="pagination-page">
                 <a href="#" className="pagination-link">
-                  <i className="fas fa-angle-double-right"></i>
+                  <FaAngleDoubleRight />
                 </a>
               </li>
             </ul>

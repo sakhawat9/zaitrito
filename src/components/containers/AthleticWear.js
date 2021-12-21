@@ -11,7 +11,7 @@ const AthleticWear = () => {
     <div>
       <ProductAreaHeader />
       <MobileHeader />
-      <BreadcrumbArea />
+      <BreadcrumbArea title="Product Collections" />
       <ProductArea02 />
       <MapArea />
       <Footer />

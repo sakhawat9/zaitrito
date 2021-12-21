@@ -106,7 +106,7 @@ const Card = ({ item }) => {
   return (
     <div
       className="single-testimonial slick-slide slick-current slick-active"
-      tabindex="0"
+      tabIndex="0"
       data-slick-index="1"
       aria-hidden="false"
     >

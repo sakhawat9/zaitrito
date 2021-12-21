@@ -97,7 +97,7 @@ const Details = () => {
                             // opacity: 0,
                             transition: "opacity 500ms ease 0s",
                           }}
-                          tabindex="-1"
+                          tabIndex="-1"
                         >
                           <img
                             className="max-w-full h-auto inline-block"
@@ -118,7 +118,7 @@ const Details = () => {
                           data-slick-index="0"
                           aria-hidden="false"
                           style={{ width: "157px" }}
-                          tabindex="0"
+                          tabIndex="0"
                         >
                           <img
                             className="single-item-image"
@@ -183,7 +183,7 @@ const Details = () => {
                     </div>
                   </div>
 
-                  <div className="product-btn-wrapper flex items-center">
+                  <div className="product-btns flex items-center">
                     <div className="cart-plus-minus">
                       <div className="dec qtybutton btn">
                         <AiOutlineMinus className="text-black" />

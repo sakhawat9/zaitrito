@@ -11,7 +11,7 @@ const WeedingDress = () => {
     <div>
       <ProductAreaHeader />
       <MobileHeader />
-      <BreadcrumbArea />
+      <BreadcrumbArea title="Product Collections" />
       <ProductArea />
       <MapArea />
       <Footer />

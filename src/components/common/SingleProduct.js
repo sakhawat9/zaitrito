@@ -86,8 +86,8 @@ const SingleProduct = ({ featuredProduct }) => {
           </div>
         </div>
         <ul className="size-switch">
-          {featuredProduct.size.map((s) => (
-            <li className="size-switch__single-size">{s}</li>
+          {featuredProduct.size.map((s, index) => (
+            <li key={index} className="size-switch__single-size">{s}</li>
           ))}
         </ul>
         <a href="#" title="Add to cart" className="add-cart">
