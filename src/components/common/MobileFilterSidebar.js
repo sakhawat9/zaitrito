@@ -51,6 +51,7 @@ const MobileFilterSidebar = () => {
                     <input
                       className="form-check-input"
                       type="checkbox"
+                      
                       id="Tshirts1"
                     />
                     <label className="form-check-label" for="Tshirts1">
@@ -64,6 +65,7 @@ const MobileFilterSidebar = () => {
                     <input
                       className="form-check-input"
                       type="checkbox"
+                      
                       id="Jackets1"
                     />
                     <label className="form-check-label" for="Jackets1">
@@ -77,6 +79,7 @@ const MobileFilterSidebar = () => {
                     <input
                       className="form-check-input"
                       type="checkbox"
+                      
                       id="Sports1"
                     />
                     <label className="form-check-label" for="Sports1">
@@ -90,6 +93,7 @@ const MobileFilterSidebar = () => {
                     <input
                       className="form-check-input"
                       type="checkbox"
+                      
                       id="Blazers1"
                     />
                     <label className="form-check-label" for="Blazers1">
@@ -103,6 +107,7 @@ const MobileFilterSidebar = () => {
                     <input
                       className="form-check-input"
                       type="checkbox"
+                      
                       id="Overshirts1"
                     />
                     <label className="form-check-label" for="Overshirts1">
@@ -116,6 +121,7 @@ const MobileFilterSidebar = () => {
                     <input
                       className="form-check-input"
                       type="checkbox"
+                      
                       id="Coats1"
                     />
                     <label className="form-check-label" for="Coats1">
@@ -162,7 +168,8 @@ const MobileFilterSidebar = () => {
                 <div className="single-colors">
                   <div className="colors-left">
                     <input
-                      className="form-check-input green"
+                      className="form
+                      -check-input green"
                       type="checkbox"
                       id="Jungle1"
                     />

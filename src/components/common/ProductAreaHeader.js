@@ -116,6 +116,9 @@ const ProductAreaHeader = () => {
                             src="http://zairito-html.zainiktheme.com/demo/assets/images/united-states.png"
                             alt="united-states"
                           />
+                          <a className="lang-text ml-4" href="#">
+                            Hin
+                          </a>
                           <ChevronDownIcon
                             className="-mr-1 ml-2 h-5 w-5"
                             aria-hidden="true"
@@ -182,7 +185,7 @@ const ProductAreaHeader = () => {
                     </Menu>
                   </div>
                 </div>
-                <a className="account-btn" href="/singIn">
+                <a className="account-btn" href="/signIn">
                   <BiUserCircle className="user-icon" /> My Account
                 </a>
               </div>

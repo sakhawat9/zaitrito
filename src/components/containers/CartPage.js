@@ -1,4 +1,6 @@
 import React from "react";
+import { AiFillStar, AiOutlineMinus } from "react-icons/ai";
+import { IoMdAdd } from "react-icons/io";
 
 const CartPage = () => {
   return (
@@ -42,21 +44,21 @@ const CartPage = () => {
                               Premier Cropped Jean
                             </a>
                           </h3>
-                          <ul className="product-review">
+                          <ul className="product-review flex">
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                           </ul>
                           <div className="variable-single-item color-switch">
@@ -100,7 +102,7 @@ const CartPage = () => {
                     </td>
                     <td>
                       <div className="cart-quantity input-group">
-                        <div className="increase-btn dec qtybutton btn">-</div>
+                        <div><AiOutlineMinus /></div>
                         <input
                           className="qty-input cart-plus-minus-box"
                           type="text"
@@ -108,7 +110,7 @@ const CartPage = () => {
                           value="1"
                           readonly=""
                         />
-                        <div className="increase-btn inc qtybutton btn">+</div>
+                        <div><IoMdAdd /></div>
                       </div>
                     </td>
                     <td>
@@ -147,21 +149,21 @@ const CartPage = () => {
                               Tailored Fit Mesh-Panel Polo
                             </a>
                           </h3>
-                          <ul className="product-review">
+                          <ul className="product-review flex">
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                           </ul>
                           <div className="variable-single-item color-switch">
@@ -205,7 +207,7 @@ const CartPage = () => {
                     </td>
                     <td>
                       <div className="cart-quantity input-group">
-                        <div className="increase-btn dec qtybutton btn">-</div>
+                        <div><AiOutlineMinus /></div>
                         <input
                           className="qty-input cart-plus-minus-box"
                           type="text"
@@ -213,7 +215,7 @@ const CartPage = () => {
                           value="1"
                           readonly=""
                         />
-                        <div className="increase-btn inc qtybutton btn">+</div>
+                        <div><IoMdAdd /></div>
                       </div>
                     </td>
                     <td>
@@ -252,21 +254,21 @@ const CartPage = () => {
                               Rosmo Namino Milancelos
                             </a>
                           </h3>
-                          <ul className="product-review">
+                          <ul className="product-review flex">
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                           </ul>
                           <div className="variable-single-item color-switch">
@@ -310,7 +312,7 @@ const CartPage = () => {
                     </td>
                     <td>
                       <div className="cart-quantity input-group">
-                        <div className="increase-btn dec qtybutton btn">-</div>
+                        <div><AiOutlineMinus /></div>
                         <input
                           className="qty-input cart-plus-minus-box"
                           type="text"
@@ -318,7 +320,7 @@ const CartPage = () => {
                           value="1"
                           readonly=""
                         />
-                        <div className="increase-btn inc qtybutton btn">+</div>
+                        <div><IoMdAdd /></div>
                       </div>
                     </td>
                     <td>
@@ -357,21 +359,21 @@ const CartPage = () => {
                               Premier Cropped Jean
                             </a>
                           </h3>
-                          <ul className="product-review">
+                          <ul className="product-review flex">
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item active">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                             <li className="review-item">
-                              <i className="flaticon-star"></i>
+                              <AiFillStar />
                             </li>
                           </ul>
                           <div className="variable-single-item color-switch">
@@ -415,7 +417,7 @@ const CartPage = () => {
                     </td>
                     <td>
                       <div className="cart-quantity input-group">
-                        <div className="increase-btn dec qtybutton btn">-</div>
+                        <div><AiOutlineMinus /></div>
                         <input
                           className="qty-input cart-plus-minus-box"
                           type="text"
@@ -423,7 +425,7 @@ const CartPage = () => {
                           value="1"
                           readonly=""
                         />
-                        <div className="increase-btn inc qtybutton btn">+</div>
+                        <div><IoMdAdd /></div>
                       </div>
                     </td>
                     <td>

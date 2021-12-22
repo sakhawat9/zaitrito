@@ -8,7 +8,7 @@ const MobileFilterMenu = () => {
       tabIndex="-1"
       id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel"
-      style={{visibility: "visible"}}
+      style={{ visibility: "visible" }}
       aria-modal="true"
       role="dialog"
     >

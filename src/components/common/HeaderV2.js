@@ -184,6 +184,9 @@ const HeaderV2 = () => {
               </div>
             </form>
           </div>
+
+          
+
           <div className="brand-logo-area">
             <a href="/" className="brand-logo">
               <img
