@@ -4,6 +4,7 @@ import AthleticWear from "./components/containers/AthleticWear";
 import Home from "./pages/home";
 import ProductDetails from "./pages/productDetails";
 import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import WeedingDress from "./pages/WeedingDress";
 
 const AppRouter = () => {
@@ -27,6 +28,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/signIn">
           <SignIn />
+        </Route>
+        <Route path="/signUp">
+          <SignUp />
         </Route>
       </Switch>
     </Router>

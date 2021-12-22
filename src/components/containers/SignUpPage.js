@@ -4,7 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { FiUser } from "react-icons/fi";
 
-const SignInPage = () => {
+const SignUpPage = () => {
   const {
     handleSubmit,
     register,
@@ -20,8 +20,23 @@ const SignInPage = () => {
             <FiUser />
           </span>
         </div>
-        <h1 className="text-center font-medium text text-5xl">Sign In</h1>
+        <h1 className="text-center font-medium text text-5xl">Sign Up</h1>
         <form className="login__form" onSubmit={handleSubmit(submitHandler)}>
+          <input
+            type="text"
+            name="name"
+            {...register("name", {
+              required: {
+                value: true,
+                message: "You most enter name",
+              },
+            })}
+            className={`${errors.name ? "ring-2 ring-red-500" : null}`}
+            placeholder="Full name"
+          />
+          <span className="py-2 text-sm text-red-400">
+            {errors?.name?.message}
+          </span>
           <input
             type="email"
             name="Email"
@@ -52,6 +67,21 @@ const SignInPage = () => {
             {errors?.email?.message}
           </span>
           <input
+            type="text"
+            name="username"
+            {...register("username", {
+              required: {
+                value: true,
+                message: "You most enter username",
+              },
+            })}
+            className={`${errors.username ? "ring-2 ring-red-500" : null}`}
+            placeholder="Username"
+          />
+          <span className="py-2 text-sm text-red-400">
+            {errors?.username?.message}
+          </span>
+          <input
             type="password"
             name="password"
             {...register("password", {
@@ -67,7 +97,7 @@ const SignInPage = () => {
             style={{ fontSize: "2rem" }}
             className={`
              ${errors.password ? "ring-2 ring-red-500" : null}`}
-            placeholder="password"
+            placeholder="Password"
           />
           <span className="py-2 text-sm text-red-400">
             {errors?.password?.message}
@@ -77,17 +107,17 @@ const SignInPage = () => {
               type="submit"
               className="cursor-pointer text-white bg-red-600 hover:bg-red-700"
               style={{ transition: "all 0.3s linear" }}
-              value="LogIn"
+              value="SignUp"
             />
           </span>
         </form>
         <p className="text-center block text-2xl">
           Don't have an account?
           <a
-            href="/signUp"
+            href="/signIn"
             className="border-b border-b-red-600 font-medium hover:text-red-600"
           >
-            Sign up
+            Sign in
           </a>
         </p>
       </div>
@@ -95,4 +125,4 @@ const SignInPage = () => {
   );
 };
 
-export default SignInPage;
+export default SignUpPage;

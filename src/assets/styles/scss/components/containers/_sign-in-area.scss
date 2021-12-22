@@ -4,7 +4,14 @@
     @apply container mx-auto p-16;
     border-radius: 10px;
     box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    &__icon {
+      @apply w-32 h-32 bg-white rounded-full text-5xl;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
+    }
   }
+
   &__form {
     &__title {
       @apply block text-lg tracking-wide py-1 text-gray-900;
@@ -13,13 +20,6 @@
       @apply block w-full px-4 py-5 my-6 placeholder-gray-500 border-gray-300 rounded-md shadow  focus:outline-none focus:ring-1 mb-3;
     }
   }
-}
-
-.icon {
-  @apply w-32 h-32 bg-white rounded-full text-5xl;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
 }
 
 .icon span {
