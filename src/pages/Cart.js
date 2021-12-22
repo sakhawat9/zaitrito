@@ -1,24 +1,22 @@
 import React from "react";
+import BreadcrumbArea from "../components/common/BreadcrumbArea";
 import MobileHeader from "../components/common/MobileHeader";
 import ProductAreaHeader from "../components/common/ProductAreaHeader";
-import Details from "../components/containers/Details";
-import FeaturedProducts from "../components/containers/FeaturedProducts";
+import CartPage from "../components/containers/CartPage";
 import Footer from "../components/containers/Footer";
 import MapArea from "../components/containers/MapArea";
-import SingleDetailsSubHeader from "../components/containers/SingleDetailsSubHeader";
 
-const ProductDetails = () => {
+const Cart = () => {
   return (
     <div>
       <ProductAreaHeader />
       <MobileHeader />
-      <SingleDetailsSubHeader />
-      <Details />
-      <FeaturedProducts />
+      <BreadcrumbArea title="Shopping Cart" />
+      <CartPage />
       <MapArea />
       <Footer />
     </div>
   );
 };
 
-export default ProductDetails;
+export default Cart;

@@ -48,7 +48,7 @@ const SignInPage = () => {
          ${errors.email ? "ring-2 ring-red-500" : null}`}
             placeholder="Email"
           />
-          <span className="py-2 text-sm text-red-400">
+          <span className="py-2 text-2xl text-red-400">
             {errors?.email?.message}
           </span>
           <input
@@ -69,7 +69,7 @@ const SignInPage = () => {
              ${errors.password ? "ring-2 ring-red-500" : null}`}
             placeholder="password"
           />
-          <span className="py-2 text-sm text-red-400">
+          <span className="py-2 text-2xl text-red-400">
             {errors?.password?.message}
           </span>
           <span className="w-full">

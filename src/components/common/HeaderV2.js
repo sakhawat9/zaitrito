@@ -50,7 +50,7 @@ const HeaderV2 = () => {
                 <Menu as="div" className="relative inline-block text-left">
                   <div>
                     <Menu.Button className="flex items-center w-full text-white">
-                      Uds
+                      $ Usd
                       <ChevronDownIcon
                         className="-mr-1 ml-2 h-5 w-5"
                         aria-hidden="true"
@@ -80,7 +80,7 @@ const HeaderV2 = () => {
                                 "block px-4 py-2 text-2xl"
                               )}
                             >
-                              Uds
+                              $ Usd
                             </a>
                           )}
                         </Menu.Item>
@@ -313,7 +313,7 @@ const HeaderV2 = () => {
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/cart">
                             Cart Page
                           </a>
                         </li>

@@ -1,10 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/solid";
+import { Fragment } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { BsBag, BsBarChart, BsSearch } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
 
 const ProductAreaHeader = () => {
   return (
@@ -46,65 +51,135 @@ const ProductAreaHeader = () => {
                 </div>
                 <div className="switcher-lang-currency">
                   <div className="currency-switcher">
-                    <span className="flag">
-                      <i className="fas fa-dollar-sign"></i>
-                    </span>
-                    <a href="#" className="currency">
-                      Usd <i className="fas fa-angle-down"></i>
-                    </a>
-                    <ul className="currency-list">
-                      <li className="single-currency">
-                        <span className="flag">
-                          <i className="fas fa-dollar-sign"></i>
-                        </span>
-                        <a className="currency-text" href="#">
-                          Usd
-                        </a>
-                      </li>
-                      <li className="single-currency">
-                        <span className="flag">
-                          <i className="fas fa-rupee-sign"></i>
-                        </span>
-                        <a className="currency-text" href="#">
-                          Rupi
-                        </a>
-                      </li>
-                    </ul>
+                    <Menu as="div" className="relative inline-block text-left">
+                      <div>
+                        <Menu.Button className="flex items-center w-full">
+                          $ Usd
+                          <ChevronDownIcon
+                            className="-mr-1 ml-2 h-5 w-5"
+                            aria-hidden="true"
+                          />
+                        </Menu.Button>
+                      </div>
+
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <Menu.Items className="origin-top-right absolute border-t-2 border-t-green-600 mt-10 right-0  w-32 shadow-lg bg-white ring-1 ring-black ring-opacity-5  focus:outline-none">
+                          <div className="py-1">
+                            <Menu.Item>
+                              {({ active }) => (
+                                <a
+                                  href="#"
+                                  className={classNames(
+                                    active
+                                      ? "bg-gray-100 text-gray-900"
+                                      : "text-gray-700",
+                                    "block px-4 py-2 text-2xl"
+                                  )}
+                                >
+                                  $ Usd
+                                </a>
+                              )}
+                            </Menu.Item>
+                            <Menu.Item>
+                              {({ active }) => (
+                                <a
+                                  href="#"
+                                  className={classNames(
+                                    active
+                                      ? "bg-gray-100 text-gray-900"
+                                      : "text-gray-700",
+                                    "block px-4 py-2 text-2xl"
+                                  )}
+                                >
+                                  Rupi
+                                </a>
+                              )}
+                            </Menu.Item>
+                          </div>
+                        </Menu.Items>
+                      </Transition>
+                    </Menu>
                   </div>
                   <div className="lang-switcher">
-                    <span className="flag">
-                      <img
-                        src="http://zairito-html.zainiktheme.com/demo/assets/images/united-states.png"
-                        alt="united-states"
-                      />
-                    </span>
-                    <a href="#" className="lang">
-                      Eng <i className="fas fa-angle-down"></i>
-                    </a>
-                    <ul className="lang-list">
-                      <li className="single-lang">
-                        <span className="flag">
+                    <Menu as="div" className="relative inline-block text-left">
+                      <div>
+                        <Menu.Button className="flex items-center w-full">
                           <img
                             src="http://zairito-html.zainiktheme.com/demo/assets/images/united-states.png"
                             alt="united-states"
                           />
-                        </span>
-                        <a className="lang-text" href="#">
-                          Eng
-                        </a>
-                      </li>
-                      <li className="single-lang">
-                        <span className="flag">
-                          <img
-                            src="http://zairito-html.zainiktheme.com/demo/assets/images/united-states.png"
-                            alt="india"
+                          <ChevronDownIcon
+                            className="-mr-1 ml-2 h-5 w-5"
+                            aria-hidden="true"
                           />
-                        </span>
-                        <a className="lang-text" href="#">
-                          Hin
-                        </a>
-                      </li>
-                    </ul>
+                        </Menu.Button>
+                      </div>
+
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-100"
+                        enterFrom="transform opacity-0 scale-95"
+                        enterTo="transform opacity-100 scale-100"
+                        leave="transition ease-in duration-75"
+                        leaveFrom="transform opacity-100 scale-100"
+                        leaveTo="transform opacity-0 scale-95"
+                      >
+                        <Menu.Items className="origin-top-right absolute border-t-2 border-t-green-600 mt-10 right-0  w-32 shadow-lg bg-white ring-1 ring-black ring-opacity-5  focus:outline-none">
+                          <div className="py-1">
+                            <Menu.Item>
+                              {({ active }) => (
+                                <a
+                                  href="#"
+                                  className={classNames(
+                                    active
+                                      ? "bg-gray-100 text-gray-900"
+                                      : "text-gray-700",
+                                    "block px-4 flex py-2 text-2xl"
+                                  )}
+                                >
+                                  <img
+                                    src="http://zairito-html.zainiktheme.com/demo/assets/images/united-states.png"
+                                    alt="united-states"
+                                  />
+                                  <a className="lang-text ml-4" href="#">
+                                    Hin
+                                  </a>
+                                </a>
+                              )}
+                            </Menu.Item>
+                            <Menu.Item>
+                              {({ active }) => (
+                                <a
+                                  href="#"
+                                  className={classNames(
+                                    active
+                                      ? "bg-gray-100 text-gray-900"
+                                      : "text-gray-700",
+                                    "block px-4 py-2 flex text-2xl"
+                                  )}
+                                >
+                                  <img
+                                    src="http://zairito-html.zainiktheme.com/demo/assets/images/india.png"
+                                    alt="india"
+                                  />
+                                  <a className="lang-text ml-4" href="#">
+                                    Hin
+                                  </a>
+                                </a>
+                              )}
+                            </Menu.Item>
+                          </div>
+                        </Menu.Items>
+                      </Transition>
+                    </Menu>
                   </div>
                 </div>
                 <a className="account-btn" href="/singIn">
@@ -119,7 +194,7 @@ const ProductAreaHeader = () => {
         <div className="container mx-auto px-8">
           <div className="header-middle-wrap">
             <div className="brand-area">
-              <a className="#" href="/l">
+              <a className="#" href="/">
                 <img
                   className="brand-image"
                   src="http://zairito-html.zainiktheme.com/demo/assets/images/zairito.png"
@@ -294,7 +369,7 @@ const ProductAreaHeader = () => {
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/cart">
                             Cart Page
                           </a>
                         </li>
