@@ -20,13 +20,13 @@ const PopularCategories = () => {
             <div className="w-full">
               <ul className="category-list">
                 <li>
-                  <a className="catatory-link " href="/weedingDress">
+                  <a className="catatory-link " href="/ProductAreaV01">
                     Weeding Dress
                     <IoIosArrowForward />
                   </a>
                 </li>
                 <li>
-                  <a href="/athleticWear">
+                  <a href="/productsAreaV02">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -51,7 +51,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/athleticWear">
+                  <a href="/productsAreaV02">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -61,12 +61,12 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/athleticWear">
+                  <a href="/productsAreaV02">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
                 <li>
-                  <a href="/athleticWear">
+                  <a href="/productsAreaV02">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -76,7 +76,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/athleticWear">
+                  <a href="/productsAreaV02">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -86,7 +86,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="/athleticWear">
+                  <a href="/productsAreaV02">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>

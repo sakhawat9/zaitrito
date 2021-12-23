@@ -6,7 +6,7 @@ import Footer from "../components/containers/Footer";
 import MapArea from "../components/containers/MapArea";
 import ProductArea02 from "../components/containers/Product-area-02";
 
-const AthleticWear = () => {
+const productsAreaV02 = () => {
   return (
     <div>
       <ProductAreaHeader />
@@ -19,4 +19,4 @@ const AthleticWear = () => {
   );
 };
 
-export default AthleticWear;
+export default productsAreaV02;

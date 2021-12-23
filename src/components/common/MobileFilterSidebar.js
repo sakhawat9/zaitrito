@@ -54,7 +54,7 @@ const MobileFilterSidebar = () => {
                       
                       id="Tshirts1"
                     />
-                    <label className="form-check-label" for="Tshirts1">
+                    <label className="form-check-label" htmlFor="Tshirts1">
                       T-shirts &amp; shirts
                     </label>
                   </div>
@@ -68,7 +68,7 @@ const MobileFilterSidebar = () => {
                       
                       id="Jackets1"
                     />
-                    <label className="form-check-label" for="Jackets1">
+                    <label className="form-check-label" htmlFor="Jackets1">
                       Jackets
                     </label>
                   </div>
@@ -82,7 +82,7 @@ const MobileFilterSidebar = () => {
                       
                       id="Sports1"
                     />
-                    <label className="form-check-label" for="Sports1">
+                    <label className="form-check-label" htmlFor="Sports1">
                       Sports &amp; Active Wear
                     </label>
                   </div>
@@ -96,7 +96,7 @@ const MobileFilterSidebar = () => {
                       
                       id="Blazers1"
                     />
-                    <label className="form-check-label" for="Blazers1">
+                    <label className="form-check-label" htmlFor="Blazers1">
                       Blazers &amp; Coats
                     </label>
                   </div>
@@ -110,7 +110,7 @@ const MobileFilterSidebar = () => {
                       
                       id="Overshirts1"
                     />
-                    <label className="form-check-label" for="Overshirts1">
+                    <label className="form-check-label" htmlFor="Overshirts1">
                       Overshirts
                     </label>
                   </div>
@@ -124,7 +124,7 @@ const MobileFilterSidebar = () => {
                       
                       id="Coats1"
                     />
-                    <label className="form-check-label" for="Coats1">
+                    <label className="form-check-label" htmlFor="Coats1">
                       Coats &amp; Jackets
                     </label>
                   </div>
@@ -173,7 +173,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="Jungle1"
                     />
-                    <label className="form-check-label" for="Jungle1">
+                    <label className="form-check-label" htmlFor="Jungle1">
                       Jungle Green
                     </label>
                   </div>
@@ -186,7 +186,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="Cerise1"
                     />
-                    <label className="form-check-label" for="Cerise1">
+                    <label className="form-check-label" htmlFor="Cerise1">
                       Cerise
                     </label>
                   </div>
@@ -199,7 +199,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="MagicMint1"
                     />
-                    <label className="form-check-label" for="MagicMint1">
+                    <label className="form-check-label" htmlFor="MagicMint1">
                       Magic Mint
                     </label>
                   </div>
@@ -212,7 +212,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="PinkSherbet1"
                     />
-                    <label className="form-check-label" for="PinkSherbet1">
+                    <label className="form-check-label" htmlFor="PinkSherbet1">
                       Pink Sherbet
                     </label>
                   </div>
@@ -225,7 +225,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="VividTangerine1"
                     />
-                    <label className="form-check-label" for="VividTangerine1">
+                    <label className="form-check-label" htmlFor="VividTangerine1">
                       Vivid Tangerine
                     </label>
                   </div>
@@ -238,7 +238,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="HotMagenta1"
                     />
-                    <label className="form-check-label" for="HotMagenta1">
+                    <label className="form-check-label" htmlFor="HotMagenta1">
                       Hot Magenta
                     </label>
                   </div>
@@ -251,7 +251,7 @@ const MobileFilterSidebar = () => {
               <div className="size-list">
                 <div className="single-size">
                   <input className="form-check-input" type="checkbox" id="SMALL1" />
-                  <label className="form-check-label" for="SMALL1">
+                  <label className="form-check-label" htmlFor="SMALL1">
                     SMALL
                   </label>
                 </div>
@@ -261,31 +261,31 @@ const MobileFilterSidebar = () => {
                     type="checkbox"
                     id="MEDIUM1"
                   />
-                  <label className="form-check-label" for="MEDIUM1">
+                  <label className="form-check-label" htmlFor="MEDIUM1">
                     MEDIUM
                   </label>
                 </div>
                 <div className="single-size">
                   <input className="form-check-input" type="checkbox" id="LARGE1" />
-                  <label className="form-check-label" for="LARGE1">
+                  <label className="form-check-label" htmlFor="LARGE1">
                     LARGE
                   </label>
                 </div>
                 <div className="single-size">
                   <input className="form-check-input" type="checkbox" id="XL1" />
-                  <label className="form-check-label" for="XL1">
+                  <label className="form-check-label" htmlFor="XL1">
                     XL
                   </label>
                 </div>
                 <div className="single-size">
                   <input className="form-check-input" type="checkbox" id="XXL1" />
-                  <label className="form-check-label" for="XXL1">
+                  <label className="form-check-label" htmlFor="XXL1">
                     XXL
                   </label>
                 </div>
                 <div className="single-size">
                   <input className="form-check-input" type="checkbox" id="XXXL1" />
-                  <label className="form-check-label" for="XXXL1">
+                  <label className="form-check-label" htmlFor="XXXL1">
                     XXXL
                   </label>
                 </div>
@@ -301,7 +301,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="Renuar1"
                     />
-                    <label className="form-check-label" for="Renuar1">
+                    <label className="form-check-label" htmlFor="Renuar1">
                       Renuar
                     </label>
                   </div>
@@ -314,7 +314,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="Zara1"
                     />
-                    <label className="form-check-label" for="Zara1">
+                    <label className="form-check-label" htmlFor="Zara1">
                       Zara
                     </label>
                   </div>
@@ -327,7 +327,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="Bershka1"
                     />
-                    <label className="form-check-label" for="Bershka1">
+                    <label className="form-check-label" htmlFor="Bershka1">
                       Bershka
                     </label>
                   </div>
@@ -336,7 +336,7 @@ const MobileFilterSidebar = () => {
                 <div className="single-brand">
                   <div className="brand-left">
                     <input className="form-check-input" type="checkbox" id="HM1" />
-                    <label className="form-check-label" for="HM1">
+                    <label className="form-check-label" htmlFor="HM1">
                       H&amp;M
                     </label>
                   </div>
@@ -349,7 +349,7 @@ const MobileFilterSidebar = () => {
                       type="checkbox"
                       id="Stradivarius1"
                     />
-                    <label className="form-check-label" for="Stradivarius1">
+                    <label className="form-check-label" htmlFor="Stradivarius1">
                       Stradivarius
                     </label>
                   </div>

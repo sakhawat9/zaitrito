@@ -185,8 +185,6 @@ const HeaderV2 = () => {
             </form>
           </div>
 
-          
-
           <div className="brand-logo-area">
             <a href="/" className="brand-logo">
               <img
@@ -321,7 +319,7 @@ const HeaderV2 = () => {
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/checkout">
                             Checkout Page
                           </a>
                         </li>

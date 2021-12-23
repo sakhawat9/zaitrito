@@ -6,7 +6,7 @@ import Footer from "../components/containers/Footer";
 import MapArea from "../components/containers/MapArea";
 import ProductArea from "../components/containers/Product-area";
 
-const WeedingDress = () => {
+const ProductAreaV01 = () => {
   return (
     <div>
       <ProductAreaHeader />
@@ -19,4 +19,4 @@ const WeedingDress = () => {
   );
 };
 
-export default WeedingDress;
+export default ProductAreaV01;

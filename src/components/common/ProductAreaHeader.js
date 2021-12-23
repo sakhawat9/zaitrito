@@ -377,7 +377,7 @@ const ProductAreaHeader = () => {
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/checkout">
                             Checkout Page
                           </a>
                         </li>

@@ -66,7 +66,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Tshirts"
                       />
-                      <label className="form-check-label" for="Tshirts">
+                      <label className="form-check-label" htmlFor="Tshirts">
                         T-shirts &amp; shirts
                       </label>
                     </div>
@@ -79,7 +79,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Jackets"
                       />
-                      <label className="form-check-label" for="Jackets">
+                      <label className="form-check-label" htmlFor="Jackets">
                         Jackets
                       </label>
                     </div>
@@ -92,7 +92,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Sports"
                       />
-                      <label className="form-check-label" for="Sports">
+                      <label className="form-check-label" htmlFor="Sports">
                         Sports &amp; Active Wear
                       </label>
                     </div>
@@ -105,7 +105,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Blazers"
                       />
-                      <label className="form-check-label" for="Blazers">
+                      <label className="form-check-label" htmlFor="Blazers">
                         Blazers &amp; Coats
                       </label>
                     </div>
@@ -118,7 +118,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Overshirts"
                       />
-                      <label className="form-check-label" for="Overshirts">
+                      <label className="form-check-label" htmlFor="Overshirts">
                         Overshirts
                       </label>
                     </div>
@@ -131,7 +131,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Coats"
                       />
-                      <label className="form-check-label" for="Coats">
+                      <label className="form-check-label" htmlFor="Coats">
                         Coats &amp; Jackets
                       </label>
                     </div>
@@ -181,7 +181,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Jungle"
                       />
-                      <label className="form-check-label" for="Jungle">
+                      <label className="form-check-label" htmlFor="Jungle">
                         Jungle Green
                       </label>
                     </div>
@@ -194,7 +194,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Cerise"
                       />
-                      <label className="form-check-label" for="Cerise">
+                      <label className="form-check-label" htmlFor="Cerise">
                         Cerise
                       </label>
                     </div>
@@ -207,7 +207,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="MagicMint"
                       />
-                      <label className="form-check-label" for="MagicMint">
+                      <label className="form-check-label" htmlFor="MagicMint">
                         Magic Mint
                       </label>
                     </div>
@@ -220,7 +220,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="PinkSherbet"
                       />
-                      <label className="form-check-label" for="PinkSherbet">
+                      <label className="form-check-label" htmlFor="PinkSherbet">
                         Pink Sherbet
                       </label>
                     </div>
@@ -233,7 +233,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="VividTangerine"
                       />
-                      <label className="form-check-label" for="VividTangerine">
+                      <label className="form-check-label" htmlFor="VividTangerine">
                         Vivid Tangerine
                       </label>
                     </div>
@@ -246,7 +246,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="HotMagenta"
                       />
-                      <label className="form-check-label" for="HotMagenta">
+                      <label className="form-check-label" htmlFor="HotMagenta">
                         Hot Magenta
                       </label>
                     </div>
@@ -264,7 +264,7 @@ const ProductArea = () => {
                       type="checkbox"
                       id="SMALL"
                     />
-                    <label className="form-check-label" for="SMALL">
+                    <label className="form-check-label" htmlFor="SMALL">
                       SMALL
                     </label>
                   </div>
@@ -274,7 +274,7 @@ const ProductArea = () => {
                       type="checkbox"
                       id="MEDIUM"
                     />
-                    <label className="form-check-label" for="MEDIUM">
+                    <label className="form-check-label" htmlFor="MEDIUM">
                       MEDIUM
                     </label>
                   </div>
@@ -284,7 +284,7 @@ const ProductArea = () => {
                       type="checkbox"
                       id="LARGE"
                     />
-                    <label className="form-check-label" for="LARGE">
+                    <label className="form-check-label" htmlFor="LARGE">
                       LARGE
                     </label>
                   </div>
@@ -294,7 +294,7 @@ const ProductArea = () => {
                       type="checkbox"
                       id="XL"
                     />
-                    <label className="form-check-label" for="XL">
+                    <label className="form-check-label" htmlFor="XL">
                       XL
                     </label>
                   </div>
@@ -304,7 +304,7 @@ const ProductArea = () => {
                       type="checkbox"
                       id="XXL"
                     />
-                    <label className="form-check-label" for="XXL">
+                    <label className="form-check-label" htmlFor="XXL">
                       XXL
                     </label>
                   </div>
@@ -314,7 +314,7 @@ const ProductArea = () => {
                       type="checkbox"
                       id="XXXL"
                     />
-                    <label className="form-check-label" for="XXXL">
+                    <label className="form-check-label" htmlFor="XXXL">
                       XXXL
                     </label>
                   </div>
@@ -331,7 +331,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Renuar"
                       />
-                      <label className="form-check-label" for="Renuar">
+                      <label className="form-check-label" htmlFor="Renuar">
                         Renuar
                       </label>
                     </div>
@@ -344,7 +344,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Zara"
                       />
-                      <label className="form-check-label" for="Zara">
+                      <label className="form-check-label" htmlFor="Zara">
                         Zara
                       </label>
                     </div>
@@ -357,7 +357,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Bershka"
                       />
-                      <label className="form-check-label" for="Bershka">
+                      <label className="form-check-label" htmlFor="Bershka">
                         Bershka
                       </label>
                     </div>
@@ -370,7 +370,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="HM"
                       />
-                      <label className="form-check-label" for="HM">
+                      <label className="form-check-label" htmlFor="HM">
                         H&amp;M
                       </label>
                     </div>
@@ -383,7 +383,7 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Stradivarius"
                       />
-                      <label className="form-check-label" for="Stradivarius">
+                      <label className="form-check-label" htmlFor="Stradivarius">
                         Stradivarius
                       </label>
                     </div>
