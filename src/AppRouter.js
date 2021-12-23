@@ -4,6 +4,7 @@ import AthleticWear from "./pages/AthleticWear";
 import Cart from "./pages/Cart";
 import Home from "./pages/home";
 import ProductDetails from "./pages/productDetails";
+import ProductsAreaV03 from "./pages/productsArea-v03";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import WeedingDress from "./pages/WeedingDress";
@@ -35,6 +36,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/cart">
           <Cart />
+        </Route>
+        <Route path="/productsAreaV03">
+          <ProductsAreaV03 />
         </Route>
       </Switch>
     </Router>
