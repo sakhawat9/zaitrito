@@ -4,13 +4,13 @@ const ServiceArea = () => {
   return (
     <div className="service-area">
       <div>
-        <div className="grid grid-cols-12 items-center g-0">
+        <div className="grid gap-4 grid-cols-12 items-center g-0">
           <div className="lg:col-span-6 col-span-12">
             <div className="service-left"></div>
           </div>
           <div className="lg:col-span-6 col-span-12">
             <div className="service-lsit">
-              <div className="grid grid-cols-12">
+              <div className="grid gap-4 grid-cols-12">
                 <div className="md:col-span-6 col-span-6">
                   <div className="single-service">
                     <div className="service-icon">

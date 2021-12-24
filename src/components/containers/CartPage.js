@@ -6,7 +6,7 @@ const CartPage = () => {
   return (
     <div className="wish-list-area cart-page-area section-padding">
       <div className="container mx-auto px-8">
-        <div className="grid grid-cols-12">
+        <div className="grid gap-4 grid-cols-12">
           <div className="col-span-12 wish-list-table">
             <div className="table-responsive">
               <table className="table table-bordered">
@@ -446,7 +446,7 @@ const CartPage = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12 cart-page-bottom-box-wrap">
+        <div className="grid gap-4 grid-cols-12 cart-page-bottom-box-wrap">
           <div className="col-12 col-span-12 md:col-span-12 lg:col-span-4">
             <div className="cart-page-bottom-box">
               <h2 className="bottom-box-title">Discount Codes</h2>

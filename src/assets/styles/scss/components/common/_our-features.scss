@@ -1,0 +1,32 @@
+.our-features-area .single-features {
+  @apply mb-14;
+}
+
+.our-features-area .single-features .features-icon {
+  @apply flex justify-center items-center w-44 h-44 rounded-full mb-14;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  border: 1px solid #c1c1c1;
+}
+
+.our-features-area .single-features .features-title {
+  @apply mb-6 font-medium capitalize;
+  font-size: 2.4rem;
+  color: var(--black);
+  font-family: "Jost", sans-serif !important;
+}
+
+.our-features-area .single-features .features-content {
+  @apply text-3xl;
+}
+
+@media (max-width: 575px) {
+  .our-features-area .single-features {
+    @apply mb-12;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .our-features-area .single-features .features-icon {
+    @apply mb-8;
+  }
+}

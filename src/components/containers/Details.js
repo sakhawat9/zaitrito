@@ -78,7 +78,7 @@ const Details = () => {
     <div className="product-single-area-v2 section-padding-t">
       <div className="container mx-auto px-8">
         <div className="product-single-details">
-          <div className="grid grid-cols-12">
+          <div className="grid gap-4 grid-cols-12">
             <div className="lg:col-span-6 md:col-span-6 col-span-12">
               <div className="product-single-left">
                 <div className="product-slier-big-image">

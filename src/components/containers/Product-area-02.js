@@ -17,7 +17,7 @@ const ProductArea02 = () => {
     <div className="product-area section-padding">
       <div className="container mx-auto px-8">
         <div className="mb-10">
-          <div className="grid grid-cols-12 items-center">
+          <div className="grid gap-4 grid-cols-12 items-center">
             <div className="md:col-span-4 col-span-12">
               <div className="product-section-top-left">
                 <button
@@ -74,7 +74,7 @@ const ProductArea02 = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-12">
+        <div className="grid gap-4 grid-cols-12">
           <Products02 />
         </div>
 

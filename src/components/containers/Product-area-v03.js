@@ -18,10 +18,10 @@ const ProductAreaV03 = () => {
   return (
     <div className="product-area section-padding">
       <div className="container mx-auto">
-        <div className="grid grid-cols-12">
+        <div className="grid gap-4 grid-cols-12">
           <div className="xl:col-span-9 lg:col-span-8 col-span-12">
             <div className="product-section-top">
-              <div className="grid grid-cols-12 items-center">
+              <div className="grid gap-4 grid-cols-12 items-center">
                 <div className="md:col-span-3 col-span-12">
                   <div className="product-section-top-left">
                     <button
@@ -72,7 +72,7 @@ const ProductAreaV03 = () => {
               </div>
             </div>
             <div>
-              <div className="grid grid-cols-12">
+              <div className="grid gap-4 grid-cols-12">
                 <Products />
               </div>
 

@@ -7,7 +7,7 @@ const PopularCategories = () => {
     <div className="section-padding">
       {/* <PopularCategoriesCircle left="-20vh" /> */}
       <div className="container flex items-center px-8 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12">
+        <div className="grid  gap-4 grid-cols-1 md:grid-cols-12">
           <div className="flex items-center col-span-5">
             <div className=" category-left">
               <h2>Most Popular/Trending Categories</h2>

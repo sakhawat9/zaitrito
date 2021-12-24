@@ -1,14 +1,10 @@
 .service-area {
-  overflow: hidden;
-  background-color: #f4f4f4;
+  @apply overflow-hidden bg-gray-100;
 }
 
 .service-area .service-left {
   background-image: url("http://zairito-html.zainiktheme.com/demo/assets/images/service-image.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  @apply bg-center bg-no-repeat bg-cover w-full;
   height: 560px;
 }
 
@@ -17,11 +13,7 @@
 }
 
 .service-area .service-lsit .single-service {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 3.5rem;
 }

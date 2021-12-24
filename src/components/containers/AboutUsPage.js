@@ -5,7 +5,7 @@ const AboutUsPage = () => {
   return (
     <div className="about-us-area section-padding">
       <div className="container mx-auto px-8">
-        <div className="grid grid-cols-12 lg:items-center">
+        <div className="grid gap-4 grid-cols-12 lg:items-center">
           <div className="lg:col-span-5 md:col-span-6 col-span-12">
             <div className="about-us-image">
               <img src="http://zairito-html.zainiktheme.com/demo/assets/images/aboutus-image.png" alt="about us image" />

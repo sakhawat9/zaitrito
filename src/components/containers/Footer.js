@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__widget">
         <div className="footer__widget__wrapper">
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid gap-4 grid-cols-12 gap-4">
             <div className="footer__widget__wrapper__area">
               <div className="footer__widget__wrapper__area__single-item about-widget">
                 <a

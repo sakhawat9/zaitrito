@@ -18,7 +18,7 @@ const ProductArea = () => {
   return (
     <div className="product-area section-padding">
       <div className="container mx-auto">
-        <div className="grid grid-cols-12">
+        <div className="grid gap-4 grid-cols-12">
           <div className="xl:col-span-3 md:col-span-6 lg:col-span-4">
             <div className="sidebar-widget-area mobile-sidebar">
               <div className="sidebar-widget-header block lg:hidden">
@@ -559,7 +559,7 @@ const ProductArea = () => {
               </div>
             </div>
             <div>
-              <div className="grid grid-cols-12">
+              <div className="grid gap-4 grid-cols-12">
                 <Products />
               </div>
 

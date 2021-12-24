@@ -16,7 +16,7 @@ const ProductAreaHeader = () => {
     <header className="header-area hidden lg:block">
       <div className="header-top">
         <div className="container mx-auto px-8">
-          <div className="grid grid-cols-12 align-items-center">
+          <div className="grid gap-4 grid-cols-12 align-items-center">
             <div className="lg:col-span-4">
               <div className="header-top-left">
                 <p className="contact-info">
