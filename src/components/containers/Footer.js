@@ -150,7 +150,7 @@ const Footer = () => {
                     </a>
                   </li>
                   <li className="meni-item">
-                    <a className="menu-link" href="#">
+                    <a className="menu-link" href="/contact">
                       Contact us
                     </a>
                   </li>
