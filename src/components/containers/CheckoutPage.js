@@ -94,7 +94,7 @@ const CheckoutPage = () => {
                               value="creditcard"
                               checked="checked"
                             />
-                            <label className="form-check-label" for="creditcard">
+                            <label className="form-check-label" htmlFor="creditcard">
                               Credit Card
                             </label>
                             <div className="input-icon">
@@ -109,7 +109,7 @@ const CheckoutPage = () => {
                           <div className="grid  gap-4 grid-cols-12">
                             <div className="lg:col-span-12">
                               <div className="form-group">
-                                <label for="card-humber">Card Number</label>
+                                <label htmlFor="card-humber">Card Number</label>
                                 <input
                                   type="text"
                                   className="form-control"
@@ -161,7 +161,7 @@ const CheckoutPage = () => {
                             </div>
                             <div className="lg:col-span-4">
                               <div className="form-group">
-                                <label for="ccv">ccv</label>
+                                <label htmlFor="ccv">ccv</label>
                                 <input
                                   type="text"
                                   className="form-control"
@@ -182,7 +182,7 @@ const CheckoutPage = () => {
                               id="paypal"
                               value="paypal"
                             />
-                            <label className="form-check-label" for="paypal">
+                            <label className="form-check-label" htmlFor="paypal">
                               Paypal
                             </label>
                             <div className="input-icon">
@@ -199,7 +199,7 @@ const CheckoutPage = () => {
                             className="form-check-input"
                             id="agree"
                           />
-                          <label className="form-check-label" for="agree">
+                          <label className="form-check-label" htmlFor="agree">
                             By clicking the button you agree to our{" "}
                             <a href="term-conditions.html">
                               Terms &amp; Conditions

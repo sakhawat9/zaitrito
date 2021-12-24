@@ -30,7 +30,7 @@ const HeaderV2 = () => {
                   <a className="menu-link" href="#"></a>
                 </li>
                 <li className="menu-item">
-                  <a className="menu-link" href="about-us.html">
+                  <a className="menu-link" href="/aboutUs">
                     About Us
                   </a>
                 </li>
@@ -402,7 +402,7 @@ const HeaderV2 = () => {
               </ul>
             </li>
             <li className="menu-item">
-              <a className="menu-link" href="#">
+              <a className="menu-link" href="/aboutUs">
                 about us
               </a>
             </li>

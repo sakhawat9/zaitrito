@@ -33,7 +33,7 @@ const ProductAreaHeader = () => {
                       <a className="menu-link" href="#"></a>
                     </li>
                     <li className="menu-item">
-                      <a className="menu-link" href="#">
+                      <a className="menu-link" href="/aboutUs">
                         About Us
                       </a>
                     </li>

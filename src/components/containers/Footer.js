@@ -86,7 +86,7 @@ const Footer = () => {
                 </h3>
                 <ul className="footer__widget__wrapper__area__single-item__menu">
                   <li className="meni-item">
-                    <a className="menu-link" href="#">
+                    <a className="menu-link" href="/aboutUs">
                       About us
                     </a>
                   </li>

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AboutUs from "./pages/aboutUs";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/checkout";
 import Home from "./pages/home";
@@ -43,6 +44,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/checkout">
           <Checkout />
+        </Route>
+        <Route path="/aboutUs">
+          <AboutUs />
         </Route>
       </Switch>
     </Router>
