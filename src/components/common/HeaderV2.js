@@ -7,6 +7,8 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { BsBag, BsBarChart, BsSearch } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Banner from "../../assets/images/mega-menu-banner.png";
+import Image from "../../assets/images/zairito-home-two.png";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -190,7 +192,7 @@ const HeaderV2 = () => {
             <a href="/" className="brand-logo">
               <img
                 className="brand-image"
-                src="http://zairito-html.zainiktheme.com/demo/assets/images/zairito-home-two.png"
+                src={Image}
                 alt="zairito-home-two"
               />
             </a>
@@ -345,7 +347,7 @@ const HeaderV2 = () => {
                       <a className="mega-menu-banner" href="#">
                         <img
                           className="menu-banner-image"
-                          src="http://zairito-html.zainiktheme.com/demo/assets/images/mega-menu-banner.png"
+                          src={Banner}
                           alt="mega-menu-banner"
                         />
                       </a>
