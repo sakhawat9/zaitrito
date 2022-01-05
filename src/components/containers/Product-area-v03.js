@@ -5,9 +5,10 @@ import { FaAngleDoubleLeft, FaAngleDoubleRight, FaPlay } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import ViewGrid from "../../assets/images/view-grid.svg";
+import ViewList from "../../assets/images/view-list.svg";
 import MobileFilterMenu from "../common/MobileFilterMenu";
 import Products from "./Products";
-
 
 const ProductAreaV03 = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -42,14 +43,14 @@ const ProductAreaV03 = () => {
                       <a href="#" className="view-btn list-view">
                         <img
                           className="view-icon"
-                          src="http://zairito-html.zainiktheme.com/demo/assets/images/view-list.svg"
+                          src={ViewList}
                           alt="view-list"
                         />
                       </a>
                       <a href="#" className="view-btn grid-view active">
                         <img
                           className="view-icon"
-                          src="http://zairito-html.zainiktheme.com/demo/assets/images/view-grid.svg"
+                          src={ViewGrid}
                           alt="view-grid"
                         />
                       </a>
@@ -321,7 +322,10 @@ const ProductAreaV03 = () => {
                         type="checkbox"
                         id="VividTangerine"
                       />
-                      <label className="form-check-label" htmlFor="VividTangerine">
+                      <label
+                        className="form-check-label"
+                        htmlFor="VividTangerine"
+                      >
                         Vivid Tangerine
                       </label>
                     </div>
@@ -471,7 +475,10 @@ const ProductAreaV03 = () => {
                         type="checkbox"
                         id="Stradivarius"
                       />
-                      <label className="form-check-label" htmlFor="Stradivarius">
+                      <label
+                        className="form-check-label"
+                        htmlFor="Stradivarius"
+                      >
                         Stradivarius
                       </label>
                     </div>

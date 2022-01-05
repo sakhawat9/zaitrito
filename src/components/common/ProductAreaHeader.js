@@ -7,6 +7,8 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { BsBag, BsBarChart, BsSearch } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import India from "../../assets/images/india.png";
+import UnitedState from "../../assets/images/united-states.png";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -112,10 +114,7 @@ const ProductAreaHeader = () => {
                     <Menu as="div" className="relative inline-block text-left">
                       <div>
                         <Menu.Button className="flex items-center w-full">
-                          <img
-                            src="http://zairito-html.zainiktheme.com/demo/assets/images/united-states.png"
-                            alt="united-states"
-                          />
+                          <img src={UnitedState} alt="united-states" />
                           <a className="lang-text ml-4" href="#">
                             Hin
                           </a>
@@ -148,10 +147,7 @@ const ProductAreaHeader = () => {
                                     "block px-4 flex py-2 text-2xl"
                                   )}
                                 >
-                                  <img
-                                    src="http://zairito-html.zainiktheme.com/demo/assets/images/united-states.png"
-                                    alt="united-states"
-                                  />
+                                  <img src={UnitedState} alt="united-states" />
                                   <a className="lang-text ml-4" href="#">
                                     Hin
                                   </a>
@@ -169,10 +165,7 @@ const ProductAreaHeader = () => {
                                     "block px-4 py-2 flex text-2xl"
                                   )}
                                 >
-                                  <img
-                                    src="http://zairito-html.zainiktheme.com/demo/assets/images/india.png"
-                                    alt="india"
-                                  />
+                                  <img src={India} alt="india" />
                                   <a className="lang-text ml-4" href="#">
                                     Hin
                                   </a>

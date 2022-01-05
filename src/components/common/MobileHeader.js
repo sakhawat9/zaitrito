@@ -3,6 +3,7 @@ import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsBag, BsBarChart } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
+import Zairito from "../../assets/images/zairito.png";
 
 const MobileHeader = () => {
   return (
@@ -13,7 +14,7 @@ const MobileHeader = () => {
             <a className="brand-logo" href="/">
               <img
                 className="brand-image"
-                src="http://zairito-html.zainiktheme.com/demo/assets/images/zairito.png"
+                src={Zairito}
                 alt="zairito"
               />
             </a>
