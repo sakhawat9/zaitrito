@@ -8,6 +8,7 @@ import { BiUserCircle } from "react-icons/bi";
 import { BsBag, BsBarChart, BsSearch } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import India from "../../assets/images/india.png";
+import Banner from "../../assets/images/mega-menu-banner.png";
 import UnitedState from "../../assets/images/united-states.png";
 import Zairito from "../../assets/images/zairito.png";
 function classNames(...classes) {
@@ -192,11 +193,7 @@ const ProductAreaHeader = () => {
           <div className="header-middle-wrap">
             <div className="brand-area">
               <a className="#" href="/">
-                <img
-                  className="brand-image"
-                  src={Zairito}
-                  alt="zairito"
-                />
+                <img className="brand-image" src={Zairito} alt="zairito" />
               </a>
             </div>
             <div className="search-area">
@@ -396,7 +393,7 @@ const ProductAreaHeader = () => {
                       <a className="mega-menu-banner" href="#">
                         <img
                           className="menu-banner-image"
-                          src="http://zairito-html.zainiktheme.com/demo/assets/images/mega-menu-banner.png"
+                          src={Banner}
                           alt="mega-menu-banner"
                         />
                       </a>
