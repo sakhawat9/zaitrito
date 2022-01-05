@@ -4,6 +4,7 @@ import { AiOutlineCloseSquare } from "react-icons/ai";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import AngleDown from "../../assets/images/angle-down.svg";
 import viewGrid from "../../assets/images/view-grid.svg";
 import ViewList from "../../assets/images/view-list.svg";
 import MobileFilterMenu from "../common/MobileFilterMenu";
@@ -29,7 +30,7 @@ const ProductArea02 = () => {
                 >
                   Filter
                   <img
-                    src="http://zairito-html.zainiktheme.com/demo/assets/images/angle-down.svg"
+                    src={AngleDown}
                     alt="angle-down"
                   />
                 </button>

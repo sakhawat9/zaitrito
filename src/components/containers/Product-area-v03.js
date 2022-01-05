@@ -5,6 +5,7 @@ import { FaAngleDoubleLeft, FaAngleDoubleRight, FaPlay } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import AngleDown from "../../assets/images/angle-down.svg";
 import ViewGrid from "../../assets/images/view-grid.svg";
 import ViewList from "../../assets/images/view-list.svg";
 import MobileFilterMenu from "../common/MobileFilterMenu";
@@ -35,7 +36,7 @@ const ProductAreaV03 = () => {
                     >
                       Filter
                       <img
-                        src="http://zairito-html.zainiktheme.com/demo/assets/images/angle-down.svg"
+                        src={AngleDown}
                         alt="angle-down"
                       />
                     </button>

@@ -18,7 +18,7 @@ const SingleProduct = ({ featuredProduct }) => {
           <img
             onClick={handleClick}
             className="product-thumbnal cursor-pointer text-center"
-            src={featuredProduct.img}
+            src={featuredProduct?.img}
             alt="product"
           />
         <div className="product-flags">

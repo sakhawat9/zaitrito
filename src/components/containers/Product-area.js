@@ -5,6 +5,7 @@ import { FaAngleDoubleLeft, FaAngleDoubleRight, FaPlay } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import AngleDown from "../../assets/images/angle-down.svg";
 import MobileFilterMenu from "../common/MobileFilterMenu";
 import Products from "./Products";
 
@@ -233,7 +234,10 @@ const ProductArea = () => {
                         type="checkbox"
                         id="VividTangerine"
                       />
-                      <label className="form-check-label" htmlFor="VividTangerine">
+                      <label
+                        className="form-check-label"
+                        htmlFor="VividTangerine"
+                      >
                         Vivid Tangerine
                       </label>
                     </div>
@@ -383,7 +387,10 @@ const ProductArea = () => {
                         type="checkbox"
                         id="Stradivarius"
                       />
-                      <label className="form-check-label" htmlFor="Stradivarius">
+                      <label
+                        className="form-check-label"
+                        htmlFor="Stradivarius"
+                      >
                         Stradivarius
                       </label>
                     </div>
@@ -520,10 +527,7 @@ const ProductArea = () => {
                       aria-controls="offcanvasExample"
                     >
                       Filter
-                      <img
-                        src="http://zairito-html.zainiktheme.com/demo/assets/images/angle-down.svg"
-                        alt="angle-down"
-                      />
+                      <img src={AngleDown} alt="angle-down" />
                     </button>
                     <div className="list-grid-view">
                       <a href="#" className="view-btn list-view">

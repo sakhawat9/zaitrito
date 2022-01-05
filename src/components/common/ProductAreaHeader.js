@@ -9,6 +9,7 @@ import { BsBag, BsBarChart, BsSearch } from "react-icons/bs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import India from "../../assets/images/india.png";
 import UnitedState from "../../assets/images/united-states.png";
+import Zairito from "../../assets/images/zairito.png";
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -193,7 +194,7 @@ const ProductAreaHeader = () => {
               <a className="#" href="/">
                 <img
                   className="brand-image"
-                  src="http://zairito-html.zainiktheme.com/demo/assets/images/zairito.png"
+                  src={Zairito}
                   alt="zairito"
                 />
               </a>
