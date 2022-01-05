@@ -45,7 +45,8 @@ const BlogDetails = () => {
         </div>
 
         <div className="grid grid-cols-12 gap-4">
-          <div className="lg:col-span-10  col-span-12 mx-auto">
+          <div className="lg:col-span-1"></div>
+          <div className="lg:col-span-10 col-span-12">
             <div className="blog-meta-box">
               <div className="post-author">
                 <img className="author-image" src={exactData[0]?.userImg} alt="post-author" />
@@ -54,7 +55,7 @@ const BlogDetails = () => {
                   <p className="author-designation">{exactData[0]?.userTitle}</p>
                 </div>
               </div>
-              <div className="social-media">
+              <div className="">
                 <ul className="media-lsit">
                   <li className="medi-item">
                     <a href="#" className="soshal-media">
