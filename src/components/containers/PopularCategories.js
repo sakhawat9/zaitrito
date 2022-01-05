@@ -31,7 +31,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/productsAreaV03">
                     Weeding Dress <IoIosArrowForward />
                   </a>
                 </li>
@@ -43,15 +43,15 @@ const PopularCategories = () => {
                 <li>
                   <a href="#">
                     Weeding Dress <IoIosArrowForward />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    Medial Mask <IoIosArrowForward />
                   </a>
                 </li>
                 <li>
                   <a href="/productsAreaV02">
+                    Medial Mask <IoIosArrowForward />
+                  </a>
+                </li>
+                <li>
+                  <a href="/productsAreaV03">
                     Athletic Wear <IoIosArrowForward />
                   </a>
                 </li>
@@ -71,7 +71,7 @@ const PopularCategories = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/productsAreaV03">
                     Medial Mask <IoIosArrowForward />
                   </a>
                 </li>
