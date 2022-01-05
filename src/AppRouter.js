@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AboutUs from "./pages/aboutUs";
+import Blog from "./pages/Blog";
+import Blogs from "./pages/Blogs";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/checkout";
 import Contact from "./pages/contact";
@@ -51,6 +53,12 @@ const AppRouter = () => {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/blog">
+          <Blog />
+        </Route>
+        <Route path="/blogs/:id">
+          <Blogs />
         </Route>
       </Switch>
     </Router>

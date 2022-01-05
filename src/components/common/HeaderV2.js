@@ -414,7 +414,7 @@ const HeaderV2 = () => {
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">
-                  <a className="sub-menu-link" href="#">
+                  <a className="sub-menu-link" href="/blog">
                     Blog Grid
                   </a>
                 </li>
