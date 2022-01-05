@@ -4,6 +4,8 @@ import { AiOutlineCloseSquare } from "react-icons/ai";
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import viewGrid from "../../assets/images/view-grid.svg";
+import ViewList from "../../assets/images/view-list.svg";
 import MobileFilterMenu from "../common/MobileFilterMenu";
 import Products02 from "../common/Products02";
 
@@ -42,18 +44,10 @@ const ProductArea02 = () => {
                 </Drawer>
                 <div className="list-grid-view">
                   <a href="#" className="view-btn list-view">
-                    <img
-                      className="view-icon"
-                      src="http://zairito-html.zainiktheme.com/demo/assets/images/view-list.svg"
-                      alt="view-list"
-                    />
+                    <img className="view-icon" src={ViewList} alt="view-list" />
                   </a>
                   <a href="#" className="view-btn grid-view active">
-                    <img
-                      className="view-icon"
-                      src="http://zairito-html.zainiktheme.com/demo/assets/images/view-grid.svg"
-                      alt="view-grid"
-                    />
+                    <img className="view-icon" src={viewGrid} alt="view-grid" />
                   </a>
                 </div>
               </div>
