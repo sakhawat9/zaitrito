@@ -13,7 +13,7 @@
   },
   {
     "id": "2",
-    "img": "https://res.cloudinary.com/medsy/image/upload/v1641384567/product-image-2_sqzbjd.png",
+    "img": "https://res.cloudinary.com/medsy/image/upload/v1641384567/product-image-3_djbkko.png",
     "sale": "sale",
     "discount": 15,
     "category": "FASHION - COLLECTION",
@@ -109,7 +109,7 @@
   },
   {
     "id": "10",
-    "img": "http://zairito-html.zainiktheme.com/demo/assets/images/product-image-1.png",
+    "img": "https://res.cloudinary.com/medsy/image/upload/v1641384567/product-image-1_eswb5y.png",
     "sale": "sale",
     "discount": 15,
     "category": "ELLA - HALOTHEMES",
@@ -121,7 +121,7 @@
   },
   {
     "id": "10",
-    "img": "http://zairito-html.zainiktheme.com/demo/assets/images/product-image-2.png",
+    "img": "https://res.cloudinary.com/medsy/image/upload/v1641384567/product-image-2_sqzbjd.png",
     "sale": "sale",
     "discount": 15,
     "category": "FASHION - COLLECTION",
@@ -133,7 +133,7 @@
   },
   {
     "id": "12",
-    "img": "http://zairito-html.zainiktheme.com/demo/assets/images/product-image-3.png",
+    "img": "https://res.cloudinary.com/medsy/image/upload/v1641384567/product-image-3_djbkko.png",
     "sale": "sale",
     "discount": 15,
     "category": "HOT - HALOTHEMES",
