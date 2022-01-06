@@ -43,7 +43,7 @@
 }
 
 .compare-page-area .compare-table table tbody tr td.product-image-title .image {
-  @apply clear-both w-full;
+  @apply flex justify-center w-full;
   margin-bottom: 40px;
 }
 

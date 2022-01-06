@@ -19,6 +19,7 @@ import RefundPolicy from "./pages/RefundPolicy";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import TermConditions from "./pages/TermConditions";
+import WishList from "./pages/WishList";
 
 const AppRouter = () => {
   return (
@@ -83,6 +84,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/compare">
           <Compare />
+        </Route>
+        <Route path="/wish-list">
+          <WishList />
         </Route>
       </Switch>
     </Router>
