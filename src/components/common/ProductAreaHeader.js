@@ -307,36 +307,36 @@ const ProductAreaHeader = () => {
                       </a>
                       <ul className="menu-items">
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
-                            Shop Grid Leftsidebar{" "}
+                          <a className="mega-menu-link" href="/productsAreaV01">
+                            Shop Grid Leftsidebar
                             <span className="menu-item-badge new">New</span>
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
-                            Shop Grid Rightsidebar{" "}
+                          <a className="mega-menu-link" href="/productsAreaV02">
+                            Shop Grid Rightsidebar
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
-                            Shop Grid No Sidebar{" "}
+                          <a className="mega-menu-link" href="/productsAreaV03">
+                            Shop Grid No Sidebar
                             <span className="menu-item-badge trending">
                               Trending
                             </span>
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/productsAreaV01">
                             Shop List Leftsidebar
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/productsAreaV02">
                             Shop List Rightsidebar
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/productsAreaV03">
                             Shop List No Sidebar
                           </a>
                         </li>
