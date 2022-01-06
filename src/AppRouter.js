@@ -6,6 +6,7 @@ import Blogs from "./pages/Blogs";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/checkout";
 import Contact from "./pages/contact";
+import Error from "./pages/Error";
 import Faq from "./pages/Faq";
 import Home from "./pages/home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -75,6 +76,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/refund-policy">
           <RefundPolicy />
+        </Route>
+        <Route path="/error-page">
+          <Error />
         </Route>
       </Switch>
     </Router>
