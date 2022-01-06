@@ -7,6 +7,7 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/checkout";
 import Compare from "./pages/Compare";
 import Contact from "./pages/contact";
+import EmptyWish from "./pages/EmptyWish";
 import Error from "./pages/Error";
 import Faq from "./pages/Faq";
 import Home from "./pages/home";
@@ -87,6 +88,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/wish-list">
           <WishList />
+        </Route>
+        <Route path="/empty-wish-list">
+          <EmptyWish />
         </Route>
       </Switch>
     </Router>

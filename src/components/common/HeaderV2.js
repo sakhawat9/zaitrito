@@ -337,7 +337,7 @@ const HeaderV2 = () => {
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/empty-wish-list">
                             Empty Wishlist
                           </a>
                         </li>

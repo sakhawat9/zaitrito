@@ -62,7 +62,6 @@
 
 .wish-list-area .wish-list-table .product-info .product-name .product-link {
   color: var(--black);
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -80,9 +79,8 @@
 }
 
 .wish-list-area .wish-list-table .product-info .product-review .review-item {
-  display: inline-block;
+  @apply inline-block cursor-pointer;
   color: #d0d0d0;
-  cursor: pointer;
 }
 
 .wish-list-area
@@ -94,18 +92,10 @@
 }
 
 .wish-list-area .wish-list-table .product-info .color-switch .single-color {
-  display: inline-block;
+  @apply inline-block rounded-full bg-white cursor-pointer leading-none h-12 w-12;
   margin: 0 0.3rem;
-  list-style: none;
-  width: 3rem;
-  height: 3rem;
-  line-height: 1;
-  border-radius: 50%;
-  background-color: var(--white);
   border: 2px solid transparent;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer;
 }
 
 .wish-list-area
