@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import PageMenu from "../common/PageMenu";
 
 const PrivacyPolicyArea = () => {
   return (
@@ -7,37 +8,7 @@ const PrivacyPolicyArea = () => {
       <div className="container mx-auto px-8">
         <div className="grid gap-4 grid-cols-12">
           <div className="lg:col-span-3 md:col-span-4">
-            <div className="page-menu-wrap">
-              <ul className="menu-items">
-                <li className="menu-item">
-                  <a className="menu-link" href="term-conditions.html">
-                    <i className="menu-icon far fa-file-alt"></i>Term &amp;
-                    Conditions
-                  </a>
-                </li>
-                <li className="menu-item active">
-                  <a className="menu-link" href="privacy-policy.html">
-                    <i className="menu-icon far fa-file-alt"></i>Privacy Policy
-                  </a>
-                </li>
-                <li className="menu-item">
-                  <a className="menu-link" href="shipping-return.html">
-                    <i className="menu-icon far fa-file-alt"></i>Shipping &amp;
-                    Return
-                  </a>
-                </li>
-                <li className="menu-item">
-                  <a className="menu-link" href="faq.html">
-                    <i className="menu-icon far fa-file-alt"></i>faq
-                  </a>
-                </li>
-                <li className="menu-item">
-                  <a className="menu-link" href="refund-policy.html">
-                    <i className="menu-icon far fa-file-alt"></i>Refund Policy
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <PageMenu />
           </div>
           <div className="lg:col-span-9 md:col-span-8">
             <div className="privacy-policy-info">
