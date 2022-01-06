@@ -1,0 +1,46 @@
+.refund-policy-area .single-refund-policy {
+  @apply mb-14;
+}
+
+.refund-policy-area .single-refund-policy .refund-policy-title {
+  @apply mb-8 font-semibold capitalize text-gray-900;
+  font-family: "Jost", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+}
+
+.refund-policy-area .single-refund-policy .refund-policy-text {
+  @apply mb-12 font-normal text-2xl leading-10;
+  color: #777777;
+}
+
+.refund-policy-area
+  .single-refund-policy
+  .refund-policy-text
+  .refund-policy-link {
+  @apply font-medium;
+  color: #777777;
+  transition: all 0.3s linear;
+}
+
+.refund-policy-area
+  .single-refund-policy
+  .refund-policy-text
+  .refund-policy-link:hover {
+  color: var(--primary-color);
+}
+
+.refund-policy-area .single-refund-policy .refund-policy-text:last-child {
+  @apply mb-0;
+}
+
+.refund-policy-area .single-refund-policy:last-child {
+  @apply mb-0;
+}
+
+@media (max-width: 375px) {
+  .refund-policy-area .single-refund-policy .refund-policy-title {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}

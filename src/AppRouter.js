@@ -13,6 +13,7 @@ import ProductDetails from "./pages/productDetails";
 import ProductAreaV01 from "./pages/productsArea-v01";
 import ProductsAreaV02 from "./pages/productsArea-v02";
 import ProductsAreaV03 from "./pages/productsArea-v03";
+import RefundPolicy from "./pages/RefundPolicy";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import TermConditions from "./pages/TermConditions";
@@ -71,6 +72,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/faq">
           <Faq />
+        </Route>
+        <Route path="/refund-policy">
+          <RefundPolicy />
         </Route>
       </Switch>
     </Router>
