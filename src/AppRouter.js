@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import TermConditions from "./components/containers/TermConditions";
 import AboutUs from "./pages/aboutUs";
 import Blog from "./pages/Blog";
 import Blogs from "./pages/Blogs";
@@ -8,12 +7,14 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/checkout";
 import Contact from "./pages/contact";
 import Home from "./pages/home";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ProductDetails from "./pages/productDetails";
 import ProductAreaV01 from "./pages/productsArea-v01";
 import ProductsAreaV02 from "./pages/productsArea-v02";
 import ProductsAreaV03 from "./pages/productsArea-v03";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import TermConditions from "./pages/TermConditions";
 
 const AppRouter = () => {
   return (
@@ -63,6 +64,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/term-conditions">
           <TermConditions />
+        </Route>
+        <Route path="/privacy-policy">
+          <PrivacyPolicy />
         </Route>
       </Switch>
     </Router>
