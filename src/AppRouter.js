@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import TermConditions from "./components/containers/TermConditions";
 import AboutUs from "./pages/aboutUs";
 import Blog from "./pages/Blog";
 import Blogs from "./pages/Blogs";
@@ -59,6 +60,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/blogs/:id">
           <Blogs />
+        </Route>
+        <Route path="/term-conditions">
+          <TermConditions />
         </Route>
       </Switch>
     </Router>

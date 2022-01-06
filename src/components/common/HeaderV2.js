@@ -362,7 +362,7 @@ const HeaderV2 = () => {
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">
-                  <a className="sub-menu-link" href="#">
+                  <a className="sub-menu-link" href="/term-conditions">
                     Term &amp; Conditions
                   </a>
                 </li>
@@ -419,7 +419,7 @@ const HeaderV2 = () => {
                   </a>
                 </li>
                 <li className="sub-menu-item">
-                  <a className="sub-menu-link" href="#">
+                  <a className="sub-menu-link" href="/blog">
                     Blog Single
                   </a>
                 </li>

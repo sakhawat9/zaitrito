@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa";
 import { useParams } from "react-router-dom";
+import CommentsAuthor01 from "../../assets/images/comments-author-1.png";
+import CommentsAuthor02 from "../../assets/images/comments-author-2.png";
 import Comments from "./Comments";
 
 const BlogDetails = () => {
@@ -171,7 +173,7 @@ const BlogDetails = () => {
                   <div className="comment-meta">
                     <img
                       className="comments-author-image"
-                      src="assets/images/comments-author-1.png"
+                      src={CommentsAuthor01}
                       alt="comments-author"
                     />
                     <div className="comment-meta-info">
@@ -196,7 +198,7 @@ const BlogDetails = () => {
                       <div className="comment-meta">
                         <img
                           className="comments-author-image"
-                          src="assets/images/comments-author-2.png"
+                          src={CommentsAuthor02}
                           alt="comments-author"
                         />
                         <div className="comment-meta-info">
@@ -223,7 +225,7 @@ const BlogDetails = () => {
                   <div className="comment-meta">
                     <img
                       className="comments-author-image"
-                      src="assets/images/comments-author-1.png"
+                      src={CommentsAuthor01}
                       alt="comments-author"
                     />
                     <div className="comment-meta-info">
