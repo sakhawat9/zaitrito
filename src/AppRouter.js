@@ -5,6 +5,7 @@ import Blog from "./pages/Blog";
 import Blogs from "./pages/Blogs";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/checkout";
+import Compare from "./pages/Compare";
 import Contact from "./pages/contact";
 import Error from "./pages/Error";
 import Faq from "./pages/Faq";
@@ -79,6 +80,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/error-page">
           <Error />
+        </Route>
+        <Route path="/compare">
+          <Compare />
         </Route>
       </Switch>
     </Router>

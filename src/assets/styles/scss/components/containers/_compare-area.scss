@@ -1,0 +1,169 @@
+.compare-page-area .compare-table table {
+  @apply mb-0;
+}
+
+.compare-page-area .compare-table table tbody tr td {
+  @apply items-center align-middle border border-gray-200;
+  padding: 25px 30px;
+}
+
+.compare-page-area .compare-table table tbody tr td:first-child {
+  @apply font-semibold m-0 leading-none;
+  min-width: 180px;
+}
+
+.compare-page-area .compare-table table tbody tr td .product-review {
+  @apply flex justify-center;
+}
+
+.compare-page-area .compare-table table tbody tr td .product-review li {
+  color: #d0d0d0;
+  margin-right: 2px;
+}
+
+.compare-page-area .compare-table table tbody tr td .product-review li.active {
+  color: #fca610;
+}
+
+.compare-page-area .compare-table table tbody tr td.product-image-title {
+  min-width: 285px;
+  max-width: 285px;
+  vertical-align: bottom;
+}
+
+.compare-page-area
+  .compare-table
+  table
+  tbody
+  tr
+  td.product-image-title
+  .image
+  .products-top {
+  @apply text-left;
+}
+
+.compare-page-area .compare-table table tbody tr td.product-image-title .image {
+  @apply clear-both w-full;
+  margin-bottom: 40px;
+}
+
+.compare-page-area
+  .compare-table
+  table
+  tbody
+  tr
+  td.product-image-title
+  .image
+  img {
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.compare-page-area
+  .compare-table
+  table
+  tbody
+  tr
+  td.product-image-title
+  .category:hover,
+.compare-page-area
+  .compare-table
+  table
+  tbody
+  tr
+  td.product-image-title
+  .title:hover {
+  color: var(--primary-color);
+}
+
+.compare-page-area
+  .compare-table
+  table
+  tbody
+  tr
+  td.product-image-title
+  .category {
+  @apply clear-both block uppercase mt-4 mb-2 leading-4;
+  color: #333;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.compare-page-area .compare-table table tbody tr td.product-image-title .title {
+  @apply clear-both text-gray-900 font-semibold;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.compare-page-area .compare-table table tbody tr td.pro-desc p {
+  @apply m-0;
+}
+
+.compare-page-area .compare-table table tbody tr td.pro-price {
+  @apply font-semibold;
+}
+
+.compare-page-area .compare-table table tbody tr td.pro-color {
+  @apply font-semibold;
+}
+
+.compare-page-area
+  .compare-table
+  table
+  tbody
+  tr
+  td.pro-addtocart
+  .add-to-cart
+  span {
+  @apply uppercase font-bold block overflow-hidden items-center;
+  transition: 0.3s;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.compare-page-area
+  .compare-table
+  table
+  tbody
+  tr
+  td.pro-addtocart
+  .add-to-cart.pro-stock {
+  @apply text-base font-semibold;
+}
+
+.compare-page-area
+  .compare-table
+  table
+  tbody
+  tr
+  td.pro-addtocart
+  .add-to-cart
+  .pro-remove
+  button {
+  @apply border-0 bg-transparent p-0;
+}
+
+.compare-page-area .compare-table table tbody tr td.pro-remove button {
+  transition: 1s ease all;
+}
+
+.compare-page-area .compare-table table tbody tr td.pro-remove button:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 767px) {
+  .compare-page-area .compare-table table tbody tr td.product-image-title {
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .compare-page-area
+    .compare-table
+    table
+    tbody
+    tr
+    td.product-image-title
+    .products-top {
+    height: 200px;
+  }
+}

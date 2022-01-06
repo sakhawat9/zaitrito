@@ -373,7 +373,7 @@ const ProductAreaHeader = () => {
                           </a>
                         </li>
                         <li className="mega-menu-items">
-                          <a className="mega-menu-link" href="#">
+                          <a className="mega-menu-link" href="/compare">
                             Compare
                           </a>
                         </li>
@@ -444,7 +444,7 @@ const ProductAreaHeader = () => {
                   </a>
                 </li>
                 <li className="sub-menu-item">
-                  <a className="sub-menu-link" href="#">
+                  <a className="sub-menu-link" href="/signUp">
                     Sign Up
                   </a>
                 </li>
