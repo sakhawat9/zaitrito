@@ -1,0 +1,67 @@
+.faq-area {
+  border: 1px solid #e9e9e9;
+}
+
+.faq-area .accordion-item {
+  @apply rounded-none;
+}
+
+.faq-area .accordion-item .accordion-header .accordion-button {
+  @apply font-medium capitalize bg-transparent text-gray-900 shadow-none;
+  padding: 3.5rem 4rem;
+  font-family: "Jost", sans-serif;
+  font-size: 2rem;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.faq-area .accordion-item .accordion-header .accordion-button:focus {
+  @apply shadow-none;
+}
+
+.faq-area .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  @apply text-gray-900 shadow-none bg-transparent border border-gray-200;
+}
+
+.faq-area
+  .accordion-item
+  .accordion-header
+  .accordion-button:not(.collapsed):after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.faq-area .accordion-item .accordion-body {
+  padding: 3rem 4rem;
+}
+
+.faq-area .accordion-item .accordion-body .faq-text {
+  @apply font-normal;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #777777;
+}
+
+.faq-area .accordion-item .accordion-body .faq-text:last-child {
+  @apply mb-0;
+}
+
+@media (max-width: 1199px) {
+  .faq-area .accordion-item .accordion-header .accordion-button {
+    @apply px-10 py-6 text-base;
+    font-family: "Jost", sans-serif;
+  }
+  .faq-area .accordion-item .accordion-body {
+    @apply px-10 py-8;
+  }
+  .faq-area .accordion-item .accordion-body .faq-text {
+    @apply text-base leading-10;
+  }
+}
+
+@media (max-width: 575px) {
+  .faq-area .accordion-item .accordion-header .accordion-button {
+    @apply p-6;
+  }
+  .faq-area .accordion-item .accordion-body {
+    @apply py-8 px-6;
+  }
+}

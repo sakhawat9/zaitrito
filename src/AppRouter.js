@@ -6,6 +6,7 @@ import Blogs from "./pages/Blogs";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/checkout";
 import Contact from "./pages/contact";
+import Faq from "./pages/Faq";
 import Home from "./pages/home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ProductDetails from "./pages/productDetails";
@@ -67,6 +68,9 @@ const AppRouter = () => {
         </Route>
         <Route path="/privacy-policy">
           <PrivacyPolicy />
+        </Route>
+        <Route path="/faq">
+          <Faq />
         </Route>
       </Switch>
     </Router>
