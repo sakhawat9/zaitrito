@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa";
 import { useParams } from "react-router-dom";
+import Comments from "./Comments";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -81,19 +82,7 @@ const BlogDetails = () => {
               </div>
             </div>
             <p className="blog-content has-dropcap">
-              Donec utrum congue leo eget malesuada. Vestibulum ac diam sit amet
-              quam vehicula elementum sed sit amet dui. Quisque velit nisi,
-              pretiu ut lacin ia in, elementum id enim. Pellentesque in ipsum id
-              orci porta dapibus. Pellentesque in ipsum id orci porta dapibus.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vesti
-              bulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-              Curabitur non nulla sit amet nisl tem pus convallis quis ac
-              lectus. Sed porttitor lectus nibh. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia Curae; Donec
-              velit neque, auctor sit amet aliquam vel, ullamcorper sit amet
-              ligula. Curabitur aliquet quam id dui posuere blandit. Proin eget
-              tortor risus. Vivamus magna justo, lacinia eget consectetur sed,
-              convallis at tellus. Proin eget tortor risus.
+            {exactData[0]?.description}
             </p>
             <p className="blog-content">
               Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
@@ -257,53 +246,7 @@ const BlogDetails = () => {
                 </li>
               </ul>
             </div>
-            <div className="comment-respond">
-              <h3 className="reply-title text-center">Leave a comment</h3>
-              <div className="comemnt-form">
-                <form>
-                  <div className="grid grid-cols-12 gap-4">
-                    <div className="col-lg-12 lg:col-span-12 col-span-12">
-                      <div className="form-group">
-                        <textarea
-                          className="form-control message-box"
-                          id="message-box"
-                          name="message-box"
-                          rows="3"
-                          placeholder="Type Message Here..."
-                        ></textarea>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="Contact_Name"
-                          name="Contact_Name"
-                          placeholder="Contact Name"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="Emil_Address"
-                          name="Emil_Address"
-                          placeholder="Emil Address"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-12 text-center">
-                      <button className="submit-btn" type="button">
-                        Submit Comment
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+            <Comments />
           </div>
         </div>
       </div>
