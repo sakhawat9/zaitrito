@@ -50,21 +50,14 @@
 }
 
 .wish-list-area .wish-list-table .product-info .product-catagory {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  font-weight: 400;
-  text-transform: uppercase;
+  @apply mb-4 text-2xl leading-10 font-normal uppercase;
   color: #555555;
 }
 
 .wish-list-area .wish-list-table .product-info .product-name {
-  margin-bottom: 1.5rem;
+  @apply mb-6 font-semibold text-gray-900 capitalize;
   font-size: 2rem;
   line-height: 3rem;
-  font-weight: 600;
-  color: var(--black);
-  text-transform: capitalize;
 }
 
 .wish-list-area .wish-list-table .product-info .product-name .product-link {

@@ -11,42 +11,27 @@
 }
 
 .header-area-v2 .header-top .contact-info {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  font-family: "Jost", sans-serif;
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 500;
-  color: var(--white);
+  @apply flex items-center m-0 text-2xl leading-none font-medium text-white;
 }
 
 .header-area-v2 .header-top .contact-info .icon {
-  margin-right: 1rem;
+  @apply mr-4;
 }
 
 .header-area-v2 .header-top .contact-info .icon::before {
-  line-height: 1;
-  font-size: 1.6rem;
-  font-weight: 700;
+  @apply leading-none text-2xl font-bold;
 }
 
 .header-area-v2 .header-top .top-bar-menu .menu-list {
-  margin: 0;
-  padding: 0;
+  @apply m-0 p-0;
 }
 
 .header-area-v2 .header-top .top-bar-menu .menu-list .menu-item {
-  display: inline-block;
-  margin-right: 3rem;
+  @apply inline-block mr-12;
 }
 
 .header-area-v2 .header-top .top-bar-menu .menu-list .menu-item .menu-link {
-  @apply flex items-center;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: var(--white);
+  @apply flex items-center text-2xl font-bold capitalize text-white;
   transition: all 0.3s linear;
 }
 
@@ -60,7 +45,7 @@
 }
 
 .header-area-v2 .header-top .switcher-lang-currency {
-  display: flex;
+  @apply flex;
 }
 
 .header-area-v2 .header-middle {
@@ -68,21 +53,16 @@
 }
 
 .header-area-v2 .header-middle .header-right .btn-list {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  @apply flex items-center m-0 p-0 justify-end;
   width: 260px;
-  justify-content: flex-end;
 }
 
 .header-area-v2 .header-middle .header-right .btn-list .single-item {
-  list-style: none;
-  margin-right: 2rem;
+  @apply mr-8;
 }
 
 .header-area-v2 .header-middle .header-right .btn-list .single-item:last-child {
-  margin-right: 0;
+  @apply mr-0;
 }
 
 .header-area-v2
@@ -116,7 +96,7 @@
 }
 
 .header-area-v2 .header-middle .brand-logo-area .brand-logo {
-  display: inline-block;
+  @apply inline-block;
 }
 
 .header-area-v2 .header-middle .brand-logo-area .brand-logo .brand-image {
@@ -124,8 +104,7 @@
 }
 
 .header-area-v2 .header-middle .search-area .form-group {
-  display: inline-block;
-  position: relative;
+  @apply inline-block relative;
 }
 
 .header-area-v2 .header-middle .search-area .form-group .form-control {
@@ -177,13 +156,9 @@
 }
 
 .header-area-v2 .header-middle .search-area .form-group .search-btn {
-  position: absolute;
+  @apply absolute left-0 border-0 bg-transparent text-gray-900 p-0;
   left: 0;
   top: 10px;
-  border: none;
-  padding: 0;
-  background: transparent;
-  color: var(--black);
   transition: all 0.3s linear;
 }
 
@@ -197,9 +172,7 @@
 }
 
 .header-area-v2 .header-bottom .menu-area .main-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @apply flex items-center justify-center;
 }
 
 .header-area-v2 .header-bottom .menu-area .main-menu .menu-item {
@@ -207,13 +180,8 @@
 }
 
 .header-area-v2 .header-bottom .menu-area .main-menu .menu-item .menu-link {
-  @apply flex items-center;
-  position: relative;
+  @apply flex items-center relative capitalize font-normal text-gray-900 text-2xl;
   padding: 1.7rem 0;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: capitalize;
-  color: var(--black);
 }
 
 .header-area-v2
@@ -249,7 +217,7 @@
   .menu-area
   .main-menu
   .menu-item.menu-item-has-children {
-  position: relative;
+  @apply relative;
 }
 
 .header-area-v2
@@ -258,16 +226,12 @@
   .main-menu
   .menu-item.menu-item-has-children
   .sub-menu {
-  position: absolute;
+  @apply absolute opacity-0 bg-white invisible border-0;
   transition: all 0.25s;
   transform: translate3d(0, 15px, 0);
-  visibility: hidden;
-  opacity: 0;
-  background: #ffffff;
   box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
   left: -20px;
   min-width: 244px;
-  border-radius: 0;
   padding: 0 10px;
   z-index: 5;
   pointer-events: none;
@@ -280,8 +244,7 @@
   .menu-item.menu-item-has-children
   .sub-menu
   .sub-menu-item {
-  display: block;
-  margin: 0;
+  @apply block m-0;
   border-bottom: 1px solid #f5f5f5;
 }
 
@@ -292,7 +255,7 @@
   .menu-item.menu-item-has-children
   .sub-menu
   .sub-menu-item:last-child {
-  border-bottom: none;
+  @apply border-b-0;
 }
 
 .header-area-v2
@@ -303,13 +266,9 @@
   .sub-menu
   .sub-menu-item
   .sub-menu-link {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: capitalize;
+  @apply block text-2xl font-normal capitalize p-4;
   color: var(--bColor);
   transition: all 0.3s linear;
-  padding: 1rem;
 }
 
 .header-area-v2
@@ -350,15 +309,9 @@
   .main-menu
   .menu-item.mega-menu-parent
   .mega-menu-area {
-  padding: 6rem 0;
-  position: absolute;
-  background: #ffffff;
+  @apply py-24 px-0 absolute bg-white w-full left-0 opacity-0 invisible;
   box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
   z-index: 99;
-  width: 100%;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
   transform: translateY(25px);
   pointer-events: none;
   transition: all 0.3s ease-in-out;
@@ -382,10 +335,9 @@
   .main-menu
   .menu-item.mega-menu-parent
   .mega-menu {
-  display: flex;
+  @apply flex justify-center;
   flex-flow: row wrap;
   max-width: 1024px;
-  justify-content: center;
   margin: 0 auto;
 }
 
@@ -417,13 +369,9 @@
   .mega-menu
   .mega-menu-item
   .mega-menu-title {
-  display: block;
-  margin-bottom: 3rem;
+  @apply block mb-12 font-medium capitalize text-gray-900;
   font-family: "Jost", sans-serif;
   font-size: 2rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: var(--black);
 }
 
 .header-area-v2
@@ -434,8 +382,7 @@
   .mega-menu
   .mega-menu-item
   .menu-items {
-  margin: 0;
-  padding: 0;
+  @apply m-0 p-0;
 }
 
 .header-area-v2
@@ -447,9 +394,7 @@
   .mega-menu-item
   .menu-items
   .mega-menu-items {
-  list-style: none;
-  display: block;
-  margin-bottom: 2rem;
+  @apply block mb-8;
 }
 
 .header-area-v2
@@ -462,10 +407,8 @@
   .menu-items
   .mega-menu-items
   .mega-menu-link {
+  @apply text-2xl font-normal capitalize;
   font-family: "Jost", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: capitalize;
   color: #555555;
   transition: all 0.3s linear;
 }
@@ -481,13 +424,8 @@
   .mega-menu-items
   .mega-menu-link
   .menu-item-badge {
-  display: inline-block;
-  font-size: 1.4rem;
+  @apply inline-block font-bold leading-none capitalize text-white text-2xl;
   padding: 0.5rem 0.8rem;
-  line-height: 1;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: var(--white);
   background-color: #00aa6c;
   margin-left: 0.5rem;
 }
@@ -548,53 +486,38 @@
 }
 
 .header-area-v2 .lang-switcher {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0;
+  @apply relative flex items-center p-0;
   min-width: 60px;
 }
 
 .header-area-v2 .lang-switcher .flag {
+  @apply rounded-full inline-block overflow-hidden w-8;
   margin-right: 5px;
-  width: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
 }
 
 .header-area-v2 .lang-switcher .lang {
-  color: var(--white);
-  font-size: 1.5rem;
+  @apply text-white text-2xl font-normal;
   transition: all 0.3s ease-in;
-  font-weight: 500;
 }
 
 .header-area-v2 .lang-switcher .lang .fa-angle-down {
-  position: relative;
+  @apply relative;
   top: 2px;
   margin-left: 3px;
 }
 
 .header-area-v2 .lang-switcher .lang-list {
-  background-color: #ffffff;
+  @apply bg-white absolute left-0 opacity-0 invisible;
   box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
   padding: 12px;
-  position: absolute;
   top: 90px;
-  left: 0px;
   width: 100px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
 
 .header-area-v2 .lang-switcher .lang-list .single-lang {
-  display: flex;
-  align-items: center;
+  @apply flex items-center cursor-pointer;
   margin-bottom: 6px;
-  cursor: pointer;
 }
 
 .header-area-v2 .lang-switcher .lang-list .single-lang .lang-text {
@@ -618,12 +541,8 @@
 
 .header-area-v2 .lang-switcher .lang-list::before {
   content: "";
-  display: block;
+  @apply block absolute top-0 left-0 w-full;
   clear: both;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 2px;
   background-color: var(--hover-color-two);
 }
@@ -636,54 +555,38 @@
 }
 
 .header-area-v2 .currency-switcher {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-  padding: 0;
+  @apply relative flex items-center p-0 mr-5;
   min-width: 60px;
 }
 
 .header-area-v2 .currency-switcher .flag {
   margin-right: 5px;
-  width: 30px;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
+  @apply inline-block overflow-hidden rounded-full w-8;
 }
 
 .header-area-v2 .currency-switcher .currency {
-  color: var(--white);
-  font-size: 1.5rem;
-  -webkit-transition: all 0.3s ease-in;
+  @apply text-white text-2xl font-medium;
   transition: all 0.3s ease-in;
-  font-weight: 500;
 }
 
 .header-area-v2 .currency-switcher .currency .fa-angle-down {
-  position: relative;
+  @apply relative;
   top: 2px;
   margin-left: 3px;
 }
 
 .header-area-v2 .currency-switcher .currency-list {
-  background-color: #ffffff;
+  @apply bg-white absolute left-0 opacity-0 invisible;
   box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
   padding: 12px;
-  position: absolute;
   top: 90px;
-  left: 0px;
   width: 100px;
-  opacity: 0;
-  visibility: hidden;
   transition: all 0.3s ease-in;
 }
 
 .header-area-v2 .currency-switcher .currency-list .single-currency {
-  display: flex;
-  align-items: center;
+  @apply flex items-center cursor-pointer;
   margin-bottom: 6px;
-  cursor: pointer;
 }
 
 .header-area-v2
@@ -715,12 +618,8 @@
 
 .header-area-v2 .currency-switcher .currency-list::before {
   content: "";
-  display: block;
+  @apply block absolute top-0 left-0 w-full;
   clear: both;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 2px;
   background-color: var(--hover-color-two);
 }

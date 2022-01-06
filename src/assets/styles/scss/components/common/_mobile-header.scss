@@ -3,15 +3,7 @@
 }
 
 .mobile-header-area .menu-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  @apply flex items-center justify-between;
 }
 
 .mobile-header-area .brand-logo .brand-image {
@@ -19,50 +11,29 @@
 }
 
 .mobile-header-area .header-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  @apply flex items-center justify-end;
 }
 
 .mobile-header-area .header-right .header-btn {
-  display: inline-block;
-  margin-right: 2rem;
-  position: relative;
+  @apply inline-block relative mr-8;
   top: 5px;
 }
 
 .mobile-header-area .header-right .header-btn .btn-left {
-  position: relative;
-  width: 3rem;
+  @apply relative w-12;
 }
 
 .mobile-header-area .header-right .header-btn .btn-left .count {
-  position: absolute;
-  right: 0;
+  @apply absolute right-0 rounded-full leading-8 font-bold items-center text-base	text-white;
   top: -3px;
   width: 1.8rem;
   height: 1.8rem;
-  line-height: 2rem;
-  border-radius: 50%;
   background-color: #fca610;
   font-family: "Jost", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  color: #ffffff;
 }
 
 .mobile-header-area .header-right .header-btn .btn-left .btn-icon {
-  font-size: 2.2rem;
-  line-height: 1;
-  font-weight: 600;
-  color: var(--black);
+  @apply text-4xl font-semibold text-gray-900 leading-none;
 }
 
 .mobile-header-area .header-right .header-btn.wishlist-btn .btn-left .count {
@@ -78,35 +49,22 @@
 }
 
 .mobile-header-area .header-right .menu-bar {
-  position: relative;
+  @apply relative border-0 p-0 bg-transparent;
   top: 3px;
-  border: none;
-  padding: 0;
-  background-color: transparent;
   font-size: 2rem;
 }
 
 .mobile-header-area .header-right .btn-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  position: relative;
+  @apply flex items-center m-0 p-0 relative;
   top: 5px;
 }
 
 .mobile-header-area .header-right .btn-list .single-item {
-  list-style: none;
-  margin-right: 2rem;
+  @apply mr-8;
 }
 
 .mobile-header-area .header-right .btn-list .single-item .single-btn {
   color: var(--black);
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -168,7 +126,6 @@
 
 .menu-offcanvas .mobile-menu-area .menu-search-form .form-select:focus {
   outline: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
