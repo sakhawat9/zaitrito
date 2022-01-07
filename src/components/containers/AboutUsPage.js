@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
+import AboutUs from "../../assets/images/aboutus-image.png";
 
 const AboutUsPage = () => {
   return (
@@ -8,7 +9,7 @@ const AboutUsPage = () => {
         <div className="grid gap-4 grid-cols-12 lg:items-center">
           <div className="lg:col-span-5 md:col-span-6 col-span-12">
             <div className="about-us-image">
-              <img src="http://zairito-html.zainiktheme.com/demo/assets/images/aboutus-image.png" alt="about us image" />
+              <img src={AboutUs} alt="about us image" />
             </div>
           </div>
           <div className="lg:col-span-1"></div>

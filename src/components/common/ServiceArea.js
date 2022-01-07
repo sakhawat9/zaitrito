@@ -1,4 +1,8 @@
 import React from "react";
+import ServiceIcon01 from "../../assets/images/service-icon-1.png";
+import ServiceIcon02 from "../../assets/images/service-icon-2.png";
+import ServiceIcon03 from "../../assets/images/service-icon-3.png";
+import ServiceIcon04 from "../../assets/images/service-icon-4.png";
 
 const ServiceArea = () => {
   return (
@@ -15,7 +19,7 @@ const ServiceArea = () => {
                   <div className="single-service">
                     <div className="service-icon">
                       <img
-                        src="http://zairito-html.zainiktheme.com/demo/assets/images/service-icon-1.png"
+                        src={ServiceIcon01}
                         alt="service-icon"
                       />
                     </div>
@@ -32,7 +36,7 @@ const ServiceArea = () => {
                   <div className="single-service">
                     <div className="service-icon">
                       <img
-                        src="http://zairito-html.zainiktheme.com/demo/assets/images/service-icon-2.png"
+                        src={ServiceIcon02}
                         alt="service-icon"
                       />
                     </div>
@@ -49,7 +53,7 @@ const ServiceArea = () => {
                   <div className="single-service">
                     <div className="service-icon">
                       <img
-                        src="http://zairito-html.zainiktheme.com/demo/assets/images/service-icon-3.png"
+                        src={ServiceIcon03}
                         alt="service-icon"
                       />
                     </div>
@@ -66,7 +70,7 @@ const ServiceArea = () => {
                   <div className="single-service">
                     <div className="service-icon">
                       <img
-                        src="http://zairito-html.zainiktheme.com/demo/assets/images/service-icon-4.png"
+                        src={ServiceIcon04}
                         alt="service-icon"
                       />
                     </div>

@@ -13,7 +13,7 @@ const SignInPage = () => {
 
   const submitHandler = {};
   return (
-    <div className="login">
+    <div className="login section-padding">
       <div className="login__wrapper">
         <div className="login__wrapper__icon flex items-center justify-center">
           <span className="far fa-user">

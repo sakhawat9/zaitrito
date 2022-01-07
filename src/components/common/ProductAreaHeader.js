@@ -452,7 +452,7 @@ const ProductAreaHeader = () => {
             </li>
 
             <li className="menu-item">
-              <a className="menu-link" href="#">
+              <a className="menu-link" href="/aboutUs">
                 about us
               </a>
             </li>
