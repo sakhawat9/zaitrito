@@ -1,4 +1,7 @@
 import React from "react";
+import FeaturesIcon01 from "../../assets/images/features-icon-1.png";
+import FeaturesIcon02 from "../../assets/images/features-icon-2.png";
+import FeaturesIcon03 from "../../assets/images/features-icon-3.png";
 
 const OurFeatures = () => {
   return (
@@ -16,7 +19,7 @@ const OurFeatures = () => {
                 <div className="single-features text-center">
                   <div className="features-icon">
                     <img
-                      src="http://zairito-html.zainiktheme.com/demo/assets/images/features-icon-1.png"
+                      src={FeaturesIcon01}
                       alt="features-icon"
                     />
                   </div>
@@ -31,7 +34,7 @@ const OurFeatures = () => {
                 <div className="single-features text-center">
                   <div className="features-icon">
                     <img
-                      src="http://zairito-html.zainiktheme.com/demo/assets/images/features-icon-2.png"
+                      src={FeaturesIcon02}
                       alt="features-icon"
                     />
                   </div>
@@ -46,7 +49,7 @@ const OurFeatures = () => {
                 <div className="single-features text-center">
                   <div className="features-icon">
                     <img
-                      src="http://zairito-html.zainiktheme.com/demo/assets/images/features-icon-3.png"
+                      src={FeaturesIcon03}
                       alt="features-icon"
                     />
                   </div>
