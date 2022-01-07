@@ -4,43 +4,27 @@
 }
 
 .header-area .header-top .header-top-left .contact-info {
-  display: flex;
-  align-items: center;
-  margin: 0;
+  @apply flex items-center m-0 text-2xl text-gray-900 leading-none font-medium;
   font-family: "Jost", sans-serif;
-  font-size: 1.5rem;
-  line-height: 1;
-  font-weight: 500;
-  color: black;
 }
 
 .header-area .header-top .header-top-left .contact-info .icon {
-  margin-right: 1rem;
+  @apply mr-4;
 }
 
 .header-area .header-top .header-top-left .contact-info .icon::before {
-  line-height: 1;
-  font-size: 1.6rem;
-  font-weight: 700;
+  @apply leading-none text-2xl font-bold;
 }
 
 .header-area .header-top .header-top-right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  @apply flex justify-end items-center;
 }
 
 .header-area .header-top .switcher-lang-currency {
-  display: flex;
+  @apply flex mr-8;
   padding: 0 2rem;
   border-left: 1px solid #d0d0d0;
   border-right: 1px solid #d0d0d0;
-  margin-right: 2rem;
-}
-
-.header-area .header-top .top-bar-menu .menu-list {
-  margin: 0;
-  padding: 0;
 }
 
 .header-area .header-top .top-bar-menu .menu-list .menu-item {
@@ -76,9 +60,7 @@
 }
 
 .header-area .header-middle .header-middle-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @apply flex items-center justify-between;
 }
 
 .header-area .header-middle .header-middle-wrap .brand-area .brand-image {
@@ -90,7 +72,7 @@
 }
 
 .header-area .header-middle .header-middle-wrap .search-area .search-wrap {
-  display: flex;
+  @apply flex;
   border: 1px solid #c4c4c4;
   border-radius: 0.6rem;
 }
@@ -605,10 +587,9 @@
 }
 
 .lang-switcher .lang {
+  @apply text-2xl font-medium;
   color: #888888;
-  font-size: 1.5rem;
   transition: all 0.3s ease-in;
-  font-weight: 500;
 }
 
 .lang-switcher .lang .fa-angle-down {
@@ -680,10 +661,9 @@
 }
 
 .currency-switcher .currency {
+  @apply text-2xl font-medium;
   color: #888888;
-  font-size: 1.5rem;
   transition: all 0.3s ease-in;
-  font-weight: 500;
 }
 
 .currency-switcher .currency .fa-angle-down {

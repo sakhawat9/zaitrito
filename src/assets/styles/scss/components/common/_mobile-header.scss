@@ -85,10 +85,8 @@
 .menu-offcanvas {
   padding: 3rem 1.5rem;
   border-right: 1px solid #fafafa;
-  -webkit-box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
   box-shadow: 0px 15px 65px 5px rgba(0, 0, 0, 0.07);
   overflow-y: scroll;
-  -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
@@ -97,30 +95,24 @@
 }
 
 .menu-offcanvas .mobile-menu-area .offcanvas-header {
-  padding: 0;
-  margin-bottom: 3rem;
+  @apply mb-12 p-0;
 }
 
 .menu-offcanvas .mobile-menu-area .offcanvas-header .brand-logo {
-  display: inline-block;
+  @apply inline-block;
 }
 
 .menu-offcanvas .mobile-menu-area .menu-search-form {
-  margin-bottom: 3rem;
+  @apply mb-12;
 }
 
 .menu-offcanvas .mobile-menu-area .menu-search-form .form-select {
-  margin-bottom: 1.5rem;
-  width: 100%;
+  @apply mb-6 w-full px-6 py-0 text-2xl font-medium bg-transparent;
   height: 5.2rem;
-  padding: 0 1.5rem;
   font-family: "Jost", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 500;
   color: #333333;
   border: 1px solid #c4c4c4;
   border-radius: 0.6rem;
-  background-color: transparent;
   white-space: nowrap;
 }
 
@@ -134,17 +126,11 @@
 }
 
 .menu-offcanvas .mobile-menu-area .menu-search-form .form-group .form-control {
-  width: 100%;
+  @apply w-full py-0 px-6 pr-16 border-0 font-normal text-2xl;
   height: 5.2rem;
-  padding: 0 1.5rem;
-  padding-right: 4rem;
-  border: none;
-  background-color: transparent;
   border: 1px solid #c4c4c4;
   border-radius: 0.6rem;
   font-family: "Jost", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
   color: #333333;
 }
 
@@ -186,22 +172,13 @@
   .form-group
   .form-control:focus {
   outline: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
 .menu-offcanvas .mobile-menu-area .menu-search-form .form-group .search-btn {
-  position: absolute;
-  right: 1.5rem;
+  @apply absolute right-6 p-0 leading-none border-0 bg-transparent text-gray-900 font-bold;
   top: 1.8rem;
-  padding: 0;
-  line-height: 1;
-  border: none;
-  background-color: transparent;
-  color: var(--black);
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  font-weight: 700;
 }
 
 .menu-offcanvas
@@ -233,18 +210,8 @@
 }
 
 .menu-offcanvas .mobile-menu-area .menu-bottom .account-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  line-height: 1;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-transform: capitalize;
+  @apply flex items-center text-2xl leading-none font-medium capitalize;
   color: #222222;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -258,8 +225,7 @@
 }
 
 .menu-offcanvas .mobile-menu-area .main-menu .menu-list .menu-item {
-  position: relative;
-  margin-bottom: 1.5rem;
+  @apply relative mb-6;
 }
 
 .menu-offcanvas
@@ -268,12 +234,9 @@
   .menu-list
   .menu-item
   .menu-expand {
-  position: absolute;
+  @apply absolute cursor-pointer bg-transparent right-0;
   z-index: 2;
   top: 12px;
-  right: 0;
-  cursor: pointer;
-  background-color: transparent;
 }
 
 .menu-offcanvas
@@ -282,15 +245,13 @@
   .menu-list
   .menu-item
   .menu-expand::before {
-  position: absolute;
+  @apply absolute;
   top: calc(50% - 1px);
   left: calc(50% - 7px);
   width: 14px;
   height: 2px;
   content: "";
-  -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-  -webkit-transform: scale(0.75);
   transform: scale(0.75);
   background-color: #7e7e7e;
 }
@@ -301,7 +262,7 @@
   .menu-list
   .menu-item
   .menu-expand::after {
-  position: absolute;
+  @apply absolute;
   top: calc(50% - 1px);
   left: calc(50% - 7px);
   width: 14px;
@@ -320,16 +281,11 @@
   .menu-list
   .menu-item.active
   .menu-expand::after {
-  -webkit-transform: inherit;
   transform: inherit;
 }
 
 .menu-offcanvas .mobile-menu-area .main-menu .menu-list .menu-item .menu-link {
-  display: block;
-  position: relative;
-  font-size: 1.6rem;
-  font-weight: 600;
-  text-transform: capitalize;
+  @apply block relative text-2xl font-semibold capitalize;
   color: #555555;
 }
 
@@ -372,13 +328,9 @@
   .menu-item
   .sub-menu
   .sub-menu-title {
-  display: block;
-  margin-bottom: 2rem;
+  @apply block mb-8 capitalize font-medium text-gray-900;
   font-family: "Jost", sans-serif;
   font-size: 2rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: var(--black);
 }
 
 .menu-offcanvas
@@ -388,12 +340,9 @@
   .menu-item
   .sub-menu
   .sub-menu-link {
+  @apply text-2xl capitalize font-normal;
   font-family: "Jost", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  text-transform: capitalize;
   color: #555555;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -405,13 +354,9 @@
   .sub-menu
   .sub-menu-link
   .menu-item-badge {
-  display: inline-block;
+  @apply inline-block leading-none font-bold capitalize text-white;
   font-size: 1.4rem;
   padding: 0.5rem 0.8rem;
-  line-height: 1;
-  font-weight: 700;
-  text-transform: capitalize;
-  color: var(--white);
   background-color: #00aa6c;
   margin-left: 0.5rem;
 }
@@ -461,18 +406,18 @@
 
 @media (max-width: 480px) {
   .mobile-header-area .header-right .header-btn {
-    margin-right: 1rem;
+    @apply mr-4;
   }
   .mobile-header-area .brand-logo .brand-image {
     max-width: 100px;
   }
   .mobile-header-area .header-right .btn-list .single-item {
-    margin-right: 1rem;
+    @apply mr-4;
   }
   .header-area-v3 .header-right .btn-list .single-item {
-    margin-right: 1rem;
+    @apply mr-4;
   }
   .header-area-v3 .header-right .btn-list {
-    margin-right: 1rem;
+    @apply mr-4;
   }
 }

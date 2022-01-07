@@ -211,18 +211,16 @@
     flex-flow: row wrap;
   }
   .blog-single-area .blog-meta-box .post-author {
-    margin-bottom: 0.5rem;
-    width: 100%;
+    @apply mb-2 w-full;
   }
   .blog-single-area .blog-meta-box .media-lsit .medi-item {
-    margin-right: 2rem;
+    @apply mr-8;
   }
   .blog-single-area .blog-meta-box .media-lsit {
     margin-left: 6.5rem;
   }
   .blog-single-area .blog-meta-box .post-author .author-image {
-    width: 5rem;
-    height: 5rem;
+    @apply w-20 h-20;
   }
   .blog-single-area .blog-meta-box .post-author .author-info .author-name {
     font-size: 1.8rem;
@@ -242,36 +240,26 @@
 }
 
 .comments-area .comments-title {
+  @apply font-medium uppercase text-gray-900;
   padding: 2rem 4rem;
   font-size: 2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--black);
   border-bottom: 1px solid #ededed;
 }
 
 .comments-area .comment-list {
-  margin: 0;
-  padding: 4rem;
+  @apply m-0 p-16;
 }
 
 .comments-area .comment-list .single-comment {
-  position: relative;
-  margin-bottom: 3.5rem;
+  @apply relative mb-14;
 }
 
 .comments-area .comment-list .single-comment:last-child {
-  margin-bottom: 0;
+  @apply mb-0;
 }
 
 .comments-area .comment-list .single-comment .comment-meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 2rem;
+  @apply flex items-center mb-8;
 }
 
 .comments-area
@@ -293,9 +281,8 @@
   .comment-meta
   .comment-meta-info
   .author-name {
+  @apply font-semibold capitalize;
   font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: capitalize;
   color: #222222;
 }
 
@@ -305,28 +292,17 @@
   .comment-meta
   .comment-meta-info
   .comment-time {
-  display: block;
-  font-size: 1.5rem;
-  font-weight: 400;
+  @apply block text-2xl font-normal;
   color: #888888;
 }
 
 .comments-area .comment-list .single-comment .comment-content .comment-text {
-  margin-bottom: 0;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  font-weight: 400;
+  @apply mb-0 text-2xl leading-10 font-normal;
   color: #777777;
 }
 
 .comments-area .comment-list .single-comment .reply {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 15px;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-transform: capitalize;
+  @apply inline-block absolute right-0 text-2xl font-normal capitalize;
   color: var(--primary-color);
 }
 
@@ -347,29 +323,24 @@
 }
 
 .comment-respond .reply-title {
+  @apply font-semibold capitalize text-gray-900;
   margin-bottom: 4.2rem;
   font-family: "Jost", sans-serif;
   font-size: 3.6rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  color: var(--black);
 }
 
 .comment-respond .form-group {
-  margin-bottom: 3rem;
+  @apply mb-14;
 }
 
 .comment-respond .form-group .form-control {
-  width: 100%;
+  @apply w-full font-normal text-2xl bg-white;
   height: 5.6rem;
   border: 1px solid #c4c4c4;
   border-radius: 0;
   padding: 1.5rem 2rem;
   font-family: "Jost", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
   color: #888888;
-  background-color: #fff;
 }
 
 .comment-respond .form-group .message-box {
@@ -377,16 +348,11 @@
 }
 
 .comment-respond .submit-btn {
-  display: inline-block;
+  @apply inline-block text-white font-semibold text-2xl capitalize border-0;
   width: 320px;
   height: 5.6rem;
   background-color: var(--primary-color-two);
-  color: var(--white);
-  border: none;
-  font-size: 1.6rem;
-  font-weight: 600;
   text-transform: capitalize;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -406,8 +372,7 @@
     padding: 5rem 3rem;
   }
   .comments-area .comment-list .single-comment .children {
-    margin-left: 1.5rem;
-    padding-left: 1rem;
+    @apply ml-6 pl-4;
   }
 }
 
@@ -417,9 +382,7 @@
     .single-comment
     .comment-meta
     .comments-author-image {
-    margin-right: 1rem;
-    width: 5rem;
-    height: 5rem;
+    @apply mr-4 w-20 h-20;
   }
   .comments-area
     .comment-list
@@ -427,24 +390,22 @@
     .comment-meta
     .comment-meta-info
     .author-name {
-    font-size: 1.6rem;
-    margin: 0;
+    @apply text-2xl m-0;
   }
   .comments-area .comment-list {
     padding: 3rem 2rem;
   }
   .comments-area .comments-title {
-    padding: 2rem;
+    @apply p-8;
   }
 }
 
 @media (max-width: 480px) {
   .comment-respond .submit-btn {
-    width: 100%;
+    @apply w-full;
   }
   .comment-respond .reply-title {
-    margin-bottom: 3rem;
-    font-size: 3rem;
+    @apply mb-12 text-5xl;
   }
 }
 

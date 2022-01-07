@@ -1,48 +1,37 @@
 .single-grid-blog .blog-thumbnail {
-  margin-bottom: 3.5rem;
-  overflow: hidden;
+  @apply overflow-hidden mb-14;
 }
 
 .single-grid-blog .blog-thumbnail .thumbnail-image {
-  width: 100%;
+  @apply w-full object-cover;
   height: 250px;
   -o-object-fit: cover;
-  object-fit: cover;
   transition: 1s ease all;
 }
 
 .single-grid-blog .blog-info .blog-category {
-  margin-bottom: 1rem;
+  @apply mb-4;
 }
 
 .single-grid-blog .blog-info .blog-category .single-category {
-  display: inline-block;
-  position: relative;
-  margin-right: 1.5rem;
-  line-height: 1;
-}
-
-.single-grid-blog .blog-info .blog-category .single-category::before {
-  position: absolute;
-  content: ",";
-  bottom: 0;
-  left: calc(100% + 6px);
-}
-
-.single-grid-blog
-  .blog-info
-  .blog-category
-  .single-category:last-child::before {
-  display: none;
+  @apply inline-block relative mr-6 leading-none;
+  &:before {
+    @apply absolute bottom-0;
+    content: ",";
+    bottom: 0;
+    left: calc(100% + 6px);
+  }
+  &:last-child {
+    &:before {
+      @apply hidden;
+    }
+  }
 }
 
 .single-grid-blog .blog-info .blog-category .single-category .category-text {
-  display: inline-block;
-  font-size: 1.5rem;
-  font-weight: 400;
+  @apply inline-block text-2xl font-normal uppercase;
   color: #555555;
   transition: all 0.3s linear;
-  text-transform: uppercase;
 }
 
 .single-grid-blog
@@ -54,12 +43,9 @@
 }
 
 .single-grid-blog .blog-info .blog-title {
-  margin-bottom: 1rem;
+  @apply mb-4 font-medium capitalize text-gray-900;
   font-size: 2.4rem;
   line-height: 3.4rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: var(--black);
 }
 
 .single-grid-blog .blog-info .blog-title .blog-link {
@@ -72,18 +58,14 @@
 }
 
 .single-grid-blog .blog-info .blog-content {
-  margin-bottom: 3rem;
-  font-size: 1.6rem;
+  @apply mb-12 font-normal text-2xl;
   line-height: 2.6rem;
-  font-weight: 400;
   color: var(--bColor);
 }
 
 .single-grid-blog .blog-info .blog-btn {
-  display: inline-block;
+  @apply inline-block font-normal capitalize;
   font-size: 2rem;
-  font-weight: 400;
-  text-transform: capitalize;
   color: var(--primary-color);
   transition: all 0.3s linear;
   border-bottom: 2px solid var(--primary-color);
