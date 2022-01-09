@@ -278,7 +278,7 @@ const ProductAreaHeader = () => {
               </a>
               <ul className="sub-menu">
                 <li className="sub-menu-item">
-                  <a className="sub-menu-link" href="#">
+                  <a className="sub-menu-link" href="/home-v1">
                     Home One
                   </a>
                 </li>

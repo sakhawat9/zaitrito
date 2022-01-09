@@ -11,6 +11,7 @@ import EmptyWish from "./pages/EmptyWish";
 import Error from "./pages/Error";
 import Faq from "./pages/Faq";
 import Home from "./pages/home";
+import HomeV1 from "./pages/HomeV1";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import ProductDetails from "./pages/productDetails";
 import ProductAreaV01 from "./pages/productsArea-v01";
@@ -28,6 +29,9 @@ const AppRouter = () => {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/home-v1">
+          <HomeV1 />
         </Route>
         <Route path="/home">
           <Home />
